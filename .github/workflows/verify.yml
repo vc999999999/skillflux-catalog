@@ -12,7 +12,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Install skillflux CLI from the main repository
-        run: npm install --no-save github:vc999999999/Skillflux_Cloudflare#main
+      - name: Check out the SkillFlux client repository
+        uses: actions/checkout@v4
+        with:
+          repository: vc999999999/Skillflux_Cloudflare
+          path: skillflux-client
+      - name: Build the skillflux CLI
+        run: |
+          cd skillflux-client
+          npm ci
+          npm run build --workspace @skillflux/mcp
       - name: Check index.json matches the skills directory
-        run: npx --no-install skillflux catalog --check .
+        run: node skillflux-client/mcp/dist/cli.js catalog --check .
