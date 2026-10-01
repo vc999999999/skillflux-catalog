@@ -1,0 +1,36 @@
+{
+  "schema": "skillflux/v1",
+  "id": "grilling",
+  "version": "1.0.0",
+  "name": "Grilling",
+  "description": "Relentlessly interview the user about a plan, decision, or idea in design-tree rounds until nothing is silently assumed.",
+  "category": "productivity",
+  "tags": [
+    "interview",
+    "planning",
+    "stress-test"
+  ],
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "Matt Pocock (imported from mattpocock/skills)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-01T05:45:00.999423Z",
+  "release": {
+    "notes": "Imported verbatim from https://github.com/mattpocock/skills (skills/productivity/grilling). No content modifications.",
+    "breaking": false,
+    "minClientVersion": "1.0.0",
+    "maintainedAt": "2026-10-01T05:45:00.999423Z",
+    "maintainedBy": "Matt Pocock"
+  }
+}

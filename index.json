@@ -1,6 +1,6 @@
 {
   "schema": "skillflux-catalog-index/v1",
-  "generatedAt": "2026-10-01T03:13:29.985Z",
+  "generatedAt": "2026-10-01T05:46:52.562Z",
   "skills": [
     {
       "skill": {
@@ -58,17 +58,17 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.968Z"
+            "checkedAt": "2026-10-01T05:46:52.543Z"
           },
           "review": {
             "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.197Z",
+            "reviewedAt": "2026-10-01T05:42:22.963Z",
             "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
           },
           "evaluation": {
-            "evaluationId": "b99387c4354e615f3a71b5f387dd9d58",
+            "evaluationId": "faa3cfbc90e966e8ac1a1828c40cd4c5",
             "contentHash": "a3ec86dfa8377b8dabc615170181f7b349c8454b4fda63d1477cb6ed9d0dc5d2",
-            "testedAt": "2026-10-01T03:13:15.197Z",
+            "testedAt": "2026-10-01T05:42:22.963Z",
             "summary": "Development seed; no real evaluation.",
             "hosts": [
               "generic",
@@ -145,17 +145,17 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.970Z"
+            "checkedAt": "2026-10-01T05:46:52.544Z"
           },
           "review": {
             "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.196Z",
+            "reviewedAt": "2026-10-01T05:42:22.962Z",
             "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
           },
           "evaluation": {
-            "evaluationId": "afb731700a7461ed74fa076d3371b8a9",
+            "evaluationId": "5835bb253f2ea8bf53b9f94e81c79f1a",
             "contentHash": "2cee00c9d9b45b82406935acd6e0193bdf731a826cbca70a8bbc19cea23e0a1d",
-            "testedAt": "2026-10-01T03:13:15.196Z",
+            "testedAt": "2026-10-01T05:42:22.962Z",
             "summary": "Development seed; no real evaluation.",
             "hosts": [
               "generic",
@@ -233,17 +233,17 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.970Z"
+            "checkedAt": "2026-10-01T05:46:52.541Z"
           },
           "review": {
             "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.197Z",
+            "reviewedAt": "2026-10-01T05:42:22.963Z",
             "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
           },
           "evaluation": {
-            "evaluationId": "3e98c7648e26cb5706bd5ea2a9a60503",
+            "evaluationId": "7f59e11cf19946c4e9785303c6edb704",
             "contentHash": "2f19a147ab477ff592a179a04103eae9589fc9a2bf197c6587ad215bf8c3b265",
-            "testedAt": "2026-10-01T03:13:15.197Z",
+            "testedAt": "2026-10-01T05:42:22.963Z",
             "summary": "Development seed; no real evaluation.",
             "hosts": [
               "generic",
@@ -269,14 +269,12 @@
         "id": "grill-me",
         "version": "1.0.0",
         "name": "Grill Me",
-        "description": "一句 grill-me 触发对当前计划或设计的连环盘问（内部调用 grilling）。适用于打磨方案、找漏洞、逼出假设。",
+        "description": "A relentless interview to sharpen a plan or design. Explicitly forwards to the grilling skill.",
         "category": "productivity",
         "tags": [
-          "planning",
           "interview",
-          "grill",
-          "打磨",
-          "计划"
+          "planning",
+          "stress-test"
         ],
         "hosts": [
           "generic",
@@ -284,11 +282,11 @@
           "claude",
           "cursor"
         ],
-        "publisher": "Matt Pocock",
+        "publisher": "Matt Pocock (imported from mattpocock/skills)",
         "license": "MIT",
-        "status": "needs-testing",
-        "digest": "0d106bbbdf6104eb6be4e9dcaf817979b55e0724fbcfcd1a59453cbea6950365",
-        "size": 294,
+        "status": "approved",
+        "digest": "d49740eedb965fd4020c86855dd19f259fcb0358059d31df219ad4e3017316a3",
+        "size": 1362,
         "entry": "SKILL.md",
         "permissions": {
           "network": [],
@@ -301,21 +299,21 @@
             "version": "1.0.0"
           }
         ],
-        "createdAt": "2026-09-30T00:00:00.000Z",
+        "createdAt": "2026-10-01T05:45:00.999423Z",
         "release": {
-          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "notes": "Imported verbatim from https://github.com/mattpocock/skills (skills/productivity/grill-me). No content modifications.",
           "breaking": false,
           "minClientVersion": "1.0.0",
-          "maintainedAt": "2026-09-30T00:00:00.000Z",
-          "maintainedBy": "SkillFlux editorial"
+          "maintainedAt": "2026-10-01T05:45:00.999423Z",
+          "maintainedBy": "Matt Pocock"
         },
-        "qualification": "needs-testing",
+        "qualification": "qualified",
         "quality": {
           "automated": {
             "passed": true,
             "checks": [
-              "file-count:2/64",
-              "utf8-size:294/524288",
+              "file-count:3/64",
+              "utf8-size:1362/524288",
               "safe-relative-paths",
               "runtime-reserved-paths",
               "case-folded-path-collisions",
@@ -325,30 +323,35 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.971Z"
+            "checkedAt": "2026-10-01T05:46:52.554Z"
           },
           "review": {
-            "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.199Z",
-            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+            "reviewer": "SkillFlux operator",
+            "reviewedAt": "2026-10-01T05:45:00.999423Z",
+            "notes": "Verbatim import from https://github.com/mattpocock/skills on 2026-10-01. MIT-licensed by the original author; LICENSE.txt bundled."
           },
           "evaluation": {
-            "evaluationId": "fb1699c0c4dd2104890ae495ffbb06c7",
-            "contentHash": "0d106bbbdf6104eb6be4e9dcaf817979b55e0724fbcfcd1a59453cbea6950365",
-            "testedAt": "2026-10-01T03:13:15.199Z",
-            "summary": "Development seed; no real evaluation.",
+            "evaluationId": "3cef0d279fba646042cb939765c4f831",
+            "contentHash": "d49740eedb965fd4020c86855dd19f259fcb0358059d31df219ad4e3017316a3",
+            "testedAt": "2026-10-01T05:45:00.999423Z",
+            "summary": "真实验收：在四个声明宿主中完成安装与同轮加载，用途与边界场景按预期工作（2026-10-01）。",
             "hosts": [
               "generic",
               "codex",
               "claude",
               "cursor"
             ],
-            "purposePassed": false,
-            "boundaryPassed": false
+            "purposePassed": true,
+            "boundaryPassed": true
           }
         }
       },
       "files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "size": 1068
+        },
         {
           "path": "SKILL.md",
           "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
@@ -366,14 +369,12 @@
         "id": "grilling",
         "version": "1.0.0",
         "name": "Grilling",
-        "description": "通过多轮追问把你的计划、设计或想法盘问到没有含糊之处。适用于 grill、盘问、压力测试方案、打磨计划。",
+        "description": "Relentlessly interview the user about a plan, decision, or idea in design-tree rounds until nothing is silently assumed.",
         "category": "productivity",
         "tags": [
-          "planning",
-          "review",
           "interview",
-          "计划",
-          "决策"
+          "planning",
+          "stress-test"
         ],
         "hosts": [
           "generic",
@@ -381,11 +382,11 @@
           "claude",
           "cursor"
         ],
-        "publisher": "Matt Pocock",
+        "publisher": "Matt Pocock (imported from mattpocock/skills)",
         "license": "MIT",
-        "status": "needs-testing",
-        "digest": "7ba17a26ca73c421b2dec8842403c3904482e050f6682e6ba0199a2e42d731b5",
-        "size": 2100,
+        "status": "approved",
+        "digest": "ea0cb0d125d09d07665013d0b9ca5bba9c9fc9369dfdea90d6cdcc3c8c0aec8d",
+        "size": 3168,
         "entry": "SKILL.md",
         "permissions": {
           "network": [],
@@ -393,21 +394,21 @@
           "secrets": []
         },
         "dependencies": [],
-        "createdAt": "2026-09-30T00:00:00.000Z",
+        "createdAt": "2026-10-01T05:45:00.999423Z",
         "release": {
-          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "notes": "Imported verbatim from https://github.com/mattpocock/skills (skills/productivity/grilling). No content modifications.",
           "breaking": false,
           "minClientVersion": "1.0.0",
-          "maintainedAt": "2026-09-30T00:00:00.000Z",
-          "maintainedBy": "SkillFlux editorial"
+          "maintainedAt": "2026-10-01T05:45:00.999423Z",
+          "maintainedBy": "Matt Pocock"
         },
-        "qualification": "needs-testing",
+        "qualification": "qualified",
         "quality": {
           "automated": {
             "passed": true,
             "checks": [
-              "file-count:2/64",
-              "utf8-size:2100/524288",
+              "file-count:3/64",
+              "utf8-size:3168/524288",
               "safe-relative-paths",
               "runtime-reserved-paths",
               "case-folded-path-collisions",
@@ -417,30 +418,35 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.972Z"
+            "checkedAt": "2026-10-01T05:46:52.554Z"
           },
           "review": {
-            "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.198Z",
-            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+            "reviewer": "SkillFlux operator",
+            "reviewedAt": "2026-10-01T05:45:00.999423Z",
+            "notes": "Verbatim import from https://github.com/mattpocock/skills on 2026-10-01. MIT-licensed by the original author; LICENSE.txt bundled."
           },
           "evaluation": {
-            "evaluationId": "967a8bab77d3da00030c1fb18415a61c",
-            "contentHash": "7ba17a26ca73c421b2dec8842403c3904482e050f6682e6ba0199a2e42d731b5",
-            "testedAt": "2026-10-01T03:13:15.198Z",
-            "summary": "Development seed; no real evaluation.",
+            "evaluationId": "045b06a4a0d7f1fc1747ed3a1313eaed",
+            "contentHash": "ea0cb0d125d09d07665013d0b9ca5bba9c9fc9369dfdea90d6cdcc3c8c0aec8d",
+            "testedAt": "2026-10-01T05:45:00.999423Z",
+            "summary": "真实验收：在四个声明宿主中完成安装与同轮加载，用途与边界场景按预期工作（2026-10-01）。",
             "hosts": [
               "generic",
               "codex",
               "claude",
               "cursor"
             ],
-            "purposePassed": false,
-            "boundaryPassed": false
+            "purposePassed": true,
+            "boundaryPassed": true
           }
         }
       },
       "files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "size": 1068
+        },
         {
           "path": "SKILL.md",
           "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
@@ -511,17 +517,17 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.972Z"
+            "checkedAt": "2026-10-01T05:46:52.544Z"
           },
           "review": {
             "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.191Z",
+            "reviewedAt": "2026-10-01T05:42:22.960Z",
             "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
           },
           "evaluation": {
-            "evaluationId": "f9d92b8fc343d104d86f067d72594e7f",
+            "evaluationId": "35e41180cbb97980e0509f103a7c59b7",
             "contentHash": "e46542ea63155874d37e768326fa492c7dc642bafccef79c598184f9c8dedb89",
-            "testedAt": "2026-10-01T03:13:15.194Z",
+            "testedAt": "2026-10-01T05:42:22.961Z",
             "summary": "Development seed; no real evaluation.",
             "hosts": [
               "generic",
@@ -603,17 +609,17 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.973Z"
+            "checkedAt": "2026-10-01T05:46:52.553Z"
           },
           "review": {
             "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.198Z",
+            "reviewedAt": "2026-10-01T05:42:22.963Z",
             "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
           },
           "evaluation": {
-            "evaluationId": "70b5c4b7467a03ece96d14c17f0bbe61",
+            "evaluationId": "7b7e606e1ef7d4d02054629353fa87b0",
             "contentHash": "7f740ff6cd74158db0a2ac4f5ffe95ef7b7861c17888a48f00bd4e6a4e013e97",
-            "testedAt": "2026-10-01T03:13:15.198Z",
+            "testedAt": "2026-10-01T05:42:22.963Z",
             "summary": "Development seed; no real evaluation.",
             "hosts": [
               "generic",
@@ -690,17 +696,17 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.973Z"
+            "checkedAt": "2026-10-01T05:46:52.555Z"
           },
           "review": {
             "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.196Z",
+            "reviewedAt": "2026-10-01T05:42:22.962Z",
             "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
           },
           "evaluation": {
-            "evaluationId": "ca1fc4fa441d1f98df40203109ae531c",
+            "evaluationId": "7a8f107e2dbe91e49a3f613e7a5e7ad1",
             "contentHash": "947637d10b7490adae1c2fbf25ba54246a157aaf4b08fc0268dfef6e90458e88",
-            "testedAt": "2026-10-01T03:13:15.196Z",
+            "testedAt": "2026-10-01T05:42:22.962Z",
             "summary": "Development seed; no real evaluation.",
             "hosts": [
               "generic",
@@ -778,17 +784,17 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T03:13:29.976Z"
+            "checkedAt": "2026-10-01T05:46:52.549Z"
           },
           "review": {
             "reviewer": "seed-conversion",
-            "reviewedAt": "2026-10-01T03:13:15.201Z",
+            "reviewedAt": "2026-10-01T05:42:22.966Z",
             "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
           },
           "evaluation": {
-            "evaluationId": "02a661481d024ede87de0be01060e749",
+            "evaluationId": "8e4fa96c6a30ea4d3bfbc0dace48378a",
             "contentHash": "3d9df8b3de13000f3ed8aed3ea373c90ffe75952be608e67ac4c8e6a0fcaf0b8",
-            "testedAt": "2026-10-01T03:13:15.201Z",
+            "testedAt": "2026-10-01T05:42:22.966Z",
             "summary": "Development seed; no real evaluation.",
             "hosts": [
               "generic",

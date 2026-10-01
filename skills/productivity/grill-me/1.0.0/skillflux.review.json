@@ -1,0 +1,52 @@
+{
+  "status": "approved",
+  "reviewer": "SkillFlux operator",
+  "reviewedAt": "2026-10-01T05:45:00.999423Z",
+  "notes": "Verbatim import from https://github.com/mattpocock/skills on 2026-10-01. MIT-licensed by the original author; LICENSE.txt bundled.",
+  "evaluation": {
+    "contentHash": "d49740eedb965fd4020c86855dd19f259fcb0358059d31df219ad4e3017316a3",
+    "tester": "SkillFlux operator",
+    "testedAt": "2026-10-01T05:45:00.999423Z",
+    "environment": "ZCode (GLM) + Claude Code session; macOS",
+    "kind": "human",
+    "purpose": {
+      "input": "用户请求「grill me about my SkillFlux catalog redesign」",
+      "expected": "AI 对计划逐轮追问，每轮列出多个编号问题并附推荐答案，等待用户回答后继续",
+      "actual": "grilling 按设计树分轮提问，问题编号且带推荐答案，回答后重组边界继续；grill-me 正确转发调用 grilling",
+      "passed": true
+    },
+    "boundary": {
+      "input": "用户要求 grill 一个含机密密钥的部署计划",
+      "expected": "追问聚焦决策结构，不要求复述密钥明文；frontier 为空时停止并等待确认",
+      "actual": "行为符合：问题针对决策分支而非密钥内容，结束时等待用户确认",
+      "passed": true
+    },
+    "hostChecks": [
+      {
+        "host": "generic",
+        "installed": true,
+        "read": true,
+        "notes": "skillflux install + load 在本地 CLI 会话中验证"
+      },
+      {
+        "host": "codex",
+        "installed": true,
+        "read": true,
+        "notes": "Codex $skillflux 显式调用路径验证"
+      },
+      {
+        "host": "claude",
+        "installed": true,
+        "read": true,
+        "notes": "Claude Code 读取 bootstrap 后验证"
+      },
+      {
+        "host": "cursor",
+        "installed": true,
+        "read": true,
+        "notes": "Cursor MCP 配置下验证"
+      }
+    ],
+    "publicSummary": "真实验收：在四个声明宿主中完成安装与同轮加载，用途与边界场景按预期工作（2026-10-01）。"
+  }
+}

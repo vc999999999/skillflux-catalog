@@ -3,25 +3,43 @@
 SkillFlux 的精选技能目录仓库。客户端（`skillflux` CLI / MCP）从此仓库拉取 `index.json`，
 并把所有下载固定在解析到的 commit SHA 上，逐文件校验 sha256。
 
-## 结构
+## 目录结构
 
 ```
-skills/<id>/<version>/
-├── skillflux.json          # 声明性清单：id、版本、入口、依赖、权限、宿主
-├── skillflux.review.json   # 审核记录 + 绑定内容哈希的人工评测证据
-└── SKILL.md 及其他内容文件
-index.json                  # 由 `skillflux catalog build` 生成，客户端唯一入口
+skills/
+└── <category>/              # 能力分类（与 manifest 的 category 字段一致，kebab-case）
+    └── <id>/                # 技能 ID（全局唯一，kebab-case）
+        └── <version>/       # 语义化版本；目录内容不可变
+            ├── skillflux.json          # 声明性清单：名称、入口、依赖、权限、宿主、发布说明
+            ├── skillflux.review.json   # 审核记录 + 绑定内容哈希的人工评测
+            ├── SKILL.md                # 技能入口正文
+            ├── agents/openai.yaml      # （可选）宿主界面声明
+            └── LICENSE.txt             # （第三方导入时）上游许可证全文
+index.json                   # 由 `skillflux catalog build` 生成，客户端唯一入口
 ```
+
+规划规则：
+- **分类目录是强制的**，且必须与 `skillflux.json` 的 `category` 一致（builder 校验，不一致即报错）。
+- **技能 ID 全局唯一**，跨分类不重复；同一 ID 永远在同一分类目录下。
+- **版本目录内容不可变**；任何内容变更（哪怕一个字符）必须新增版本目录。
+- **第三方导入的技能必须捆绑上游 LICENSE.txt**，publisher 字段注明来源。
+
+## 当前内容
+
+| 分类 | 技能 | 状态 |
+| --- | --- | --- |
+| productivity | grill-me、grilling（来自 [mattpocock/skills](https://github.com/mattpocock/skills)，MIT，逐字导入） | ✅ qualified，四宿主实测 |
+| development / product / data / research | 9 个开发种子 | needs-testing（simulation 证据，不可安装） |
 
 ## 维护流程
 
 修改技能内容后运行 `skillflux catalog build`（来自 [SkillFlux 主仓库](https://github.com/vc999999999/Skillflux_Cloudflare)），
 提交生成的 `index.json`。CI 会运行 `skillflux catalog build --check`：`index.json` 与目录内容不一致即失败。
 
-同一 `<id>/<version>` 目录内容不可变；内容变更必须新增版本目录。`skillflux.review.json`
-中 `kind: "simulation"` 的评测不能使版本获得 qualified 资格。
+`skillflux.review.json` 中 `kind: "simulation"` 的评测不能使版本获得 qualified 资格；只有
+`kind: "human"` 且 contentHash 绑定当前内容的评测才能发布可安装版本。撤销 = 将 review status
+改为 `revoked` 并重建 index，依赖它的合格版本派生状态随之失效。
 
-## 状态
+## 信任模型
 
-当前 9 个条目为开发种子（`needs-testing` 状态，simulation 证据）——它们**不是**已通过真人实测的
-可安装版本。 client 搜索不会返回它们。真实合格版本将带有人工评测记录逐步发布。
+免签名：信任根为 GitHub 账号（2FA + 分支保护）+ commit SHA 钉扎 + 逐文件 sha256 + CI 一致性检查。
