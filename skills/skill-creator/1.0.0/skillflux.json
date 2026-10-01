@@ -1,0 +1,39 @@
+{
+  "schema": "skillflux/v1",
+  "id": "skill-creator",
+  "name": "Skill Creator",
+  "description": "创建、修改、评测和改进 Agent Skill 的完整工作流，含评估模板与打包说明。适用于写 skill、优化 skill 描述、跑 eval。",
+  "category": "development",
+  "tags": [
+    "skill",
+    "authoring",
+    "evals",
+    "eval",
+    "agent",
+    "写作"
+  ],
+  "version": "1.0.0",
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "Anthropic",
+  "license": "Apache-2.0",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "release": {
+    "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+    "breaking": false,
+    "minClientVersion": "1.0.0",
+    "maintainedAt": "2026-09-30T00:00:00.000Z",
+    "maintainedBy": "SkillFlux editorial"
+  },
+  "createdAt": "2026-09-30T00:00:00.000Z"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "needs-testing",
+  "reviewer": "seed-conversion",
+  "reviewedAt": "2026-10-01T03:13:15.197Z",
+  "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication.",
+  "evaluation": {
+    "contentHash": "a3ec86dfa8377b8dabc615170181f7b349c8454b4fda63d1477cb6ed9d0dc5d2",
+    "tester": "seed-conversion",
+    "testedAt": "2026-10-01T03:13:15.197Z",
+    "environment": "local fixture",
+    "kind": "simulation",
+    "purpose": {
+      "input": "placeholder",
+      "expected": "placeholder",
+      "actual": "placeholder",
+      "passed": false
+    },
+    "boundary": {
+      "input": "placeholder",
+      "expected": "placeholder",
+      "actual": "placeholder",
+      "passed": false
+    },
+    "hostChecks": [
+      {
+        "host": "generic",
+        "installed": false,
+        "read": false,
+        "notes": "not tested"
+      },
+      {
+        "host": "codex",
+        "installed": false,
+        "read": false,
+        "notes": "not tested"
+      },
+      {
+        "host": "claude",
+        "installed": false,
+        "read": false,
+        "notes": "not tested"
+      },
+      {
+        "host": "cursor",
+        "installed": false,
+        "read": false,
+        "notes": "not tested"
+      }
+    ],
+    "publicSummary": "Development seed; no real evaluation."
+  }
+}

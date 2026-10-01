@@ -1,0 +1,38 @@
+{
+  "schema": "skillflux/v1",
+  "id": "product-brief",
+  "name": "产品需求梳理",
+  "description": "将产品想法整理为用户场景、行为需求和可验收标准；product、PRD、需求、产品设计。",
+  "category": "product",
+  "tags": [
+    "product",
+    "prd",
+    "需求",
+    "产品",
+    "planning"
+  ],
+  "version": "1.0.0",
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "SkillFlux",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "release": {
+    "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+    "breaking": false,
+    "minClientVersion": "1.0.0",
+    "maintainedAt": "2026-09-30T00:00:00.000Z",
+    "maintainedBy": "SkillFlux editorial"
+  },
+  "createdAt": "2026-09-30T00:00:00.000Z"
+}

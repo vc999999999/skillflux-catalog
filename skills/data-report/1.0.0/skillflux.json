@@ -1,0 +1,39 @@
+{
+  "schema": "skillflux/v1",
+  "id": "data-report",
+  "name": "数据分析报告",
+  "description": "分析 CSV 或表格并输出可复查的统计、图表与结论；data analysis、数据、报表、CSV。",
+  "category": "data",
+  "tags": [
+    "data",
+    "analysis",
+    "csv",
+    "spreadsheet",
+    "数据",
+    "报表"
+  ],
+  "version": "1.0.0",
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "SkillFlux",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "release": {
+    "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+    "breaking": false,
+    "minClientVersion": "1.0.0",
+    "maintainedAt": "2026-09-30T00:00:00.000Z",
+    "maintainedBy": "SkillFlux editorial"
+  },
+  "createdAt": "2026-09-30T00:00:00.000Z"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "skillflux/v1",
+  "id": "api-contract-design",
+  "name": "API 契约设计",
+  "description": "设计和检查 HTTP API、请求响应模型、分页、幂等与错误约定；API、接口、后端契约。",
+  "category": "development",
+  "tags": [
+    "api",
+    "backend",
+    "http",
+    "接口",
+    "schema"
+  ],
+  "version": "1.0.0",
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "SkillFlux",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "release": {
+    "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+    "breaking": false,
+    "minClientVersion": "1.0.0",
+    "maintainedAt": "2026-09-30T00:00:00.000Z",
+    "maintainedBy": "SkillFlux editorial"
+  },
+  "createdAt": "2026-09-30T00:00:00.000Z"
+}

@@ -1,0 +1,898 @@
+{
+  "schema": "skillflux-catalog-index/v1",
+  "generatedAt": "2026-10-01T03:13:29.985Z",
+  "skills": [
+    {
+      "skill": {
+        "id": "api-contract-design",
+        "version": "1.0.0",
+        "name": "API 契约设计",
+        "description": "设计和检查 HTTP API、请求响应模型、分页、幂等与错误约定；API、接口、后端契约。",
+        "category": "development",
+        "tags": [
+          "api",
+          "backend",
+          "http",
+          "接口",
+          "schema"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "SkillFlux",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "a3ec86dfa8377b8dabc615170181f7b349c8454b4fda63d1477cb6ed9d0dc5d2",
+        "size": 1156,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:1/64",
+              "utf8-size:1156/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.968Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.197Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "b99387c4354e615f3a71b5f387dd9d58",
+            "contentHash": "a3ec86dfa8377b8dabc615170181f7b349c8454b4fda63d1477cb6ed9d0dc5d2",
+            "testedAt": "2026-10-01T03:13:15.197Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "89c6154b9146fe5dffb4fae4eb92e2bfb64a73a46527019667a88a90583929b4",
+          "size": 1156
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "code-review",
+        "version": "1.0.0",
+        "name": "代码审查",
+        "description": "审查 Git diff 和实现中的正确性、回归与测试缺口，提供可定位的问题；code review、review、代码审查。",
+        "category": "development",
+        "tags": [
+          "code-review",
+          "git",
+          "testing",
+          "代码审查",
+          "bug"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "SkillFlux",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "2cee00c9d9b45b82406935acd6e0193bdf731a826cbca70a8bbc19cea23e0a1d",
+        "size": 893,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:1/64",
+              "utf8-size:893/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.970Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.196Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "afb731700a7461ed74fa076d3371b8a9",
+            "contentHash": "2cee00c9d9b45b82406935acd6e0193bdf731a826cbca70a8bbc19cea23e0a1d",
+            "testedAt": "2026-10-01T03:13:15.196Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5f059c0346bd1648fd9f790349568a027e40237839fd5412d44007f3da2dffd8",
+          "size": 893
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "data-report",
+        "version": "1.0.0",
+        "name": "数据分析报告",
+        "description": "分析 CSV 或表格并输出可复查的统计、图表与结论；data analysis、数据、报表、CSV。",
+        "category": "data",
+        "tags": [
+          "data",
+          "analysis",
+          "csv",
+          "spreadsheet",
+          "数据",
+          "报表"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "SkillFlux",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "2f19a147ab477ff592a179a04103eae9589fc9a2bf197c6587ad215bf8c3b265",
+        "size": 1044,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:1/64",
+              "utf8-size:1044/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.970Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.197Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "3e98c7648e26cb5706bd5ea2a9a60503",
+            "contentHash": "2f19a147ab477ff592a179a04103eae9589fc9a2bf197c6587ad215bf8c3b265",
+            "testedAt": "2026-10-01T03:13:15.197Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "85eb44f7bb3c5a2d5338d8729ee0066633cdbfed8fe68b665650e6cbe05ed513",
+          "size": 1044
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "grill-me",
+        "version": "1.0.0",
+        "name": "Grill Me",
+        "description": "一句 grill-me 触发对当前计划或设计的连环盘问（内部调用 grilling）。适用于打磨方案、找漏洞、逼出假设。",
+        "category": "productivity",
+        "tags": [
+          "planning",
+          "interview",
+          "grill",
+          "打磨",
+          "计划"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Matt Pocock",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "0d106bbbdf6104eb6be4e9dcaf817979b55e0724fbcfcd1a59453cbea6950365",
+        "size": 294,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [
+          {
+            "id": "grilling",
+            "version": "1.0.0"
+          }
+        ],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:2/64",
+              "utf8-size:294/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.971Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.199Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "fb1699c0c4dd2104890ae495ffbb06c7",
+            "contentHash": "0d106bbbdf6104eb6be4e9dcaf817979b55e0724fbcfcd1a59453cbea6950365",
+            "testedAt": "2026-10-01T03:13:15.199Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+          "size": 157
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
+          "size": 137
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "grilling",
+        "version": "1.0.0",
+        "name": "Grilling",
+        "description": "通过多轮追问把你的计划、设计或想法盘问到没有含糊之处。适用于 grill、盘问、压力测试方案、打磨计划。",
+        "category": "productivity",
+        "tags": [
+          "planning",
+          "review",
+          "interview",
+          "计划",
+          "决策"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Matt Pocock",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "7ba17a26ca73c421b2dec8842403c3904482e050f6682e6ba0199a2e42d731b5",
+        "size": 2100,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:2/64",
+              "utf8-size:2100/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.972Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.198Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "967a8bab77d3da00030c1fb18415a61c",
+            "contentHash": "7ba17a26ca73c421b2dec8842403c3904482e050f6682e6ba0199a2e42d731b5",
+            "testedAt": "2026-10-01T03:13:15.198Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+          "size": 1987
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
+          "size": 113
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "landing-page-design",
+        "version": "1.0.0",
+        "name": "落地页设计",
+        "description": "为现有项目设计并实现有清晰视觉方向的响应式落地页；适用于 website、landing page、frontend、网站、前端、页面设计。",
+        "category": "development",
+        "tags": [
+          "web-design",
+          "frontend",
+          "landing-page",
+          "网站",
+          "前端",
+          "Astro",
+          "React"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "SkillFlux",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "e46542ea63155874d37e768326fa492c7dc642bafccef79c598184f9c8dedb89",
+        "size": 1675,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:2/64",
+              "utf8-size:1675/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.972Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.191Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "f9d92b8fc343d104d86f067d72594e7f",
+            "contentHash": "e46542ea63155874d37e768326fa492c7dc642bafccef79c598184f9c8dedb89",
+            "testedAt": "2026-10-01T03:13:15.194Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8322d06376371f7757c8164a4a558d19f754b302ccc23832972d6f19de903b7e",
+          "size": 1285
+        },
+        {
+          "path": "references/review.md",
+          "sha256": "c7234c65520ad1ad421d55749c3e4307fa6b89c4885a4a3bcb456ae1ba8ad0f3",
+          "size": 390
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "product-brief",
+        "version": "1.0.0",
+        "name": "产品需求梳理",
+        "description": "将产品想法整理为用户场景、行为需求和可验收标准；product、PRD、需求、产品设计。",
+        "category": "product",
+        "tags": [
+          "product",
+          "prd",
+          "需求",
+          "产品",
+          "planning"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "SkillFlux",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "7f740ff6cd74158db0a2ac4f5ffe95ef7b7861c17888a48f00bd4e6a4e013e97",
+        "size": 1127,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:1/64",
+              "utf8-size:1127/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.973Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.198Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "70b5c4b7467a03ece96d14c17f0bbe61",
+            "contentHash": "7f740ff6cd74158db0a2ac4f5ffe95ef7b7861c17888a48f00bd4e6a4e013e97",
+            "testedAt": "2026-10-01T03:13:15.198Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "75d344853c351e2933e0580ebd0e0dfe97acdfbb246a50b15b41bd8903d96343",
+          "size": 1127
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "research-synthesis",
+        "version": "1.0.0",
+        "name": "研究资料综合",
+        "description": "把提供的访谈、文章与研究资料整理成有出处的洞察和决策依据；research、研究、访谈、资料分析。",
+        "category": "research",
+        "tags": [
+          "research",
+          "synthesis",
+          "访谈",
+          "研究",
+          "总结"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "SkillFlux",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "947637d10b7490adae1c2fbf25ba54246a157aaf4b08fc0268dfef6e90458e88",
+        "size": 1101,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:1/64",
+              "utf8-size:1101/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.973Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.196Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "ca1fc4fa441d1f98df40203109ae531c",
+            "contentHash": "947637d10b7490adae1c2fbf25ba54246a157aaf4b08fc0268dfef6e90458e88",
+            "testedAt": "2026-10-01T03:13:15.196Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e0b7e3309d433864f9f72345d76c8e0fc16506d8e874b9a9ac7ffa75b6e11532",
+          "size": 1101
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "skill-creator",
+        "version": "1.0.0",
+        "name": "Skill Creator",
+        "description": "创建、修改、评测和改进 Agent Skill 的完整工作流，含评估模板与打包说明。适用于写 skill、优化 skill 描述、跑 eval。",
+        "category": "development",
+        "tags": [
+          "skill",
+          "authoring",
+          "evals",
+          "eval",
+          "agent",
+          "写作"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Anthropic",
+        "license": "Apache-2.0",
+        "status": "needs-testing",
+        "digest": "3d9df8b3de13000f3ed8aed3ea373c90ffe75952be608e67ac4c8e6a0fcaf0b8",
+        "size": 224992,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-09-30T00:00:00.000Z",
+        "release": {
+          "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+          "breaking": false,
+          "minClientVersion": "1.0.0",
+          "maintainedAt": "2026-09-30T00:00:00.000Z",
+          "maintainedBy": "SkillFlux editorial"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:18/64",
+              "utf8-size:224992/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-01T03:13:29.976Z"
+          },
+          "review": {
+            "reviewer": "seed-conversion",
+            "reviewedAt": "2026-10-01T03:13:15.201Z",
+            "notes": "Development seed entry converted from mcp/catalog/seed.json. kind:simulation evidence cannot qualify for publication."
+          },
+          "evaluation": {
+            "evaluationId": "02a661481d024ede87de0be01060e749",
+            "contentHash": "3d9df8b3de13000f3ed8aed3ea373c90ffe75952be608e67ac4c8e6a0fcaf0b8",
+            "testedAt": "2026-10-01T03:13:15.201Z",
+            "summary": "Development seed; no real evaluation.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": false,
+            "boundaryPassed": false
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+          "size": 11345
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+          "size": 33168
+        },
+        {
+          "path": "agents/analyzer.md",
+          "sha256": "bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a",
+          "size": 10376
+        },
+        {
+          "path": "agents/comparator.md",
+          "sha256": "fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e",
+          "size": 7287
+        },
+        {
+          "path": "agents/grader.md",
+          "sha256": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+          "size": 9049
+        },
+        {
+          "path": "assets/eval_review.html",
+          "sha256": "ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452",
+          "size": 7058
+        },
+        {
+          "path": "eval-viewer/generate_review.py",
+          "sha256": "fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb",
+          "size": 16365
+        },
+        {
+          "path": "eval-viewer/viewer.html",
+          "sha256": "a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa",
+          "size": 44998
+        },
+        {
+          "path": "references/schemas.md",
+          "sha256": "8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f",
+          "size": 12061
+        },
+        {
+          "path": "scripts/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "scripts/aggregate_benchmark.py",
+          "sha256": "123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa",
+          "size": 14386
+        },
+        {
+          "path": "scripts/generate_report.py",
+          "sha256": "13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453",
+          "size": 12847
+        },
+        {
+          "path": "scripts/improve_description.py",
+          "sha256": "87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80",
+          "size": 11116
+        },
+        {
+          "path": "scripts/package_skill.py",
+          "sha256": "1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f",
+          "size": 4234
+        },
+        {
+          "path": "scripts/quick_validate.py",
+          "sha256": "67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365",
+          "size": 3972
+        },
+        {
+          "path": "scripts/run_eval.py",
+          "sha256": "43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f",
+          "size": 11464
+        },
+        {
+          "path": "scripts/run_loop.py",
+          "sha256": "7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21",
+          "size": 13605
+        },
+        {
+          "path": "scripts/utils.py",
+          "sha256": "3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1",
+          "size": 1661
+        }
+      ]
+    }
+  ]
+}

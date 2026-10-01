@@ -1,0 +1,43 @@
+{
+  "schema": "skillflux/v1",
+  "id": "grill-me",
+  "name": "Grill Me",
+  "description": "一句 grill-me 触发对当前计划或设计的连环盘问（内部调用 grilling）。适用于打磨方案、找漏洞、逼出假设。",
+  "category": "productivity",
+  "tags": [
+    "planning",
+    "interview",
+    "grill",
+    "打磨",
+    "计划"
+  ],
+  "version": "1.0.0",
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "Matt Pocock",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [
+    {
+      "id": "grilling",
+      "version": "1.0.0"
+    }
+  ],
+  "release": {
+    "notes": "Initial SkillFlux registry release imported from upstream source; files reviewed during editorial import.",
+    "breaking": false,
+    "minClientVersion": "1.0.0",
+    "maintainedAt": "2026-09-30T00:00:00.000Z",
+    "maintainedBy": "SkillFlux editorial"
+  },
+  "createdAt": "2026-09-30T00:00:00.000Z"
+}
