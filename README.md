@@ -15,7 +15,9 @@ skills/
             ├── SKILL.md                # 技能入口正文
             ├── agents/openai.yaml      # （可选）宿主界面声明
             └── LICENSE.txt             # （第三方导入时）上游许可证全文
-index.json                   # 由 `skillflux catalog build` 生成，客户端唯一入口
+index.json                   # 由 `skillflux catalog .` 生成，客户端唯一入口
+imports/                     # 固定上游提交的导入清单、文件哈希和验收任务
+intake/                      # 尚不符合当前权限模型的候选包，不进入客户端索引
 ```
 
 规划规则：
@@ -29,12 +31,17 @@ index.json                   # 由 `skillflux catalog build` 生成，客户端�
 | 分类 | 技能 | 状态 |
 | --- | --- | --- |
 | productivity | grill-me、grilling（来自 [mattpocock/skills](https://github.com/mattpocock/skills)，MIT，逐字导入） | ✅ qualified，四宿主实测 |
-| development / product / data / research | 9 个开发种子 | needs-testing（simulation 证据，不可安装） |
+| development / product / data / research | 7 个开发种子 | needs-testing（simulation 证据，不可安装） |
+| development / productivity | codebase-design、domain-modeling、writing-for-agents、handoff、to-questionnaire | needs-testing（Matt Pocock 原文导入，待人工与宿主验收，不可安装） |
+
+2026-10-08 的筛选理由、固定来源和待验收任务见 [Matt Pocock 收录记录](imports/mattpocock-2026-10-08.md)。
+`tdd`、`diagnosing-bugs`、`prototype` 的完整候选包保存在 `intake/`，它们涉及命令或 Git 操作，
+需要先解决与当前权限模型的兼容问题；不会通过填写 `shell: false` 来掩盖实际能力需求。
 
 ## 维护流程
 
-修改技能内容后运行 `skillflux catalog build`（来自 [SkillFlux 主仓库](https://github.com/vc999999999/Skillflux_Cloudflare)），
-提交生成的 `index.json`。CI 会运行 `skillflux catalog build --check`：`index.json` 与目录内容不一致即失败。
+新增技能版本后运行 `skillflux catalog .`（来自 [SkillFlux 主仓库](https://github.com/vc999999999/Skillflux_Cloudflare)），
+提交生成的 `index.json`。CI 会运行 `skillflux catalog --check .`：`index.json` 与目录内容不一致即失败。
 
 `skillflux.review.json` 中 `kind: "simulation"` 的评测不能使版本获得 qualified 资格；只有
 `kind: "human"` 且 contentHash 绑定当前内容的评测才能发布可安装版本。撤销 = 将 review status

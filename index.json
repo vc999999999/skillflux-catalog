@@ -1,6 +1,6 @@
 {
   "schema": "skillflux-catalog-index/v1",
-  "generatedAt": "2026-10-01T05:46:52.562Z",
+  "generatedAt": "2026-10-08T15:36:37.253Z",
   "skills": [
     {
       "skill": {
@@ -58,7 +58,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.543Z"
+            "checkedAt": "2026-10-08T15:36:37.223Z"
           },
           "review": {
             "reviewer": "seed-conversion",
@@ -145,7 +145,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.544Z"
+            "checkedAt": "2026-10-08T15:36:37.223Z"
           },
           "review": {
             "reviewer": "seed-conversion",
@@ -173,6 +173,111 @@
           "path": "SKILL.md",
           "sha256": "5f059c0346bd1648fd9f790349568a027e40237839fd5412d44007f3da2dffd8",
           "size": 893
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "codebase-design",
+        "version": "1.0.0",
+        "name": "Codebase Design",
+        "description": "Design smaller interfaces around deep modules, explicit seams and testable behavior.",
+        "category": "development",
+        "tags": [
+          "architecture",
+          "interfaces",
+          "testing"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Matt Pocock (imported from mattpocock/skills)",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "ef8209203138196f326fede98c928780d2e39b3c197979e051fa9abe9d8314e1",
+        "size": 12834,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-10-08T15:27:39.029Z",
+        "release": {
+          "notes": "Verbatim upstream skill and resources from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/codebase-design. Upstream MIT license included. Candidate only; human evaluation and host validation are outstanding. The alternative-interface branch needs parallel subagents; changing code or tests still requires task-specific authorization.",
+          "breaking": false,
+          "minClientVersion": "1.1.0",
+          "maintainedAt": "2026-10-08T15:27:39.029Z",
+          "maintainedBy": "SkillFlux import review"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:5/64",
+              "utf8-size:12834/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-08T15:36:37.226Z"
+          },
+          "review": {
+            "reviewer": "SkillFlux AI import audit",
+            "reviewedAt": "2026-10-08T15:27:39.029Z",
+            "notes": "Pinned source, bundled resources and MIT license verified. Static checks are not behavioral or human approval. The alternative-interface branch needs parallel subagents; changing code or tests still requires task-specific authorization."
+          },
+          "evaluation": {
+            "evaluationId": "dbbf280e02620c64cc6b07be88d8f7a4",
+            "contentHash": "ef8209203138196f326fede98c928780d2e39b3c197979e051fa9abe9d8314e1",
+            "testedAt": "2026-10-08T15:30:10.227125+00:00",
+            "summary": "One isolated Codex AI scenario met its stated purpose and scope constraints. Simulation only; human evaluation and all declared-host MCP install/load checks remain outstanding.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": true,
+            "boundaryPassed": true
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "DEEPENING.md",
+          "sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+          "size": 2553
+        },
+        {
+          "path": "DESIGN-IT-TWICE.md",
+          "sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+          "size": 2665
+        },
+        {
+          "path": "LICENSE.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "size": 1068
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+          "size": 6446
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f",
+          "size": 102
         }
       ]
     },
@@ -233,7 +338,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.541Z"
+            "checkedAt": "2026-10-08T15:36:37.221Z"
           },
           "review": {
             "reviewer": "seed-conversion",
@@ -261,6 +366,111 @@
           "path": "SKILL.md",
           "sha256": "85eb44f7bb3c5a2d5338d8729ee0066633cdbfed8fe68b665650e6cbe05ed513",
           "size": 1044
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "domain-modeling",
+        "version": "1.0.0",
+        "name": "Domain Modeling",
+        "description": "Clarify domain terms and maintain a glossary, recording architectural decisions only when warranted.",
+        "category": "development",
+        "tags": [
+          "domain-modeling",
+          "glossary",
+          "adr"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Matt Pocock (imported from mattpocock/skills)",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "e87f1b3771e3789327d814e4e32c055d5a7dab37044c50810837fea653bb08e9",
+        "size": 9548,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-10-08T15:27:39.029Z",
+        "release": {
+          "notes": "Verbatim upstream skill and resources from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/domain-modeling. Upstream MIT license included. Candidate only; human evaluation and host validation are outstanding. Needs project file reading and scoped glossary/ADR writing; conflicting terms should be clarified with the user.",
+          "breaking": false,
+          "minClientVersion": "1.1.0",
+          "maintainedAt": "2026-10-08T15:27:39.029Z",
+          "maintainedBy": "SkillFlux import review"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:5/64",
+              "utf8-size:9548/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-08T15:36:37.229Z"
+          },
+          "review": {
+            "reviewer": "SkillFlux AI import audit",
+            "reviewedAt": "2026-10-08T15:27:39.029Z",
+            "notes": "Pinned source, bundled resources and MIT license verified. Static checks are not behavioral or human approval. Needs project file reading and scoped glossary/ADR writing; conflicting terms should be clarified with the user."
+          },
+          "evaluation": {
+            "evaluationId": "5d2efc262b6c8a4d4243bb0604dda1dc",
+            "contentHash": "e87f1b3771e3789327d814e4e32c055d5a7dab37044c50810837fea653bb08e9",
+            "testedAt": "2026-10-08T15:30:10.227125+00:00",
+            "summary": "One isolated Codex AI scenario met its stated purpose and scope constraints. Simulation only; human evaluation and all declared-host MCP install/load checks remain outstanding.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": true,
+            "boundaryPassed": true
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "ADR-FORMAT.md",
+          "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+          "size": 2733
+        },
+        {
+          "path": "GLOSSARY-FORMAT.md",
+          "sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+          "size": 2300
+        },
+        {
+          "path": "LICENSE.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "size": 1068
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+          "size": 3346
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b",
+          "size": 101
         }
       ]
     },
@@ -323,7 +533,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.554Z"
+            "checkedAt": "2026-10-08T15:36:37.240Z"
           },
           "review": {
             "reviewer": "SkillFlux operator",
@@ -418,7 +628,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.554Z"
+            "checkedAt": "2026-10-08T15:36:37.241Z"
           },
           "review": {
             "reviewer": "SkillFlux operator",
@@ -456,6 +666,101 @@
           "path": "agents/openai.yaml",
           "sha256": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
           "size": 113
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "handoff",
+        "version": "1.0.0",
+        "name": "Handoff",
+        "description": "Create an explicitly requested, redacted handoff in the operating system temporary directory.",
+        "category": "productivity",
+        "tags": [
+          "handoff",
+          "context",
+          "productivity"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Matt Pocock (imported from mattpocock/skills)",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "0f3d821be91c01ca99a438d0e325def2627e274e8beeaf7b9361dd84980d704b",
+        "size": 2149,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-10-08T15:27:39.029Z",
+        "release": {
+          "notes": "Verbatim upstream skill and resources from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/handoff. Upstream MIT license included. Candidate only; human evaluation and host validation are outstanding. Explicit invocation only; needs temporary-directory file writing and must redact sensitive information.",
+          "breaking": false,
+          "minClientVersion": "1.1.0",
+          "maintainedAt": "2026-10-08T15:27:39.029Z",
+          "maintainedBy": "SkillFlux import review"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:3/64",
+              "utf8-size:2149/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-08T15:36:37.243Z"
+          },
+          "review": {
+            "reviewer": "SkillFlux AI import audit",
+            "reviewedAt": "2026-10-08T15:27:39.029Z",
+            "notes": "Pinned source, bundled resources and MIT license verified. Static checks are not behavioral or human approval. Explicit invocation only; needs temporary-directory file writing and must redact sensitive information."
+          },
+          "evaluation": {
+            "evaluationId": "eb76d4492f3cd85798e015a7f0e7191c",
+            "contentHash": "0f3d821be91c01ca99a438d0e325def2627e274e8beeaf7b9361dd84980d704b",
+            "testedAt": "2026-10-08T15:35:02.637514+00:00",
+            "summary": "One isolated Codex AI rehearsal produced the expected local artifact and met its scoped checks. Simulation only; human evaluation and declared-host MCP verification remain outstanding.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": true,
+            "boundaryPassed": true
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "size": 1068
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+          "size": 940
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28",
+          "size": 141
         }
       ]
     },
@@ -517,7 +822,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.544Z"
+            "checkedAt": "2026-10-08T15:36:37.230Z"
           },
           "review": {
             "reviewer": "seed-conversion",
@@ -609,7 +914,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.553Z"
+            "checkedAt": "2026-10-08T15:36:37.239Z"
           },
           "review": {
             "reviewer": "seed-conversion",
@@ -696,7 +1001,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.555Z"
+            "checkedAt": "2026-10-08T15:36:37.245Z"
           },
           "review": {
             "reviewer": "seed-conversion",
@@ -784,7 +1089,7 @@
               "secret-pattern-scan",
               "instruction-risk-pattern-scan"
             ],
-            "checkedAt": "2026-10-01T05:46:52.549Z"
+            "checkedAt": "2026-10-08T15:36:37.236Z"
           },
           "review": {
             "reviewer": "seed-conversion",
@@ -897,6 +1202,201 @@
           "path": "scripts/utils.py",
           "sha256": "3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1",
           "size": 1661
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "to-questionnaire",
+        "version": "1.0.0",
+        "name": "To Questionnaire",
+        "description": "Ask who a questionnaire is for and what decisions are needed, then draft a local Markdown questionnaire.",
+        "category": "productivity",
+        "tags": [
+          "discovery",
+          "questionnaire",
+          "requirements"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Matt Pocock (imported from mattpocock/skills)",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "6b5df7bdecd38c097a883dc1ae186b80ddd3f323de8250a59daeda74216870e0",
+        "size": 4138,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-10-08T15:27:39.029Z",
+        "release": {
+          "notes": "Verbatim upstream skill and resources from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/to-questionnaire. Upstream MIT license included. Candidate only; human evaluation and host validation are outstanding. Explicit invocation only; asks about the recipient and required decisions, writes locally, and does not send the questionnaire.",
+          "breaking": false,
+          "minClientVersion": "1.1.0",
+          "maintainedAt": "2026-10-08T15:27:39.029Z",
+          "maintainedBy": "SkillFlux import review"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:3/64",
+              "utf8-size:4138/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-08T15:36:37.243Z"
+          },
+          "review": {
+            "reviewer": "SkillFlux AI import audit",
+            "reviewedAt": "2026-10-08T15:27:39.029Z",
+            "notes": "Pinned source, bundled resources and MIT license verified. Static checks are not behavioral or human approval. Explicit invocation only; asks about the recipient and required decisions, writes locally, and does not send the questionnaire."
+          },
+          "evaluation": {
+            "evaluationId": "43c019cfba1362a07d879b78f04bfd9b",
+            "contentHash": "6b5df7bdecd38c097a883dc1ae186b80ddd3f323de8250a59daeda74216870e0",
+            "testedAt": "2026-10-08T15:35:02.637514+00:00",
+            "summary": "One isolated Codex AI rehearsal produced the expected local artifact and met its scoped checks. Simulation only; human evaluation and declared-host MCP verification remain outstanding.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": true,
+            "boundaryPassed": true
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "size": 1068
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+          "size": 2904
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2",
+          "size": 166
+        }
+      ]
+    },
+    {
+      "skill": {
+        "id": "writing-for-agents",
+        "version": "1.0.0",
+        "name": "Writing for Agents",
+        "description": "Improve agent-facing documents with precise triggers, context pointers and completion criteria.",
+        "category": "productivity",
+        "tags": [
+          "documentation",
+          "agents",
+          "skills"
+        ],
+        "hosts": [
+          "generic",
+          "codex",
+          "claude",
+          "cursor"
+        ],
+        "publisher": "Matt Pocock (imported from mattpocock/skills)",
+        "license": "MIT",
+        "status": "needs-testing",
+        "digest": "9556aa0e8af0951c0190a6ddde04ba4041f750943e2af158482782275b1e8d14",
+        "size": 14685,
+        "entry": "SKILL.md",
+        "permissions": {
+          "network": [],
+          "shell": false,
+          "secrets": []
+        },
+        "dependencies": [],
+        "createdAt": "2026-10-08T15:27:39.029Z",
+        "release": {
+          "notes": "Verbatim upstream skill and resources from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/writing-for-agents. Upstream MIT license included. Candidate only; human evaluation and host validation are outstanding. Edits only documents authorized by the task; changing deployment or permission policy needs explicit user intent.",
+          "breaking": false,
+          "minClientVersion": "1.1.0",
+          "maintainedAt": "2026-10-08T15:27:39.029Z",
+          "maintainedBy": "SkillFlux import review"
+        },
+        "qualification": "needs-testing",
+        "quality": {
+          "automated": {
+            "passed": true,
+            "checks": [
+              "file-count:4/64",
+              "utf8-size:14685/524288",
+              "safe-relative-paths",
+              "runtime-reserved-paths",
+              "case-folded-path-collisions",
+              "file-directory-path-collisions",
+              "filesystem-segment-byte-limits",
+              "no-binary-or-archive-extension",
+              "secret-pattern-scan",
+              "instruction-risk-pattern-scan"
+            ],
+            "checkedAt": "2026-10-08T15:36:37.244Z"
+          },
+          "review": {
+            "reviewer": "SkillFlux AI import audit",
+            "reviewedAt": "2026-10-08T15:27:39.029Z",
+            "notes": "Pinned source, bundled resources and MIT license verified. Static checks are not behavioral or human approval. Edits only documents authorized by the task; changing deployment or permission policy needs explicit user intent."
+          },
+          "evaluation": {
+            "evaluationId": "864a2c595482123a6a86a717a76c2819",
+            "contentHash": "9556aa0e8af0951c0190a6ddde04ba4041f750943e2af158482782275b1e8d14",
+            "testedAt": "2026-10-08T15:30:10.227125+00:00",
+            "summary": "One isolated Codex AI scenario met its stated purpose and scope constraints. Simulation only; human evaluation and all declared-host MCP install/load checks remain outstanding.",
+            "hosts": [
+              "generic",
+              "codex",
+              "claude",
+              "cursor"
+            ],
+            "purposePassed": true,
+            "boundaryPassed": true
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "size": 1068
+        },
+        {
+          "path": "SKILL-MECHANICS.md",
+          "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+          "size": 2629
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+          "size": 10886
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b",
+          "size": 102
         }
       ]
     }

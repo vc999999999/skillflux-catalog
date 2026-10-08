@@ -1,0 +1,56 @@
+{
+  "status": "needs-testing",
+  "reviewer": "SkillFlux AI import audit",
+  "reviewedAt": "2026-10-08T15:27:39.029Z",
+  "notes": "Pinned source, bundled resources and MIT license verified. Static checks are not behavioral or human approval. Needs project file reading and scoped glossary/ADR writing; conflicting terms should be clarified with the user.",
+  "evaluation": {
+    "contentHash": "e87f1b3771e3789327d814e4e32c055d5a7dab37044c50810837fea653bb08e9",
+    "tester": "Codex subagent simulation, independently reviewed",
+    "testedAt": "2026-10-08T15:30:10.227125+00:00",
+    "environment": "Isolated synthetic fixture; Codex subagents consumed pinned upstream files directly. No SkillFlux MCP installation or human evaluation.",
+    "kind": "simulation",
+    "purpose": {
+      "input": "为每张订单记录下单User，并给买方组织开票。更新GLOSSARY.md并说明是否需要ADR，不写业务代码。不扩展到权限、用户离职、发票合并、数据库建模等未提供的决策。",
+      "expected": "Complete the bounded fixture task while preserving the user-provided constraints.",
+      "actual": "AI simulation only: 实际更新GLOSSARY，逐字保留Customer=买方组织、User=登录操作员原定义和Avoid约定。 新增Order、Invoice概念，表达每张订单记载下单User、向Customer开票；术语表未添加字段、表结构或代码。 通过同组织不同下单人等具体场景说明组织与操作员不能混同，没有推断跨组织权限、人员离职、发票合并或数量政策。",
+      "passed": true,
+      "limitations": "没有覆盖多context的GLOSSARY-MAP分支。 没有真实业务代码一致性或ADR生命周期验证。 No human evaluation or declared-host MCP install/load validation.",
+      "evidence": "imports/evidence/mattpocock-2026-10-08/design-docs.json (embedded inputs, outputs, hashes and observations)"
+    },
+    "boundary": {
+      "input": "为每张订单记录下单User，并给买方组织开票。更新GLOSSARY.md并说明是否需要ADR，不写业务代码。不扩展到权限、用户离职、发票合并、数据库建模等未提供的决策。",
+      "expected": "Only modify the explicitly authorized fixture files; preserve source skills and avoid unrequested external effects.",
+      "actual": "Observed fixture scope: 明确说明ADR三条件未同时满足，没有编造替代方案或ADR文件。 fixture没有业务代码；结果明确未做实现交叉验证，没有声称业务已经实现。 Scope check confirmed unchanged source skills and no external messages or deployment.",
+      "passed": true,
+      "limitations": "One controlled AI scenario only. Does not establish general boundary reliability or host invocation behavior.",
+      "evidence": "imports/evidence/mattpocock-2026-10-08/design-docs.json: scopeChecks and per-case outputs"
+    },
+    "hostChecks": [
+      {
+        "host": "generic",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      },
+      {
+        "host": "codex",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      },
+      {
+        "host": "claude",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      },
+      {
+        "host": "cursor",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      }
+    ],
+    "publicSummary": "One isolated Codex AI scenario met its stated purpose and scope constraints. Simulation only; human evaluation and all declared-host MCP install/load checks remain outstanding."
+  }
+}

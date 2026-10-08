@@ -1,0 +1,119 @@
+{
+  "schema": "skillflux-ai-rehearsal/v1",
+  "kind": "simulation",
+  "reviewer": "Codex subagent audit_matt_import",
+  "performedAt": "2026-10-08T15:35:02.637514+00:00",
+  "source": {
+    "repository": "mattpocock/skills",
+    "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+  },
+  "scope": "One synthetic scenario per skill. Agent authored synthetic fixture responses and then followed the unmodified pinned skill instructions. Filesystem outputs and stated checks were actually produced; no human acceptance or host installation testing occurred.",
+  "humanAcceptance": false,
+  "fourHostValidation": false,
+  "hostInstallationTestsPerformed": [],
+  "fixtureRoot": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU",
+  "catalogOrWebModified": false,
+  "networkRequestsOrExternalMessagesPerformed": false,
+  "upstreamScriptsExecuted": false,
+  "cases": [
+    {
+      "skill": "handoff",
+      "sourceEntry": "skills/productivity/handoff/SKILL.md",
+      "sourceSha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+      "fixture": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU/handoff/conversation.json",
+      "simulatedWorkspace": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU/handoff/workspace",
+      "artifact": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU/handoff/handoff-csv-verification.md",
+      "artifactSha256": "844757b1acb4c6200e0c813952f29941c1336748e4ff16e62e841ef9bf23c1ad",
+      "observedExecution": "Read pinned SKILL.md and synthetic conversation/spec/progress. Wrote handoff under /tmp outside the simulated workspace. Verified file references, retained unperformed verification, and redacted the deliberately fake test key.",
+      "checks": {
+        "file_exists": true,
+        "inside_isolated_tmp": true,
+        "outside_simulated_workspace": true,
+        "fake_secret_absent": true,
+        "redaction_marker_present": true,
+        "all_referenced_artifacts_exist": true,
+        "suggested_skills_section_present": true,
+        "unperformed_validation_disclosed": true,
+        "source_spec_not_duplicated": true
+      },
+      "result": "passed-in-single-ai-rehearsal",
+      "qualitativeEvaluation": "A fresh agent receives the next-session focus, existing-artifact pointers, an ordered continuation, missing test-runner/application constraints, and suggested skills. The document does not claim the fictional implementation passed tests and does not copy the full specification.",
+      "limitations": [
+        "Current-session summarization was simulated by a fixture; real long-conversation recall was not tested.",
+        "The fake test key was intentionally conspicuous; robustness against less obvious secrets was not tested.",
+        "No downstream agent resumed from this handoff, and no Skill tool invocation was performed.",
+        "Caller explicitly required /tmp isolation; OS-specific temporary-directory discovery and Windows paths were not exercised."
+      ]
+    },
+    {
+      "skill": "to-questionnaire",
+      "sourceEntry": "skills/productivity/to-questionnaire/SKILL.md",
+      "sourceSha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+      "fixture": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU/questionnaire/request.md",
+      "interview": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU/questionnaire/interview.json",
+      "simulatedWorkspace": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU/questionnaire/workspace",
+      "artifact": "/tmp/skillflux-matt-handoff-questionnaire.25EXLU/questionnaire/workspace/to-questionnaire-order-export-pilot.md",
+      "artifactSha256": "999c4012657722d079f491a4b9dcd4c7f4d40d31b47fab5f44aa69ccd8c45885",
+      "observedExecution": "Generated one clearly marked synthetic exchange for recipient role/expertise/relationship and one for the needed decisions. Then wrote the required local questionnaire filename in the simulated current directory. No message or file was sent externally.",
+      "checks": {
+        "file_exists_in_simulated_cwd": true,
+        "required_filename_pattern": true,
+        "two_synthetic_interview_exchanges": true,
+        "six_required_decisions_covered": true,
+        "answer_stub_for_each_numbered_question": true,
+        "purpose_from_to_use_context_answer_sections": true,
+        "deadline_and_effort_present": true
+      },
+      "result": "passed-in-single-ai-rehearsal",
+      "qualitativeEvaluation": "The six numbered questions each address one gap: required fields, success criteria, typical volume, waiting time, export initiators, and file viewers. Field/success decisions appear first; the document includes audience, purpose, response use, deadline, effort, answer stubs, uncertainty guidance, and a catch-all.",
+      "coverageMapping": {
+        "required_fields": 1,
+        "success_criteria": 2,
+        "typical_order_count": 3,
+        "acceptable_wait_time": 4,
+        "export_initiator_roles": 5,
+        "file_viewer_roles": 6
+      },
+      "limitations": [
+        "Both user replies were agent-generated fixtures, not a human interview.",
+        "Questionnaire usefulness to a real external customer and follow-up handling were not tested.",
+        "No email, messaging, document connector, or host-specific installation was exercised."
+      ]
+    }
+  ],
+  "qualificationConclusion": "This report is AI simulation evidence only. It must not be used as kind:human evidence, does not satisfy the catalog human evaluation gate, and does not qualify either skill or any declared host.",
+  "embeddedFiles": {
+    "handoff/conversation.json": {
+      "content": "{\n  \"synthetic\": true,\n  \"explicit_request\": \"请用 handoff 把当前会话交给下一个代理；下一次只做 CSV 导出验证和修复，不部署，也不联系客户。\",\n  \"context\": [\n    \"这是虚构 CSV 导出项目。实施要求已保存至 workspace/docs/spec.md，当前进度已保存至 workspace/docs/progress.md。\",\n    \"已添加 workspace/src/csv.ts；先前会话没有运行任何测试。\",\n    \"测试用密钥是 FAKE_TEST_KEY_DO_NOT_USE_HANDOFF_20261008。它完全虚构，没有对应服务；交接文档中仍应脱敏。\"\n  ],\n  \"next_session_focus\": \"验证并修复 CSV 导出；先确认测试接口；识别当前 fixture 缺少完整应用与测试运行器，不能声称下载端到端已通过。\"\n}\n",
+      "sha256": "9f03fd5c063f3a9c8bae7f338e84f36ac8ad4d2848ca3be8e44b498e39b9d1cf"
+    },
+    "handoff/handoff-csv-verification.md": {
+      "content": "# CSV 导出验证交接\n\n本文件来自虚构 fixture 的 Codex 子代理预演，不代表真实项目进度或人工验收。\n\n## 下一次会话的目标\n\n继续验证并修复 CSV 导出。用户明确将本轮交接限定为验证与修复；部署和对外联系不在授权范围内。\n\n## 先读这些文件\n\n- 需求的唯一来源：[`spec.md`](/tmp/skillflux-matt-handoff-questionnaire.25EXLU/handoff/workspace/docs/spec.md)。\n- 已实施内容与未完成验证：[`progress.md`](/tmp/skillflux-matt-handoff-questionnaire.25EXLU/handoff/workspace/docs/progress.md)。该记录是前次虚构会话的陈述，尚无执行证据支持正确性。\n- 当前待检查的实现：[`csv.ts`](/tmp/skillflux-matt-handoff-questionnaire.25EXLU/handoff/workspace/src/csv.ts)。\n\n以上文件位于临时目录；本 fixture 没有真实 issue、提交或部署记录。无需从这份交接复制一套规格。\n\n## 继续时的顺序\n\n1. 读取上述规格、进度和实现，确认验证范围与对外可观察的测试接口。\n2. 检查 fixture 能实际运行什么。当前只有一个实现片段，没有完整应用或测试运行器；先说明缺口，再确定可运行的局部验证方案。\n3. 为规格规定的行为建立独立预期，记录失败、修复以及复验的实际命令和输出。完整应用不可用时，明确保留浏览器下载和取消导出的验证缺口。\n4. 返回实际完成的验证与剩余限制。当前没有任何已通过的测试，不能把已写代码或本交接文件当作验证通过。\n\n## 敏感信息\n\n前次虚构对话含一个测试密钥，已脱敏：`<REDACTED>`。它不用于后续验证，不要将原始对话复制进报告；本 fixture 不需要连接服务或获取凭据。\n\n## Suggested skills\n\n- `tdd`：下一代理可通过 Skill tool 调用，先确认测试接口，再逐项建立失败信号和修复。\n- `code-review`：验证与修复完成后，通过 Skill tool 调用，检查实现是否符合原始规格。\n\n这里只建议技能，没有执行技能调用。宿主缺少 Skill tool 时应说明能力限制，不能声称已调用。\n",
+      "sha256": "844757b1acb4c6200e0c813952f29941c1336748e4ff16e62e841ef9bf23c1ad"
+    },
+    "handoff/workspace/docs/progress.md": {
+      "content": "# Prior-session progress (synthetic fixture)\n\nThe fixture conversation reports that CSV field escaping and header ordering have been implemented.\nThe session has not run regression tests, cancellation tests, or a browser download check.\nNo commit, issue, deployment, customer communication, or real external system exists in this fixture.\n",
+      "sha256": "de66ea883e1a787a9cdc029ac1f7c4aa405d2b0384dfac968c3c89dcb5e851e0"
+    },
+    "handoff/workspace/docs/spec.md": {
+      "content": "# CSV export specification (synthetic fixture)\n\nThis is a fictional fixture, not a real customer requirement.\n\nExport filtered rows as CSV. The column order is Order ID, Amount, Currency.\nValues containing a comma, quote, or newline must be quoted; embedded quotes must be doubled.\nA cancelled export must not produce a file. Empty results contain only the header row.\n",
+      "sha256": "f615e4ba44c46aca1470eff0f8836e3598d15113e53fd581caa5179f431a8bbd"
+    },
+    "handoff/workspace/src/csv.ts": {
+      "content": "// Synthetic fixture implementation; correctness has not been tested.\nexport function quoteCsvField(value: string): string {\n  return /[\",\\n]/.test(value) ? `\"${value.replaceAll('\"', '\"\"')}\"` : value;\n}\nexport const header = ['Order ID', 'Amount', 'Currency'];\n",
+      "sha256": "edec9e35cb1389aff76f13c5fb7dde77bcc4e784b7a097f8cdafa026e56a4eba"
+    },
+    "questionnaire/interview.json": {
+      "content": "{\n  \"synthetic\": true,\n  \"method\": \"Codex subagent generated both fictional user responses for an AI rehearsal; no human interview occurred.\",\n  \"exchanges\": [\n    {\n      \"step\": 1,\n      \"assistant\": \"问卷会交给哪一位接收人？请说明对方的职责、对相关业务的了解程度，以及与你的合作关系。\",\n      \"syntheticUser\": \"发给一位外部试点客户的运营负责人。她每天管理订单、熟悉导出表格和内部审批流程，不写代码。我们是为她做试点的产品团队；她最清楚一线同事怎样使用导出结果。请避免 API、schema 之类术语。\"\n    },\n    {\n      \"step\": 2,\n      \"assistant\": \"收到回复后，你必须能确定哪些事项？也请给出填写期限和可接受的耗时，便于说明填写方式。\",\n      \"syntheticUser\": \"必须确定首版必需字段、典型单次导出订单量、可接受的最长等待时间、谁可以发起导出、谁能看到导出文件，以及客户如何判定试点成功。请在问卷发出后的 3 个工作日内回复，预计 15 分钟。不要让她提供真实订单、姓名、电话或账号；举例用虚构数据。\"\n    }\n  ]\n}\n",
+      "sha256": "81c67da0a9eff9233b5864a13819c3a6baad2740b97105d3087f73d5d5b5b1a4"
+    },
+    "questionnaire/request.md": {
+      "content": "# Synthetic request\n\n请用 to-questionnaire 将产品需求讨论整理成发给外部客户的问卷。我们计划做一个批量订单导出工具，但我无法代替客户决定必需字段、使用量、权限和完成标准。只生成本地 Markdown 文件，不发送。\n\n本预演允许代理生成虚构用户回答，回答不代表真实用户作出的决定。\n",
+      "sha256": "e0a6cb71665ec87719d82ab86453cee9e81cedcce18d6a22d6bbfec03064adc1"
+    },
+    "questionnaire/workspace/to-questionnaire-order-export-pilot.md": {
+      "content": "# 批量订单导出试点：需求发现问卷\n\n**Purpose:** 补齐产品团队尚不了解的日常导出需求，用于确定首版范围和试点验收方式。\n\n**From:** 试点产品团队，**To:** 试点客户运营负责人，**How your answers will be used:** 整理首版需求、安排验证，并在实施前与你确认。\n\n## Context\n\n我们计划提供批量订单导出工具，希望了解你和同事当前处理订单表格的实际方式。你熟悉一线工作和内部权限，因此需要由你补充下面的业务事实；这份问卷中的问题不代表已经确定的产品承诺。\n\n## How to answer\n\n请在收到问卷后的 **3 个工作日内** 回复，预计需要 **15 分钟**。可以直接在每个问题下填写。部分回答也有帮助；不确定时请写“我不知道”或说明需要向谁确认。请勿提供真实订单、客户姓名、电话、账号或凭据；如需举例，请使用虚构内容。\n\n## 首版范围与成功标准\n\n### 1. 首版导出必须包含哪些字段？\n\n> 请列出缺少后会阻碍日常工作的字段：\n\n### 2. 达到什么可观察的结果，你会认为本次试点成功？\n\n_为什么需要这项信息：我们会据此和你确认验收方式，避免只以“功能已经做完”作为结束标准。_\n\n> 例如某项工作能在约定时间内完成；请写你实际采用的标准：\n\n## 使用规模与等待时间\n\n### 3. 一次常见的导出大约包含多少条订单？\n\n> 大约 ______ 条；不确定时可以给出范围：\n\n### 4. 发起导出后，你最多可以接受等待多长时间？\n\n> 最多 ______ 秒或分钟：\n\n## 使用权限\n\n### 5. 哪些岗位应当可以发起导出？\n\n> 请填写岗位，不必提供同事姓名或账号：\n\n### 6. 哪些岗位应当可以查看导出的文件？\n\n_为什么需要这项信息：查看文件的人可能与发起导出的人不同。_\n\n> 请填写岗位，不必提供同事姓名或账号：\n\n## Anything else?\n\n还有哪些我们没有问到、但应在开始试点前了解的事情？\n\n>\n",
+      "sha256": "999c4012657722d079f491a4b9dcd4c7f4d40d31b47fab5f44aa69ccd8c45885"
+    }
+  }
+}

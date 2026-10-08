@@ -1,0 +1,36 @@
+{
+  "schema": "skillflux/v1",
+  "id": "codebase-design",
+  "version": "1.0.0",
+  "name": "Codebase Design",
+  "description": "Design smaller interfaces around deep modules, explicit seams and testable behavior.",
+  "category": "development",
+  "tags": [
+    "architecture",
+    "interfaces",
+    "testing"
+  ],
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "Matt Pocock (imported from mattpocock/skills)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-08T15:27:39.029Z",
+  "release": {
+    "notes": "Verbatim upstream skill and resources from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/codebase-design. Upstream MIT license included. Candidate only; human evaluation and host validation are outstanding. The alternative-interface branch needs parallel subagents; changing code or tests still requires task-specific authorization.",
+    "breaking": false,
+    "minClientVersion": "1.1.0",
+    "maintainedAt": "2026-10-08T15:27:39.029Z",
+    "maintainedBy": "SkillFlux import review"
+  }
+}

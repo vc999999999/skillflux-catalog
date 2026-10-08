@@ -1,0 +1,36 @@
+{
+  "schema": "skillflux/v1",
+  "id": "handoff",
+  "version": "1.0.0",
+  "name": "Handoff",
+  "description": "Create an explicitly requested, redacted handoff in the operating system temporary directory.",
+  "category": "productivity",
+  "tags": [
+    "handoff",
+    "context",
+    "productivity"
+  ],
+  "hosts": [
+    "generic",
+    "codex",
+    "claude",
+    "cursor"
+  ],
+  "publisher": "Matt Pocock (imported from mattpocock/skills)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-08T15:27:39.029Z",
+  "release": {
+    "notes": "Verbatim upstream skill and resources from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/handoff. Upstream MIT license included. Candidate only; human evaluation and host validation are outstanding. Explicit invocation only; needs temporary-directory file writing and must redact sensitive information.",
+    "breaking": false,
+    "minClientVersion": "1.1.0",
+    "maintainedAt": "2026-10-08T15:27:39.029Z",
+    "maintainedBy": "SkillFlux import review"
+  }
+}

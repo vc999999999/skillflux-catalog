@@ -1,0 +1,162 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/mattpocock/skills",
+  "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+  "importedAt": "2026-10-08T15:27:39.029Z",
+  "license": "MIT",
+  "licenseSource": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/LICENSE",
+  "records": [
+    {
+      "id": "codebase-design",
+      "disposition": "needs-testing",
+      "target": "skills/development/codebase-design/1.0.0",
+      "sourcePath": "skills/engineering/codebase-design",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/codebase-design",
+      "files": {
+        "DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "DESIGN-IT-TWICE.md": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+      },
+      "staticScanPassed": true,
+      "limitations": "The alternative-interface branch needs parallel subagents; changing code or tests still requires task-specific authorization."
+    },
+    {
+      "id": "domain-modeling",
+      "disposition": "needs-testing",
+      "target": "skills/development/domain-modeling/1.0.0",
+      "sourcePath": "skills/engineering/domain-modeling",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/domain-modeling",
+      "files": {
+        "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+      },
+      "staticScanPassed": true,
+      "limitations": "Needs project file reading and scoped glossary/ADR writing; conflicting terms should be clarified with the user."
+    },
+    {
+      "id": "writing-for-agents",
+      "disposition": "needs-testing",
+      "target": "skills/productivity/writing-for-agents/1.0.0",
+      "sourcePath": "skills/productivity/writing-for-agents",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/writing-for-agents",
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL-MECHANICS.md": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+        "SKILL.md": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+        "agents/openai.yaml": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+      },
+      "staticScanPassed": true,
+      "limitations": "Edits only documents authorized by the task; changing deployment or permission policy needs explicit user intent."
+    },
+    {
+      "id": "handoff",
+      "disposition": "needs-testing",
+      "target": "skills/productivity/handoff/1.0.0",
+      "sourcePath": "skills/productivity/handoff",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/handoff",
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+        "agents/openai.yaml": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28"
+      },
+      "staticScanPassed": true,
+      "limitations": "Explicit invocation only; needs temporary-directory file writing and must redact sensitive information."
+    },
+    {
+      "id": "to-questionnaire",
+      "disposition": "needs-testing",
+      "target": "skills/productivity/to-questionnaire/1.0.0",
+      "sourcePath": "skills/productivity/to-questionnaire",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/to-questionnaire",
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "agents/openai.yaml": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2"
+      },
+      "staticScanPassed": true,
+      "limitations": "Explicit invocation only; asks about the recipient and required decisions, writes locally, and does not send the questionnaire."
+    },
+    {
+      "id": "tdd",
+      "disposition": "intake-permission-review",
+      "target": "intake/mattpocock-2026-10-08/tdd",
+      "sourcePath": "skills/engineering/tdd",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/tdd",
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+        "agents/openai.yaml": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b",
+        "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "tests.md": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a"
+      },
+      "staticScanPassed": true,
+      "reason": "Run a test runner during the red/green/refactor loop. Conditional codebase-design dependency must be qualified first.",
+      "requiredHostCapabilities": [
+        "shell:test-runner",
+        "project-file-edit"
+      ],
+      "conditionalSkillDependencies": [
+        {
+          "id": "codebase-design",
+          "version": "1.0.0",
+          "when": "module/interface design is required"
+        }
+      ],
+      "optionalReferences": [
+        "code-review: upstream closing suggestion only; not mapped to the unrelated SkillFlux seed with the same ID."
+      ]
+    },
+    {
+      "id": "diagnosing-bugs",
+      "disposition": "intake-permission-review",
+      "target": "intake/mattpocock-2026-10-08/diagnosing-bugs",
+      "sourcePath": "skills/engineering/diagnosing-bugs",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/diagnosing-bugs",
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+        "agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+        "scripts/hitl-loop.template.sh": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503"
+      },
+      "staticScanPassed": true,
+      "reason": "Reproduce bugs with commands and possibly a browser, curl or git bisect. Review the bundled HITL shell template before execution.",
+      "requiredHostCapabilities": [
+        "shell:reproduction-and-test",
+        "optional-network",
+        "optional-browser",
+        "optional-git-bisect"
+      ],
+      "conditionalSkillDependencies": [],
+      "optionalReferences": []
+    },
+    {
+      "id": "prototype",
+      "disposition": "intake-permission-review",
+      "target": "intake/mattpocock-2026-10-08/prototype",
+      "sourcePath": "skills/engineering/prototype",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/prototype",
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "LOGIC.md": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
+        "SKILL.md": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+        "UI.md": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3",
+        "agents/openai.yaml": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc"
+      },
+      "staticScanPassed": true,
+      "reason": "Both prototype branches finish by creating a throwaway Git branch and recording its pointer in the implementation issue (a local issue record can satisfy the tracker requirement). The UI branch also needs a project task runner.",
+      "requiredHostCapabilities": [
+        "shell:task-runner-for-ui-branch",
+        "git:branch",
+        "issue-record:write-implementation-issue-pointer-local-or-remote",
+        "project-file-edit"
+      ],
+      "conditionalSkillDependencies": [],
+      "optionalReferences": []
+    }
+  ]
+}

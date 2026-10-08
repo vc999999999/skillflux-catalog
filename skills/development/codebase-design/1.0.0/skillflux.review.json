@@ -1,0 +1,56 @@
+{
+  "status": "needs-testing",
+  "reviewer": "SkillFlux AI import audit",
+  "reviewedAt": "2026-10-08T15:27:39.029Z",
+  "notes": "Pinned source, bundled resources and MIT license verified. Static checks are not behavioral or human approval. The alternative-interface branch needs parallel subagents; changing code or tests still requires task-specific authorization.",
+  "evaluation": {
+    "contentHash": "ef8209203138196f326fede98c928780d2e39b3c197979e051fa9abe9d8314e1",
+    "tester": "Codex subagent simulation, independently reviewed",
+    "testedAt": "2026-10-08T15:30:10.227125+00:00",
+    "environment": "Isolated synthetic fixture; Codex subagents consumed pinned upstream files directly. No SkillFlux MCP installation or human evaluation.",
+    "kind": "simulation",
+    "purpose": {
+      "input": "订单金额计算目前分散三个调用方。仅给一个共享接口的设计建议，保留每方不同折扣策略，不实现、不改src。金额以CNY分为单位；当前fixture不包含税费、运费或外部服务。",
+      "expected": "Complete the bounded fixture task while preserving the user-provided constraints.",
+      "actual": "AI simulation only: 实际产出一个 calculateOrderTotal(items, discount) interface 建议，使用 coupon/manual/tier 标记联合保留三方规则。 独立逐项核对：web 固定折扣只封顶于小计，phone 额外封顶5000，partner 沿用 Math.floor，未统一错误地套用封顶/取整。 包含 interface/invariants、external seam、In-process 依赖分类、depth/locality、deletion test 和独立字面量测试建议。",
+      "passed": true,
+      "limitations": "设计建议未实现；没有新接口运行正确性证据。 未测试3+并行接口探索分支或任何MCP资源二次读取。 No human evaluation or declared-host MCP install/load validation.",
+      "evidence": "imports/evidence/mattpocock-2026-10-08/design-docs.json (embedded inputs, outputs, hashes and observations)"
+    },
+    "boundary": {
+      "input": "订单金额计算目前分散三个调用方。仅给一个共享接口的设计建议，保留每方不同折扣策略，不实现、不改src。金额以CNY分为单位；当前fixture不包含税费、运费或外部服务。",
+      "expected": "Only modify the explicitly authorized fixture files; preserve source skills and avoid unrequested external effects.",
+      "actual": "Observed fixture scope: 没有实现共享模块、修改三个源码文件、创建或删除测试。未触发多方案 DESIGN-IT-TWICE 分支。 有效业务输入域被明确标为待确认建议，未冒充fixture已有保证；新增错误处理、税费、运费、远程服务均未实施。 Scope check confirmed unchanged source skills and no external messages or deployment.",
+      "passed": true,
+      "limitations": "One controlled AI scenario only. Does not establish general boundary reliability or host invocation behavior.",
+      "evidence": "imports/evidence/mattpocock-2026-10-08/design-docs.json: scopeChecks and per-case outputs"
+    },
+    "hostChecks": [
+      {
+        "host": "generic",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      },
+      {
+        "host": "codex",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      },
+      {
+        "host": "claude",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      },
+      {
+        "host": "cursor",
+        "installed": false,
+        "read": false,
+        "notes": "No real MCP install/load validation on this host; listed for planned evaluation, not proven compatibility."
+      }
+    ],
+    "publicSummary": "One isolated Codex AI scenario met its stated purpose and scope constraints. Simulation only; human evaluation and all declared-host MCP install/load checks remain outstanding."
+  }
+}
