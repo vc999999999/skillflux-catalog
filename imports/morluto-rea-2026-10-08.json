@@ -1,0 +1,121 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/morluto/rea",
+  "commit": "c701376777212ec9acfd10c97f45b1eaf0c885c6",
+  "importedAt": "2026-10-08T15:44:53.251646+00:00",
+  "license": "MIT",
+  "licenseSource": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/LICENSE",
+  "type": "intake",
+  "notes": "Pinned source inclusion only. No upstream setup, CLI, runtime/provider or bundled script was executed. No SkillFlux-installable version or human approval is asserted.",
+  "records": [
+    {
+      "id": "reverse-engineer-anything",
+      "disposition": "intake",
+      "target": "intake/morluto-rea-2026-10-08/reverse-engineer-anything",
+      "sourcePath": "skill-src/reverse-engineer-anything",
+      "sourceUrl": "https://github.com/morluto/rea/tree/c701376777212ec9acfd10c97f45b1eaf0c885c6/skill-src/reverse-engineer-anything",
+      "upstreamVersion": "skill metadata version 33; repository package version is independent",
+      "reason": "Requires a separately installed REA MCP server or rea-agents CLI. Some workflows execute commands, attach to a browser/process, extract artifacts, or use external native-analysis providers. The current SkillFlux shell/network/secret-free runtime does not cover these capabilities.",
+      "requiredHostCapabilities": [
+        "REA MCP registration or rea-agents CLI; Node.js >=22.19 on supported release lines",
+        "Provider selected for the requested target: e.g. Hopper, Ghidra, IDA, JADX/Java, Binwalk/Unblob, or Chrome-family browser",
+        "Scoped local artifact reading; extraction and runtime observation may write files or execute user-selected targets",
+        "MCP setup changes configuration only after the upstream skill's explicit review and authorization flow"
+      ],
+      "files": {
+        "LICENSE.txt": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b",
+        "SKILL.md": "24e26f68b613474099a8fb356edcf4942cc9d2cd176c202d71e078f420592577",
+        "references/android-applications.md": "4c4f12493bbd29365aefbba0430f0ea2a79058ed18de501c5a78ff5aebb8515c",
+        "references/evidence-workflows.md": "3d884c15aabf16f807b33dcde96138125dd614a42db2e22fc03766d19faeb04d",
+        "references/javascript-applications.md": "638f2fdda831b88c50f80d127e406ab06a32f1b3cdeed7dd4009ec512fcfb70a",
+        "references/native-and-artifacts.md": "cad48e193036ea692deb2b03d3bc60737af1a93bdadf8e288bf53f59b20110ee",
+        "references/runtime-observation.md": "b3eea94dd7d0c6474634de22ac3ccae317f42ba1ba2389d93535ee8dae7d94e1"
+      },
+      "originalSourceFiles": {
+        "SKILL.md": "24e26f68b613474099a8fb356edcf4942cc9d2cd176c202d71e078f420592577",
+        "references/android-applications.md": "4c4f12493bbd29365aefbba0430f0ea2a79058ed18de501c5a78ff5aebb8515c",
+        "references/evidence-workflows.md": "3d884c15aabf16f807b33dcde96138125dd614a42db2e22fc03766d19faeb04d",
+        "references/javascript-applications.md": "638f2fdda831b88c50f80d127e406ab06a32f1b3cdeed7dd4009ec512fcfb70a",
+        "references/native-and-artifacts.md": "cad48e193036ea692deb2b03d3bc60737af1a93bdadf8e288bf53f59b20110ee",
+        "references/runtime-observation.md": "b3eea94dd7d0c6474634de22ac3ccae317f42ba1ba2389d93535ee8dae7d94e1"
+      },
+      "thirdPartyNotices": [],
+      "totalBytes": 29846,
+      "externalReferences": [
+        "https://github.com/Washi1337/ghidra-nativeaot",
+        "https://github.com/morluto/rea/blob/main/docs/binary-diagnostics.md",
+        "https://github.com/morluto/rea/blob/main/docs/evm-bytecode.md",
+        "https://github.com/morluto/rea/blob/main/docs/firmware-analysis.md",
+        "https://github.com/morluto/rea/blob/main/docs/ghidra-dos.md",
+        "https://github.com/morluto/rea/blob/main/docs/ida-provider.md",
+        "https://github.com/morluto/rea/blob/main/docs/recorded-crashes.md",
+        "https://github.com/morluto/rea/blob/main/docs/web-network-captures.md",
+        "https://github.com/mrexodia/ida-pro-mcp"
+      ],
+      "plannedHumanChecks": [
+        "Use an operator-owned JavaScript fixture to verify evidence IDs, source/static limits and bounded conclusions.",
+        "Verify that ordinary source-repository architecture requests do not launch REA or configuration diagnostics.",
+        "Verify no provider installation or MCP configuration mutation without the requested scope and approval.",
+        "Check supported hosts and the installed server's actual tool list; main-branch skill instructions may describe unreleased tools."
+      ],
+      "validation": {
+        "kind": "static-review",
+        "sourceBytesPreserved": true,
+        "completeLocalSkillDirectory": true,
+        "upstreamLicenseIncluded": true,
+        "executed": false,
+        "hostChecksPerformed": false,
+        "humanEvaluationPerformed": false
+      },
+      "staticScanPassed": true,
+      "staticScan": {
+        "passed": true,
+        "checks": [
+          "file-count:7/64",
+          "utf8-size:29846/524288",
+          "safe-relative-paths",
+          "runtime-reserved-paths",
+          "case-folded-path-collisions",
+          "file-directory-path-collisions",
+          "filesystem-segment-byte-limits",
+          "no-binary-or-archive-extension",
+          "secret-pattern-scan",
+          "instruction-risk-pattern-scan"
+        ],
+        "checkedAt": "2026-10-08T15:44:53.351Z",
+        "failures": [],
+        "totalBytes": 29846
+      },
+      "pinnedExternalReferences": [
+        {
+          "original": "https://github.com/morluto/rea/blob/main/docs/binary-diagnostics.md",
+          "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/binary-diagnostics.md"
+        },
+        {
+          "original": "https://github.com/morluto/rea/blob/main/docs/evm-bytecode.md",
+          "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/evm-bytecode.md"
+        },
+        {
+          "original": "https://github.com/morluto/rea/blob/main/docs/firmware-analysis.md",
+          "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/firmware-analysis.md"
+        },
+        {
+          "original": "https://github.com/morluto/rea/blob/main/docs/ghidra-dos.md",
+          "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/ghidra-dos.md"
+        },
+        {
+          "original": "https://github.com/morluto/rea/blob/main/docs/ida-provider.md",
+          "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/ida-provider.md"
+        },
+        {
+          "original": "https://github.com/morluto/rea/blob/main/docs/recorded-crashes.md",
+          "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/recorded-crashes.md"
+        },
+        {
+          "original": "https://github.com/morluto/rea/blob/main/docs/web-network-captures.md",
+          "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/web-network-captures.md"
+        }
+      ]
+    }
+  ]
+}

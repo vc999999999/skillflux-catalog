@@ -1,0 +1,79 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "commit": "92ace75ac21efe19a620434e0ca4e356081fe807",
+  "importedAt": "2026-10-08T15:47:21.940708Z",
+  "license": "MIT",
+  "licenseSource": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/92ace75ac21efe19a620434e0ca4e356081fe807/LICENSE.md",
+  "notes": "Repository listed as a source; one unmodified candidate retained in intake. No package is newly installable, no upstream scripts executed, no human or host evaluation asserted.",
+  "inventory": {
+    "treeTruncated": false,
+    "skillsDirectorySkillMdFiles": 177,
+    "gitSubmodules": [],
+    "treeSource": "https://api.github.com/repos/K-Dense-AI/scientific-agent-skills/git/trees/92ace75ac21efe19a620434e0ca4e356081fe807?recursive=1"
+  },
+  "records": [
+    {
+      "id": "scientific-agent-skills",
+      "sourcePath": "",
+      "disposition": "source-only",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807"
+    },
+    {
+      "id": "scientific-critical-thinking",
+      "sourcePath": "skills/scientific-critical-thinking",
+      "disposition": "intake",
+      "target": "intake/scientific-agent-skills-2026-10-08/scientific-critical-thinking",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/scientific-critical-thinking",
+      "files": {
+        "LICENSE.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "SKILL.md": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4",
+        "references/common_biases.md": "641e8e8e6dfadac1643ea8691b7d3e4e58cf013f134cd42c71301878096a5a39",
+        "references/core_capabilities.md": "0f337b96aa2d7453433a17824368fbd0638b9469d4f90a5fd23f4167c9dee180",
+        "references/evidence_hierarchy.md": "534fbe991ecfb2d162f755004dc528118ce74a78862917c2911595a522d76e6c",
+        "references/experimental_design.md": "eca7e42025393984c07676f3d4bc354d217e5604dc2209c76215d31953a7c74c",
+        "references/logical_fallacies.md": "becfc5bfac7b831dca67cc442cd0fcb42d8eea527a6fc2921c1b704e592ff593",
+        "references/review_sources.md": "71e75106f36f3e69b28959ad1fec503ccdb21b7f5361ab230173e4812accbf62",
+        "references/scientific_method.md": "5aa925b97c7a916f819dafc8b42a9c24e4bd3eb2836594e724f1e7f9ae75ea0f",
+        "references/statistical_pitfalls.md": "0c43204a0a81110cfeb7c982fa4caa89f274bdcebf096e09e5adfccf31241cb9"
+      },
+      "limitations": "Analytical core is local text guidance. Optional figure workflow refers outside this bundle to scientific-schematics, Python, OpenRouter, OPENROUTER_API_KEY; citation verification may use network. No manifest or runtime-permission claim is supplied.",
+      "staticScanPassed": true,
+      "totalBytes": 134227,
+      "upstreamGitBlobVerified": true
+    }
+  ],
+  "priorityCandidates": [
+    {
+      "id": "scientific-critical-thinking",
+      "sourcePath": "skills/scientific-critical-thinking",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/scientific-critical-thinking",
+      "entrySha256": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4"
+    },
+    {
+      "id": "scientific-brainstorming",
+      "sourcePath": "skills/scientific-brainstorming",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/scientific-brainstorming",
+      "entrySha256": "06f73b71556356a7f488c369b9445d7943543a3f14d159b2168fd3f621d6f8a9"
+    },
+    {
+      "id": "experimental-design",
+      "sourcePath": "skills/experimental-design",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/experimental-design",
+      "entrySha256": "db2de0f3d29b7729776a91e923c9c83801298f5ad8e88fe44570045fbefcc248"
+    },
+    {
+      "id": "peer-review",
+      "sourcePath": "skills/peer-review",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/peer-review",
+      "entrySha256": "a042ccdc76d3399431b9a6c4cd4f98968eab964b1c14baeea4d9e73de82c7d19"
+    }
+  ],
+  "evidence": {
+    "readmeSha256": "2d4a9f2268c6ed70fc0d0d769921963da6b82966bd71c4b0225e35b0779b2447",
+    "licenseSha256": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "treeResponseSha256": "ffb96314c8a567ae60ed07583dd367f338613ac1546615096bc67376bdedc174",
+    "evaluated": "Selective source and resource inspection only; no behavioral or multi-host tests.",
+    "candidateLocalMarkdownLinks": "All relative Markdown links within the selected skill resolve; external optional skill/command reference is disclosed as unbundled."
+  }
+}

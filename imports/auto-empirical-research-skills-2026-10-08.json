@@ -1,0 +1,75 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "commit": "9fa87d86e34d6c9a1c7cdb0db755c83c780537a0",
+  "importedAt": "2026-10-08T15:47:21.940708Z",
+  "license": "CC-BY-SA-4.0 for repository material; vendored collections retain heterogeneous source licenses",
+  "licenseSource": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/LICENSE",
+  "notes": "Source-only inclusion of a multi-source collection. No bulk redistribution, submodule checkout, install, script execution, or SkillFlux qualification. Upstream catalog and raw tree counts are separate observations.",
+  "records": [
+    {
+      "id": "auto-empirical-research-skills",
+      "sourcePath": "",
+      "disposition": "source-only",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0"
+    }
+  ],
+  "inventory": {
+    "treeTruncated": false,
+    "catalogCollectionRecords": 77,
+    "catalogSkillRecords": 1107,
+    "trackedSkillMdFiles": 1172,
+    "skillsDirectorySkillMdFiles": 1168,
+    "gitSubmodulesNotExpanded": [
+      "skills/69-Paper-WorkFlow"
+    ],
+    "catalogSource": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/catalog/skills.json"
+  },
+  "priorityCandidates": [
+    {
+      "id": "aer-preregistration",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-preregistration",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-preregistration",
+      "entrySha256": "3d2f03f0540d56a5acabe0bd2dcde769d07847fe4b6664b9d72b710f33155a2e",
+      "collectionLicense": "MIT",
+      "collectionLicenseSource": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/LICENSE",
+      "declaredOriginalSource": "https://github.com/brycewang-stanford/AER-skills",
+      "disposition": "not-copied",
+      "limitations": "References PAP template, shared methods and examples; registration and scientific policy judgments need explicit scope and expert validation."
+    },
+    {
+      "id": "aer-identification",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-identification",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-identification",
+      "entrySha256": "43d61741731424c1566ff77c1ac5182eca38138378e7238ba4476185703a62f5",
+      "collectionLicense": "MIT",
+      "collectionLicenseSource": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/LICENSE",
+      "declaredOriginalSource": "https://github.com/brycewang-stanford/AER-skills",
+      "disposition": "not-copied",
+      "limitations": "References shared methods, other AER skills and statistical/StatsPAI execution; full dependency and capability closure unverified."
+    },
+    {
+      "id": "aer-replication",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-replication",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-replication",
+      "entrySha256": "65c79ca440fe204190bcc4efe27dd19a784882611464592cb7731ce0a92f90ee",
+      "collectionLicense": "MIT",
+      "collectionLicenseSource": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/LICENSE",
+      "declaredOriginalSource": "https://github.com/brycewang-stanford/AER-skills",
+      "disposition": "not-copied",
+      "limitations": "Requires shared templates, reproducibility tooling and data provenance; drafting is not completed independent replication or authorized upload."
+    }
+  ],
+  "evidence": {
+    "readmeSha256": "19c4c388cc2906f5078630e67bf6565733c1c65e0768408a2ce6d3165f1d9ef3",
+    "licenseSha256": "22401c14e67fc2f4b5bc4987a5ee367e52e833066901b94ad798d46eaf7917f8",
+    "upstreamLicenseAuditSha256": "d8536282b7ad3366ae52c516f6fa2226f05189b8c373b23b3f81e97c7cec2e23",
+    "upstreamCatalogSha256": "62d3188ef3f2a02a07b8e36f7c8971aacc88061fc21591772b0222ceb6107444",
+    "upstreamProvenanceSha256": "c04daa2f788de5879a1166fd03bd41bfe4d04423cc41393bf522a39ce096f3f8",
+    "treeResponseSha256": "af3ef574037aa0697c2efef3809172ebcca6ed6c58f30138d1fb878c43667670",
+    "candidateCollectionLicenseSha256": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+    "upstreamLicenseAuditDate": "2026-07-22",
+    "upstreamUnknownLicenseCollectionCount": 25,
+    "evaluated": "Root README/license, upstream catalog/provenance, selected collection license and three candidate entries inspected. No behavioral, scientific validity or host evaluation."
+  }
+}

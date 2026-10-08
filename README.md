@@ -38,6 +38,20 @@ intake/                      # 尚不符合当前权限模型的候选包，不�
 `tdd`、`diagnosing-bugs`、`prototype` 的完整候选包保存在 `intake/`，它们涉及命令或 Git 操作，
 需要先解决与当前权限模型的兼容问题；不会通过填写 `shell: false` 来掩盖实际能力需求。
 
+## 其他来源与候选
+
+以下来源已收录，供发现、溯源与更新检查；尚未授予 MCP 安装资格。
+
+| 来源 | 本次保留的内容 | 收录记录 |
+| --- | --- | --- |
+| morluto/rea | reverse-engineer-anything 完整指令候选包；依赖独立 REA MCP/CLI 及分析工具 | [来源、能力与校验](imports/morluto-rea-2026-10-08.md) |
+| QingYunA/answer-me-with-html | 完整技能、捆绑 CLI、上游和第三方许可；涉及命令、后台更新与可选语音服务 | [来源、能力与校验](imports/qingyuna-answer-me-with-html-2026-10-08.md) |
+| K-Dense-AI/scientific-agent-skills | 科研库来源、候选清单及 scientific-critical-thinking 完整候选包 | [来源、能力与校验](imports/scientific-agent-skills-2026-10-08.md) |
+| brycewang-stanford/Auto-Empirical-Research-Skills | 多来源合集登记、许可差异与三个优先候选指针；未批量复制异构许可内容 | [来源与许可审查](imports/auto-empirical-research-skills-2026-10-08.md) |
+
+每个来源的 `imports/*.json` 都保存固定 GitHub 提交、待监测上游路径、收录范围和能力限制。
+`intake/` 内容不进入 `index.json`，静态检查不等于已运行验证，也不替代人工验收。
+
 ## 维护流程
 
 新增技能版本后运行 `skillflux catalog .`（来自 [SkillFlux 主仓库](https://github.com/vc999999999/Skillflux_Cloudflare)），

@@ -1,0 +1,127 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/QingYunA/answer-me-with-html",
+  "commit": "d0add7ec67fd51704321ec0295ede1563f8297be",
+  "importedAt": "2026-10-08T15:44:53.251646+00:00",
+  "license": "MIT",
+  "licenseSource": "https://github.com/QingYunA/answer-me-with-html/blob/d0add7ec67fd51704321ec0295ede1563f8297be/LICENSE",
+  "type": "intake",
+  "notes": "Pinned source inclusion only. No upstream setup, CLI, runtime/provider or bundled script was executed. No SkillFlux-installable version or human approval is asserted.",
+  "records": [
+    {
+      "id": "answer-me-with-html",
+      "disposition": "intake",
+      "target": "intake/qingyuna-answer-me-with-html-2026-10-08/answer-me-with-html",
+      "sourcePath": "skills/answer-me-with-html",
+      "sourceUrl": "https://github.com/QingYunA/answer-me-with-html/tree/d0add7ec67fd51704321ec0295ede1563f8297be/skills/answer-me-with-html",
+      "upstreamVersion": "repository package version 0.4.15",
+      "reason": "The skill must execute its bundled Node CLI, writes local output/settings, can open a browser, and enables a background GitHub version check by default. Explicit video generation may use an existing ElevenLabs API key or local speech endpoint. These requirements do not fit the current SkillFlux shell/network/secret-free permissions.",
+      "requiredHostCapabilities": [
+        "Node.js >=20 and command execution for scripts/am.mjs; no package install required for the bundled CLI",
+        "Local pages/config/cache under ~/.answer-me-with-html by default; AM_HOME can isolate test output",
+        "Background GitHub version check is enabled by default; update_check off or AM_NO_UPDATE_CHECK disables it",
+        "Explicit video requests: voice auto may use ELEVENLABS_API_KEY, otherwise system TTS or captions; local speech has its own endpoint/key",
+        "Video file export may require Chrome and Node.js >=22; MP4 requires ffmpeg",
+        "User-authorized cleanup and skill update are separate commands; the upstream default update route is not compatible with SkillFlux version ownership"
+      ],
+      "files": {
+        "LICENSE.txt": "752a1a34b40ae8e64e86f546ec699a691aff573179e1f96997e82757b2ee5d3f",
+        "SKILL.md": "fc74013a03e27d1ddabecdedfe0e98e45398c66428ef4e430039bf39b7c710ef",
+        "references/settings.md": "507b3458ee883f4009bf5fdeaab73ae437c54cf6da7e9037d04eb6e6e984fe65",
+        "references/video.md": "3f77398b830944a5f876bde223dce8ec5724ccd95ef93691b56a7e0532e20425",
+        "scripts/am.mjs": "c1fbbc9bfea2855ea654f1d453da372b2a2d3f62cb19eae77461ab0a7a7493cb",
+        "scripts/dagre.esm.js.LEGAL.txt": "9148bffb1e84382a8b6668eeb2b53c6a554341d714fba129856ea5eb350d35f3",
+        "third-party-licenses/dagrejs-dagre-LICENSE.txt": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015",
+        "third-party-licenses/dagrejs-graphlib-LICENSE.txt": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015",
+        "third-party-licenses/marked-LICENSE.txt": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+      },
+      "originalSourceFiles": {
+        "SKILL.md": "fc74013a03e27d1ddabecdedfe0e98e45398c66428ef4e430039bf39b7c710ef",
+        "references/settings.md": "507b3458ee883f4009bf5fdeaab73ae437c54cf6da7e9037d04eb6e6e984fe65",
+        "references/video.md": "3f77398b830944a5f876bde223dce8ec5724ccd95ef93691b56a7e0532e20425",
+        "scripts/am.mjs": "c1fbbc9bfea2855ea654f1d453da372b2a2d3f62cb19eae77461ab0a7a7493cb"
+      },
+      "thirdPartyNotices": [
+        {
+          "path": "third-party-licenses/marked-LICENSE.txt",
+          "package": "marked",
+          "version": "18.0.14",
+          "sourcePath": "package/LICENSE",
+          "sourceUrl": "https://registry.npmjs.org/marked/-/marked-18.0.14.tgz",
+          "integrity": "sha512-mBHK6FBHuBAlhgRe88w9F0O1AbwwXJUcQibUbC/QcdTbVGAD7aWza+xt3N6oT/jCZx3/OMeS+8rnuiHZcQ9s7A==",
+          "tarballIntegrityVerified": true,
+          "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+        },
+        {
+          "path": "third-party-licenses/dagrejs-dagre-LICENSE.txt",
+          "package": "@dagrejs/dagre",
+          "version": "3.1.1",
+          "sourcePath": "package/LICENSE",
+          "sourceUrl": "https://registry.npmjs.org/@dagrejs/dagre/-/dagre-3.1.1.tgz",
+          "integrity": "sha512-zroZB1dFOFiGgv4Xcrn1DckB1o4aOikPqD2NDQPV0WM//CXGcS6xiD0rNkqHmw6FEg4tabt4nxPLwgCWT+Vb2A==",
+          "tarballIntegrityVerified": true,
+          "sha256": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015"
+        },
+        {
+          "path": "scripts/dagre.esm.js.LEGAL.txt",
+          "package": "@dagrejs/dagre",
+          "version": "3.1.1",
+          "sourcePath": "package/dist/dagre.esm.js.LEGAL.txt",
+          "sourceUrl": "https://registry.npmjs.org/@dagrejs/dagre/-/dagre-3.1.1.tgz",
+          "integrity": "sha512-zroZB1dFOFiGgv4Xcrn1DckB1o4aOikPqD2NDQPV0WM//CXGcS6xiD0rNkqHmw6FEg4tabt4nxPLwgCWT+Vb2A==",
+          "tarballIntegrityVerified": true,
+          "sha256": "9148bffb1e84382a8b6668eeb2b53c6a554341d714fba129856ea5eb350d35f3"
+        },
+        {
+          "path": "third-party-licenses/dagrejs-graphlib-LICENSE.txt",
+          "package": "@dagrejs/graphlib",
+          "version": "4.0.5",
+          "sourcePath": "package/LICENSE",
+          "sourceUrl": "https://registry.npmjs.org/@dagrejs/graphlib/-/graphlib-4.0.5.tgz",
+          "integrity": "sha512-7xrBTqIts3o+PMUZX97wSc+7TUbW+/rULzGNCTP6yooNVDXbzw4Wutg/H/xOutTB/c/k0YqOAavgPh4/Zk9PFA==",
+          "tarballIntegrityVerified": true,
+          "sha256": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015"
+        }
+      ],
+      "totalBytes": 510949,
+      "externalReferences": [
+        "https://github.com/mzopedia/simplified-technical-chinese"
+      ],
+      "plannedHumanChecks": [
+        "Render a simple synthetic explanation with isolated AM_HOME, AM_NO_UPDATE_CHECK=1, and no automatic browser opening; verify the generated local artifact.",
+        "Verify that a request for plain text creates no page and that video is produced only when explicitly requested.",
+        "Verify page comments are treated as data, not authority to run commands, fetch URLs or change settings.",
+        "Inspect scoped file/code embedding, cleanup dry-run, update flow, and available TTS credentials before any future runtime approval."
+      ],
+      "validation": {
+        "kind": "static-review",
+        "sourceBytesPreserved": true,
+        "completeLocalSkillDirectory": true,
+        "upstreamLicenseIncluded": true,
+        "executed": false,
+        "hostChecksPerformed": false,
+        "humanEvaluationPerformed": false
+      },
+      "staticScanPassed": true,
+      "staticScan": {
+        "passed": true,
+        "checks": [
+          "file-count:9/64",
+          "utf8-size:510949/524288",
+          "safe-relative-paths",
+          "runtime-reserved-paths",
+          "case-folded-path-collisions",
+          "file-directory-path-collisions",
+          "filesystem-segment-byte-limits",
+          "no-binary-or-archive-extension",
+          "secret-pattern-scan",
+          "instruction-risk-pattern-scan"
+        ],
+        "checkedAt": "2026-10-08T15:44:53.356Z",
+        "failures": [],
+        "totalBytes": 510949
+      },
+      "pinnedExternalReferences": []
+    }
+  ]
+}
