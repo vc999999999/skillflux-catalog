@@ -121,7 +121,37 @@
         "failures": [],
         "totalBytes": 510949
       },
-      "pinnedExternalReferences": []
+      "pinnedExternalReferences": [],
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "f6bb9d5d1205a9430821ca2fa8873293db9272a1",
+          "size": 16243
+        },
+        "references/settings.md": {
+          "gitBlobSha": "18f49b9fce9ae53709d5224bd02b118cf564649f",
+          "size": 1826
+        },
+        "references/video.md": {
+          "gitBlobSha": "1ce515d052c352d175cfe9d8e71d50ad4fd52ef2",
+          "size": 3598
+        },
+        "scripts/am.mjs": {
+          "gitBlobSha": "d536b8ce15a25846a7aeccc5e06348339592a01f",
+          "size": 482049
+        }
+      },
+      "completeness": {
+        "verifiedAt": "2026-10-09T08:58:09.785009+08:00",
+        "timeZone": "Asia/Shanghai",
+        "sourceDirectoryFileCount": 4,
+        "targetFileCount": 9,
+        "allSourceFilesPreserved": true,
+        "sourceDirectoryInventory": "Complete recursive Git blob inventory at the fixed upstream commit, excluding added catalog licenses and notices.",
+        "verification": "Every source byte and Git file mode was compared with the uploaded catalog package. Added licenses remain covered by the files SHA-256 inventory. No upstream code was executed.",
+        "externalDependencies": [
+          "Node.js is required to execute the complete bundled scripts/am.mjs. Templates, CSS, browser JavaScript and library code are bundled; no src/ or node_modules directory is needed for the shipped skill. Video/TTS, browser export and update checks have separately recorded host/network dependencies."
+        ]
+      }
     }
   ]
 }

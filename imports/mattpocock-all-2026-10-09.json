@@ -1,0 +1,2541 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/mattpocock/skills",
+  "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+  "importedAt": "2026-10-09T09:01:01+08:00",
+  "selection": "User explicitly selected every SKILL.md package in this repository at the recorded pin; other upstream repositories remain individually curated.",
+  "license": "MIT",
+  "licenseSource": "https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/LICENSE",
+  "scope": {
+    "include": "Every directory containing SKILL.md, recursively, including engineering, productivity, misc and in-progress.",
+    "exclude": "Repository development infrastructure and generated per-project outputs; external tools are declared capabilities, not vendored installations.",
+    "sharedResources": "No required existing local resource outside these complete skill directories was found. Generated project GLOSSARY.md/ADRs/tracker configuration are task inputs or outputs, not missing bundled files. Cross-skill calls are mapped in skillDependencies."
+  },
+  "summary": {
+    "skills": 38,
+    "newIntakePackages": 29,
+    "reusedPackages": 9,
+    "upstreamFiles": 103,
+    "upstreamNonMarkdownFiles": 42,
+    "bundledFiles": 142,
+    "bundledNonMarkdownFiles": 81,
+    "categoryCounts": {
+      "engineering": 20,
+      "in-progress": 7,
+      "misc": 4,
+      "productivity": 7
+    },
+    "missingFiles": 0,
+    "byteMismatches": 0,
+    "dependencyTargetsMissing": 0
+  },
+  "records": [
+    {
+      "id": "ask-matt",
+      "sourceId": "mattpocock/ask-matt",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/ask-matt",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/ask-matt",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/ask-matt",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "PHASE-BOUNDARIES.md": "a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
+        "SKILL.md": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+        "agents/openai.yaml": "bdffbc5a0a99ed1b6ef3253d251d755fd18162b9845972e380007f844b09b05c"
+      },
+      "upstreamFiles": {
+        "PHASE-BOUNDARIES.md": {
+          "gitBlobSha": "fb58ef9febcfd558cdb4517e370f19034869ba26",
+          "size": 4249,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "4bfeeb61dae548b8b7754c4fba7bd40ab3926099",
+          "size": 12594,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "5c60d51b5b1248d7210bff8c6b42a5a06524b8a4",
+          "size": 137,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 4,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "code-review",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/code-review",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/code-review",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "codebase-design",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/codebase-design",
+          "target": "skills/development/codebase-design/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "diagnosing-bugs",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/diagnosing-bugs",
+          "target": "intake/mattpocock-2026-10-08/diagnosing-bugs",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "domain-modeling",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/domain-modeling",
+          "target": "skills/development/domain-modeling/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "grill-me",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/grill-me",
+          "target": "skills/productivity/grill-me/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "grill-with-docs",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/grill-with-docs",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/grill-with-docs",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "grilling",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/grilling",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "handoff",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/handoff",
+          "target": "skills/productivity/handoff/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "implement",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/implement",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/implement",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "implement-spec",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/implement-spec",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/implement-spec",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "improve-codebase-architecture",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/improve-codebase-architecture",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/improve-codebase-architecture",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "pr",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/pr",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/pr",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "prototype",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/prototype",
+          "target": "intake/mattpocock-2026-10-08/prototype",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "research",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/research",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/research",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "retro",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/retro",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/retro",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "setup-matt-pocock-skills",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/setup-matt-pocock-skills",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "tdd",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/tdd",
+          "target": "intake/mattpocock-2026-10-08/tdd",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "teach",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/teach",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/teach",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "to-questionnaire",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/to-questionnaire",
+          "target": "skills/productivity/to-questionnaire/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "to-spec",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/to-spec",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/to-spec",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "to-tickets",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/to-tickets",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/to-tickets",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "triage",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/triage",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/triage",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "wait-what",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/wait-what",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/wait-what",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "wayfinder",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/wayfinder",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/wayfinder",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "wizard",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/wizard",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/wizard",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "writing-for-agents",
+          "kind": "router-reference",
+          "when": "Read target SKILL.md before recommending; explicit-only skills still require user invocation.",
+          "sourceId": "mattpocock/writing-for-agents",
+          "target": "skills/productivity/writing-for-agents/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。"
+      ]
+    },
+    {
+      "id": "code-review",
+      "sourceId": "mattpocock/code-review",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/code-review",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/code-review",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/code-review",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357",
+        "agents/openai.yaml": "8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "373a4f26e6cfa3617778397945bb069d9cb184bc",
+          "size": 6670,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "9076774ba327f49068db9273feceda03bfe940fa",
+          "size": 100,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "setup-matt-pocock-skills",
+          "kind": "configuration",
+          "when": "Issue tracker is not configured.",
+          "sourceId": "mattpocock/setup-matt-pocock-skills",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "parallel-subagents",
+        "git-diff-read",
+        "issue-tracker-read"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "来源路径隔离 Matt Pocock 版本，未映射或覆盖 SkillFlux 同名种子。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "codebase-design",
+      "sourceId": "mattpocock/codebase-design",
+      "disposition": "needs-testing",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/codebase-design",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/codebase-design",
+      "target": "skills/development/codebase-design/1.0.0",
+      "reusedExistingPackage": true,
+      "files": {
+        "DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "DESIGN-IT-TWICE.md": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+      },
+      "upstreamFiles": {
+        "DEEPENING.md": {
+          "gitBlobSha": "cd94075cfd754d147555c5d747a16431ed4c7dd8",
+          "size": 2553,
+          "mode": "100644"
+        },
+        "DESIGN-IT-TWICE.md": {
+          "gitBlobSha": "d0990138c35c800bd821289a73115e52680c1620",
+          "size": 2665,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "3f63c8146dd2604b419c929e9876b90c30d410e9",
+          "size": 6446,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "3180715edb37f6e96bec42f92f00169faa8886ef",
+          "size": 102,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 4,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 5,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "diagnosing-bugs",
+      "sourceId": "mattpocock/diagnosing-bugs",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/diagnosing-bugs",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/diagnosing-bugs",
+      "target": "intake/mattpocock-2026-10-08/diagnosing-bugs",
+      "reusedExistingPackage": true,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+        "agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+        "scripts/hitl-loop.template.sh": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12",
+          "size": 8664,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "a13a755a77634ce61a649a3a0d905a66d3865b35",
+          "size": 103,
+          "mode": "100644"
+        },
+        "scripts/hitl-loop.template.sh": {
+          "gitBlobSha": "243198464a8401a7ba1d63b3708fa43c3d067665",
+          "size": 1316,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 2,
+        "bundledFileCount": 4,
+        "bundledNonMarkdownFileCount": 3,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:reproduction-and-test",
+        "optional-network",
+        "optional-browser",
+        "optional-git-bisect"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "domain-modeling",
+      "sourceId": "mattpocock/domain-modeling",
+      "disposition": "needs-testing",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/domain-modeling",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/domain-modeling",
+      "target": "skills/development/domain-modeling/1.0.0",
+      "reusedExistingPackage": true,
+      "files": {
+        "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+      },
+      "upstreamFiles": {
+        "ADR-FORMAT.md": {
+          "gitBlobSha": "d7e61f30a9fd8ca70d9ee68f019c2a9ebf2d13f7",
+          "size": 2733,
+          "mode": "100644"
+        },
+        "GLOSSARY-FORMAT.md": {
+          "gitBlobSha": "9c0b4c7a2e8507c23cbb5e0baa66d81699321cc6",
+          "size": 2300,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "a4438c6879c517d1a08e2b5fbca049b632688dfe",
+          "size": 3346,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "7f1522d2f11506ee205275ab7c282aa52366ecf6",
+          "size": 101,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 4,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 5,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "grill-with-docs",
+      "sourceId": "mattpocock/grill-with-docs",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/grill-with-docs",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/grill-with-docs",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/grill-with-docs",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+        "agents/openai.yaml": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "62b9efb6f991d1b229adee7506962f13ced0c499",
+          "size": 247,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "5dbe2780a51be3e9b118bd7758a73e54a9384e11",
+          "size": 145,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "grilling",
+          "kind": "required",
+          "when": "Interview discipline.",
+          "sourceId": "mattpocock/grilling",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "domain-modeling",
+          "kind": "required",
+          "when": "Maintain domain vocabulary and ADRs.",
+          "sourceId": "mattpocock/domain-modeling",
+          "target": "skills/development/domain-modeling/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。"
+      ]
+    },
+    {
+      "id": "implement",
+      "sourceId": "mattpocock/implement",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/implement",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/implement",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/implement",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+        "agents/openai.yaml": "8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "bd49e472984c7b99aac40286fdae749bb955a842",
+          "size": 622,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "f8794dc153b409052a9167baf10858cf01b36175",
+          "size": 139,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "tdd",
+          "kind": "conditional",
+          "when": "At pre-agreed seams where possible.",
+          "sourceId": "mattpocock/tdd",
+          "target": "intake/mattpocock-2026-10-08/tdd",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "code-review",
+          "kind": "required",
+          "when": "Review completed work.",
+          "sourceId": "mattpocock/code-review",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/code-review",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "project-file-edit",
+        "shell:test-and-typecheck",
+        "git:commit",
+        "issue-tracker-read"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "implement-spec",
+      "sourceId": "mattpocock/implement-spec",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/implement-spec",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/implement-spec",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/implement-spec",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "7a22dd2e60b8fcece478ced9d2533582adf3520d695acd3ab715341535c9e56d",
+        "agents/openai.yaml": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "183923797ab58f1b3ef09e03bc1f1f203c309f37",
+          "size": 2780,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "f5e91af21e38eb1a167ea5aa93dfc7da3c4637b4",
+          "size": 168,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "setup-matt-pocock-skills",
+          "kind": "configuration",
+          "when": "Issue tracker is not configured.",
+          "sourceId": "mattpocock/setup-matt-pocock-skills",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "tdd",
+          "kind": "required",
+          "when": "Implementer subagents build each ticket.",
+          "sourceId": "mattpocock/tdd",
+          "target": "intake/mattpocock-2026-10-08/tdd",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "code-review",
+          "kind": "required",
+          "when": "Review integration branch.",
+          "sourceId": "mattpocock/code-review",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/code-review",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "parallel-subagents",
+        "shell:test-and-typecheck",
+        "git:branch-worktree-merge",
+        "issue-tracker-write",
+        "optional-pull-request-write"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "improve-codebase-architecture",
+      "sourceId": "mattpocock/improve-codebase-architecture",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/improve-codebase-architecture",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/improve-codebase-architecture",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/improve-codebase-architecture",
+      "reusedExistingPackage": false,
+      "files": {
+        "HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392",
+        "agents/openai.yaml": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1"
+      },
+      "upstreamFiles": {
+        "HTML-REPORT.md": {
+          "gitBlobSha": "e39e8255b8797cf8257d014fb6658fb533f3a399",
+          "size": 6641,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "44cc7d3136c44534d68ac523fa6cd37e759d2846",
+          "size": 6000,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "706fdca096da5937fe57875a9154017d50668c42",
+          "size": 166,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 4,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "codebase-design",
+          "kind": "required",
+          "when": "Architecture vocabulary and interface alternatives.",
+          "sourceId": "mattpocock/codebase-design",
+          "target": "skills/development/codebase-design/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "grilling",
+          "kind": "conditional",
+          "when": "After user selects a candidate.",
+          "sourceId": "mattpocock/grilling",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "domain-modeling",
+          "kind": "conditional",
+          "when": "As domain decisions crystallize.",
+          "sourceId": "mattpocock/domain-modeling",
+          "target": "skills/development/domain-modeling/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "subagents",
+        "local-html-write",
+        "shell:open-preview",
+        "network:CDN-for-preview"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "pr",
+      "sourceId": "mattpocock/pr",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/pr",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/pr",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/pr",
+      "reusedExistingPackage": false,
+      "files": {
+        "CREDITS.md": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+        "LICENSE-HumanLayer.txt": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+        "agents/openai.yaml": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad"
+      },
+      "upstreamFiles": {
+        "CREDITS.md": {
+          "gitBlobSha": "5314bda2fa6005e264c9b5c1de7c425e719dc91f",
+          "size": 604,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "84dd4fb2f068e9f6282690235d20dd505b418119",
+          "size": 4169,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "48286f48f53b937cc19c0e39899b5f956271a98d",
+          "size": 93,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 5,
+        "bundledNonMarkdownFileCount": 3,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "pull-request-body-authoring"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "prototype",
+      "sourceId": "mattpocock/prototype",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/prototype",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/prototype",
+      "target": "intake/mattpocock-2026-10-08/prototype",
+      "reusedExistingPackage": true,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "LOGIC.md": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
+        "SKILL.md": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+        "UI.md": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3",
+        "agents/openai.yaml": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc"
+      },
+      "upstreamFiles": {
+        "LOGIC.md": {
+          "gitBlobSha": "32be86a0a5d9928db84b3988e55f9debe476ab40",
+          "size": 6036,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "a0044501fe0d385b4d8575b610188ede9b236ccf",
+          "size": 2931,
+          "mode": "100644"
+        },
+        "UI.md": {
+          "gitBlobSha": "3977951663490882c2632b40695d9f59a2fe2408",
+          "size": 6913,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "1618b147965bc729b7bf3e8da5f130132067aadc",
+          "size": 100,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 4,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 5,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:task-runner-for-ui-branch",
+        "git:branch",
+        "issue-record:write-implementation-issue-pointer-local-or-remote",
+        "project-file-edit"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "research",
+      "sourceId": "mattpocock/research",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/research",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/research",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/research",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4",
+        "agents/openai.yaml": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "fecee97e9457ba039678d2fcf1b1bc9fca78307d",
+          "size": 794,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "e18b96ca0ccc1003889d5d6991386207c2454bc2",
+          "size": 94,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "background-subagent",
+        "external-primary-source-read",
+        "project-file-write"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "retro",
+      "sourceId": "mattpocock/retro",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/retro",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/retro",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/retro",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "agents/openai.yaml": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "12149acf2dd23b4514dec57b04a6293eaa1352fa",
+          "size": 4369,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "a2f0bac3f9cebf29beee2e79960cb876e0adc65d",
+          "size": 146,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "writing-for-agents",
+          "kind": "conditional",
+          "when": "When proposing or editing agent documents.",
+          "sourceId": "mattpocock/writing-for-agents",
+          "target": "skills/productivity/writing-for-agents/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "project-configuration-edit"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "setup-matt-pocock-skills",
+      "sourceId": "mattpocock/setup-matt-pocock-skills",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/setup-matt-pocock-skills",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/setup-matt-pocock-skills",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
+        "agents/openai.yaml": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939",
+        "domain.md": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+        "issue-tracker-github.md": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
+        "issue-tracker-gitlab.md": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
+        "issue-tracker-local.md": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+        "triage-labels.md": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "293c25b75590119794af03b037ba4288054a32b3",
+          "size": 6978,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "65a0da8128c98051183235e490767a8065310868",
+          "size": 152,
+          "mode": "100644"
+        },
+        "domain.md": {
+          "gitBlobSha": "4032de016c1e91119d33d477633e2b8f265f4195",
+          "size": 2042,
+          "mode": "100644"
+        },
+        "issue-tracker-github.md": {
+          "gitBlobSha": "a63510f74038300d8da354553f9d31d1bd954d94",
+          "size": 4117,
+          "mode": "100644"
+        },
+        "issue-tracker-gitlab.md": {
+          "gitBlobSha": "81499dca459e8097d560b641f8ba7c2e1c7c9da4",
+          "size": 3816,
+          "mode": "100644"
+        },
+        "issue-tracker-local.md": {
+          "gitBlobSha": "0209a19af92c9c485cf3acc3d9e253171517ea17",
+          "size": 1810,
+          "mode": "100644"
+        },
+        "triage-labels.md": {
+          "gitBlobSha": "5276464244857a3cc29890ff4a978a197b21f3fc",
+          "size": 1057,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 7,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 8,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "triage",
+          "kind": "optional",
+          "when": "Only configure triage labels if triage is installed.",
+          "sourceId": "mattpocock/triage",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/triage",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "domain-modeling",
+          "kind": "reference",
+          "when": "Generated domain guidance points to this skill.",
+          "sourceId": "mattpocock/domain-modeling",
+          "target": "skills/development/domain-modeling/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "project-agent-configuration-write",
+        "issue-tracker-configuration",
+        "optional-network"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "tdd",
+      "sourceId": "mattpocock/tdd",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/tdd",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/tdd",
+      "target": "intake/mattpocock-2026-10-08/tdd",
+      "reusedExistingPackage": true,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+        "agents/openai.yaml": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b",
+        "mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+        "tests.md": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "01eadaa34e7c9a63a67d6dc3cce1cc81b0e49985",
+          "size": 3629,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "651b838a7663e027b1b8884491e867f26bb9a021",
+          "size": 87,
+          "mode": "100644"
+        },
+        "mocking.md": {
+          "gitBlobSha": "71cbfee674d93244ce81d1830b930ca9a69200bd",
+          "size": 1481,
+          "mode": "100644"
+        },
+        "tests.md": {
+          "gitBlobSha": "7ab86479f925a1f9e8ba680af33cb3b12e015381",
+          "size": 2214,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 4,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 5,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "codebase-design",
+          "kind": "conditional",
+          "when": "Interface shape is in question.",
+          "sourceId": "mattpocock/codebase-design",
+          "target": "skills/development/codebase-design/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "code-review",
+          "kind": "optional",
+          "when": "Subsequent review-stage suggestion; not the unrelated SkillFlux seed.",
+          "sourceId": "mattpocock/code-review",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/code-review",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "shell:test-runner",
+        "project-file-edit"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "to-spec",
+      "sourceId": "mattpocock/to-spec",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/to-spec",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/to-spec",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/to-spec",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+        "agents/openai.yaml": "1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "3f52599ae2a4347aee5a07432c2707518e691a7f",
+          "size": 3043,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "549e6f76f020a1b9ba65f52ccda336566ee6222a",
+          "size": 135,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "setup-matt-pocock-skills",
+          "kind": "configuration",
+          "when": "Issue tracker or triage labels are not configured.",
+          "sourceId": "mattpocock/setup-matt-pocock-skills",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "issue-tracker-write"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "to-tickets",
+      "sourceId": "mattpocock/to-tickets",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/to-tickets",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/to-tickets",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/to-tickets",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+        "agents/openai.yaml": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "9b77a01db9460c99c22d03c910c349f890f12c0e",
+          "size": 5812,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "24605a5db64e4fc750b999aa94aea126bee814ee",
+          "size": 146,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "setup-matt-pocock-skills",
+          "kind": "configuration",
+          "when": "Issue tracker or triage labels are not configured.",
+          "sourceId": "mattpocock/setup-matt-pocock-skills",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "issue-tracker-write",
+        "optional-network"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "triage",
+      "sourceId": "mattpocock/triage",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/triage",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/triage",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/triage",
+      "reusedExistingPackage": false,
+      "files": {
+        "AGENT-BRIEF.md": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "OUT-OF-SCOPE.md": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+        "SKILL.md": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+        "agents/openai.yaml": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c"
+      },
+      "upstreamFiles": {
+        "AGENT-BRIEF.md": {
+          "gitBlobSha": "1462fcd9e8cc21921158c296149dc05d9be39d20",
+          "size": 7942,
+          "mode": "100644"
+        },
+        "OUT-OF-SCOPE.md": {
+          "gitBlobSha": "c9fba2f77ee0619975ec8488c0d4861a0c7e3151",
+          "size": 4667,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "3fd5617e906cf9b71a6b17424791adb905fc248b",
+          "size": 6558,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "acb366cf0f2527e8925ff1223b77610ac0b1be4c",
+          "size": 135,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 4,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 5,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "setup-matt-pocock-skills",
+          "kind": "configuration",
+          "when": "Issue tracker or label mapping is not configured.",
+          "sourceId": "mattpocock/setup-matt-pocock-skills",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "grilling",
+          "kind": "conditional",
+          "when": "Request needs fleshing out.",
+          "sourceId": "mattpocock/grilling",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "domain-modeling",
+          "kind": "conditional",
+          "when": "Request needs fleshing out.",
+          "sourceId": "mattpocock/domain-modeling",
+          "target": "skills/development/domain-modeling/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "issue-tracker-read-write-close",
+        "shell:reproduction-and-test",
+        "project-file-edit",
+        "optional-network"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "wayfinder",
+      "sourceId": "mattpocock/wayfinder",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/wayfinder",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/wayfinder",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/wayfinder",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7",
+        "agents/openai.yaml": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "e28cf3018906d6d60fc5b25390b4eeea035dd290",
+          "size": 12380,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "b37544751e0570f9df8de6c02aef238de8c3e1e0",
+          "size": 144,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "setup-matt-pocock-skills",
+          "kind": "configuration",
+          "when": "Tracker is missing; local-markdown fallback is also documented.",
+          "sourceId": "mattpocock/setup-matt-pocock-skills",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/setup-matt-pocock-skills",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "grilling",
+          "kind": "required",
+          "when": "Name destination and resolve interview tickets.",
+          "sourceId": "mattpocock/grilling",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "domain-modeling",
+          "kind": "required",
+          "when": "Name destination and resolve interview tickets.",
+          "sourceId": "mattpocock/domain-modeling",
+          "target": "skills/development/domain-modeling/1.0.0",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "research",
+          "kind": "conditional",
+          "when": "Research ticket branch.",
+          "sourceId": "mattpocock/research",
+          "target": "intake/mattpocock-all-2026-10-09/engineering/research",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        },
+        {
+          "id": "prototype",
+          "kind": "conditional",
+          "when": "Prototype ticket branch.",
+          "sourceId": "mattpocock/prototype",
+          "target": "intake/mattpocock-2026-10-08/prototype",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "parallel-subagents",
+        "issue-tracker-read-write",
+        "git:research-branch-and-push",
+        "optional-network"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "wizard",
+      "sourceId": "mattpocock/wizard",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "engineering",
+      "stability": "upstream-main",
+      "sourcePath": "skills/engineering/wizard",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/wizard",
+      "target": "intake/mattpocock-all-2026-10-09/engineering/wizard",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+        "agents/openai.yaml": "98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83",
+        "template.sh": "7c70da7da1b0cab497c469411aa92b5650d43ef24e6b88728eb3a19a63ee8be7"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "c4294ad8298b9b95fc727496b1b802b1f7363fba",
+          "size": 4123,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "b601bdf3a321e7d32d5714681540b811287d3988",
+          "size": 96,
+          "mode": "100644"
+        },
+        "template.sh": {
+          "gitBlobSha": "2d0de38e641662269c8bec5a40eed9bf1e993edc",
+          "size": 9047,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 2,
+        "bundledFileCount": 4,
+        "bundledNonMarkdownFileCount": 3,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:interactive-template",
+        "environment-file-write",
+        "github-secrets-write",
+        "browser",
+        "credentials"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "chief-of-staff",
+      "sourceId": "mattpocock/chief-of-staff",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "in-progress",
+      "stability": "beta",
+      "sourcePath": "skills/in-progress/chief-of-staff",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/in-progress/chief-of-staff",
+      "target": "intake/mattpocock-all-2026-10-09/in-progress/chief-of-staff",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "6cc6e47ab5022f3e45e5be0fedbb0f6e645f4f0190d6b0c51c7cd60c2d7c1d98",
+        "agents/openai.yaml": "c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "97da622d09acaaacebbb4482663c907e241f4594",
+          "size": 2112,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "080598b44ad9c843dc3457b6e0e32368aaeec84d",
+          "size": 184,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "subagents",
+        "optional-schedules",
+        "project-environment-edit"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "上游 in-progress/beta：作者说明可能改变或移除，且不随上游常规插件发布。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "claude-handoff",
+      "sourceId": "mattpocock/claude-handoff",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "in-progress",
+      "stability": "beta",
+      "sourcePath": "skills/in-progress/claude-handoff",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/in-progress/claude-handoff",
+      "target": "intake/mattpocock-all-2026-10-09/in-progress/claude-handoff",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
+        "agents/openai.yaml": "2308a672978864633286fb9f0792b08657e501426b3f7883fc418d5d2eac5eb0"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "77f82fc59c89c3a83ed5a92521dc2869f0533724",
+          "size": 1424,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "0a7aa5da50d0e73248fc17fb8fe82409ec071eaf",
+          "size": 141,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:claude-bg",
+        "background-agent"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "上游 in-progress/beta：作者说明可能改变或移除，且不随上游常规插件发布。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "loop-me",
+      "sourceId": "mattpocock/loop-me",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "in-progress",
+      "stability": "beta",
+      "sourcePath": "skills/in-progress/loop-me",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/in-progress/loop-me",
+      "target": "intake/mattpocock-all-2026-10-09/in-progress/loop-me",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
+        "agents/openai.yaml": "b66fa10079957051be6a812f45e55b67ac394b71d5ba88349962b4c9205802c3"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "e58a474ca80feffdeb28842bc3bdee37da6510e7",
+          "size": 2522,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "1a4f4111192ff75b4771e8a248c603994d5eafdc",
+          "size": 140,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "grilling",
+          "kind": "required",
+          "when": "Run the stateful workflow-spec interview.",
+          "sourceId": "mattpocock/grilling",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [
+        "stateful-workspace-file-write-delete"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "上游 in-progress/beta：作者说明可能改变或移除，且不随上游常规插件发布。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "setup-ts-deep-modules",
+      "sourceId": "mattpocock/setup-ts-deep-modules",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "in-progress",
+      "stability": "beta",
+      "sourcePath": "skills/in-progress/setup-ts-deep-modules",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/in-progress/setup-ts-deep-modules",
+      "target": "intake/mattpocock-all-2026-10-09/in-progress/setup-ts-deep-modules",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "29acca66ac99d4532e2a6f0370d8125d7cba1e87c9ac66573203c75189d3e6c7",
+        "agents/openai.yaml": "159f680217d50747702620c05fd65734a152185b3219a8ca5ee4630878a354fa",
+        "dependency-cruiser.config.cjs": "3c4973bec69f73b2117654abf9e666a7c28665b213be20e6d39869e29842428e"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "7e30047eaeda175de5d93886596a37baf365bb90",
+          "size": 7546,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "5d0581bdd4f9337cfb1e13feb7e1e18f43ea9db1",
+          "size": 149,
+          "mode": "100644"
+        },
+        "dependency-cruiser.config.cjs": {
+          "gitBlobSha": "54030ede7d36b7f72fc0f645fa414efa9b6f63ed",
+          "size": 3712,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 2,
+        "bundledFileCount": 4,
+        "bundledNonMarkdownFileCount": 3,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:dependency-install-and-lint",
+        "project-configuration-edit"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "上游 in-progress/beta：作者说明可能改变或移除，且不随上游常规插件发布。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "writing-beats",
+      "sourceId": "mattpocock/writing-beats",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "in-progress",
+      "stability": "beta",
+      "sourcePath": "skills/in-progress/writing-beats",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/in-progress/writing-beats",
+      "target": "intake/mattpocock-all-2026-10-09/in-progress/writing-beats",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+        "agents/openai.yaml": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "3d3b25b605491adc5c62ae5423127717a94b9632",
+          "size": 4855,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "e8eaa188d4c70b582eed2d1775fe4c4ea3562b25",
+          "size": 142,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "project-document-write"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "上游 in-progress/beta：作者说明可能改变或移除，且不随上游常规插件发布。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "writing-fragments",
+      "sourceId": "mattpocock/writing-fragments",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "in-progress",
+      "stability": "beta",
+      "sourcePath": "skills/in-progress/writing-fragments",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/in-progress/writing-fragments",
+      "target": "intake/mattpocock-all-2026-10-09/in-progress/writing-fragments",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+        "agents/openai.yaml": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "c7c889b880cf9c8d289119dea5ff240641b615ca",
+          "size": 3558,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "be3713e91e3ddc6c71e04e6b512b6ad6502d7cc8",
+          "size": 140,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "project-document-write"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "上游 in-progress/beta：作者说明可能改变或移除，且不随上游常规插件发布。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "writing-shape",
+      "sourceId": "mattpocock/writing-shape",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "in-progress",
+      "stability": "beta",
+      "sourcePath": "skills/in-progress/writing-shape",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/in-progress/writing-shape",
+      "target": "intake/mattpocock-all-2026-10-09/in-progress/writing-shape",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72",
+        "agents/openai.yaml": "56de45430e23104ff178415f5ecf7821d51a9cfabd8814b1607ebf39da2ef5cd"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "02f2866d13e72504e010f2ad3458eb9b36b876db",
+          "size": 5922,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "87e0c736be148002f9db275258cd2f405643ad7b",
+          "size": 144,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "project-document-write"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "上游 in-progress/beta：作者说明可能改变或移除，且不随上游常规插件发布。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "git-guardrails-claude-code",
+      "sourceId": "mattpocock/git-guardrails-claude-code",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "misc",
+      "stability": "misc-frozen",
+      "sourcePath": "skills/misc/git-guardrails-claude-code",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/misc/git-guardrails-claude-code",
+      "target": "intake/mattpocock-all-2026-10-09/misc/git-guardrails-claude-code",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+        "agents/openai.yaml": "d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
+        "scripts/block-dangerous-git.sh": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "58bcdd875b164093b95f436fa32a65c6cb5eb572",
+          "size": 2313,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "3f5d756f1b9b97d94cef1473fb480ccda5fdfbc1",
+          "size": 112,
+          "mode": "100644"
+        },
+        "scripts/block-dangerous-git.sh": {
+          "gitBlobSha": "c40b59cb47880fc9da8fe4179bd742f51f09d17d",
+          "size": 507,
+          "mode": "100755"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 2,
+        "bundledFileCount": 4,
+        "bundledNonMarkdownFileCount": 3,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:bash-hook",
+        "claude-settings-write",
+        "jq"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "migrate-to-shoehorn",
+      "sourceId": "mattpocock/migrate-to-shoehorn",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "misc",
+      "stability": "misc-frozen",
+      "sourcePath": "skills/misc/migrate-to-shoehorn",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/misc/migrate-to-shoehorn",
+      "target": "intake/mattpocock-all-2026-10-09/misc/migrate-to-shoehorn",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+        "agents/openai.yaml": "395c2db852e66a199f1cd07f7ed92d66cb6f0787460c5475926f1a5e778b699d"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "ae4f965e204fc93cedbc4e2c306e92829d93f800",
+          "size": 2795,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "3bd79ee2b502075c6d1fe40e6fe98f4fe3f3c5f5",
+          "size": 110,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:npm-install-and-typecheck",
+        "project-test-edit"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "scaffold-exercises",
+      "sourceId": "mattpocock/scaffold-exercises",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "misc",
+      "stability": "misc-frozen",
+      "sourcePath": "skills/misc/scaffold-exercises",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/misc/scaffold-exercises",
+      "target": "intake/mattpocock-all-2026-10-09/misc/scaffold-exercises",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+        "agents/openai.yaml": "525b33913340bea7947ad2de17f2a7c5fb94be543345fe80ae753b9a44ba601d"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "d87df28e7d8abb4e57ecc6e47d71c274d16054c7",
+          "size": 3589,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "963723a58973effa256cbfe0f23a7bcc03a374b8",
+          "size": 108,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:ai-hero-cli",
+        "project-file-write"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "setup-pre-commit",
+      "sourceId": "mattpocock/setup-pre-commit",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "misc",
+      "stability": "misc-frozen",
+      "sourcePath": "skills/misc/setup-pre-commit",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/misc/setup-pre-commit",
+      "target": "intake/mattpocock-all-2026-10-09/misc/setup-pre-commit",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "agents/openai.yaml": "acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "1b9708168263067adb4684d06ebb8f4ccfe9682c",
+          "size": 2258,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "e5a1c63df9e0703893cdad799bd5e2a6b5e6939d",
+          "size": 99,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "shell:package-install",
+        "git-hooks-configuration"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "grill-me",
+      "sourceId": "mattpocock/grill-me",
+      "disposition": "existing-qualified",
+      "upstreamCategory": "productivity",
+      "stability": "upstream-main",
+      "sourcePath": "skills/productivity/grill-me",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/grill-me",
+      "target": "skills/productivity/grill-me/1.0.0",
+      "reusedExistingPackage": true,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "3947ff9c4ad980d14fc07fccbf659d47c114e81d",
+          "size": 157,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "4d6fb0c746c5d21364dce5d0cf8c51eab9712e7b",
+          "size": 137,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [
+        {
+          "id": "grilling",
+          "kind": "required",
+          "when": "The wrapper directly invokes grilling.",
+          "sourceId": "mattpocock/grilling",
+          "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+          "contentStatus": "collected; not necessarily qualified for installation"
+        }
+      ],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "grilling",
+      "sourceId": "mattpocock/grilling",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "productivity",
+      "stability": "upstream-main",
+      "sourcePath": "skills/productivity/grilling",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/grilling",
+      "target": "intake/mattpocock-all-2026-10-09/productivity/grilling",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "df69d9936880cd3314c28858c6c52f48db23b856",
+          "size": 2049,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "ddbdb96139c0c1dfe6bca698f39d0465674b8a39",
+          "size": 113,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "当前快照与已有 qualified 1.0.0 不同，保留旧版本并单独收集新原文；未覆盖既有审核。"
+      ]
+    },
+    {
+      "id": "handoff",
+      "sourceId": "mattpocock/handoff",
+      "disposition": "needs-testing",
+      "upstreamCategory": "productivity",
+      "stability": "upstream-main",
+      "sourcePath": "skills/productivity/handoff",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/handoff",
+      "target": "skills/productivity/handoff/1.0.0",
+      "reusedExistingPackage": true,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+        "agents/openai.yaml": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "a224edc643a20ddb989f9bca1547440169159810",
+          "size": 940,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "6e1d8da121beceddc2f9ec7fa8714c1d914dd11a",
+          "size": 141,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "teach",
+      "sourceId": "mattpocock/teach",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "productivity",
+      "stability": "upstream-main",
+      "sourcePath": "skills/productivity/teach",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/teach",
+      "target": "intake/mattpocock-all-2026-10-09/productivity/teach",
+      "reusedExistingPackage": false,
+      "files": {
+        "GLOSSARY-FORMAT.md": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+        "LEARNING-RECORD-FORMAT.md": "701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "MISSION-FORMAT.md": "8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
+        "RESOURCES-FORMAT.md": "e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec",
+        "SKILL.md": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
+        "agents/openai.yaml": "5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f"
+      },
+      "upstreamFiles": {
+        "GLOSSARY-FORMAT.md": {
+          "gitBlobSha": "fdd7e366ad9760588b28981e42b3d3b561e56aca",
+          "size": 2122,
+          "mode": "100644"
+        },
+        "LEARNING-RECORD-FORMAT.md": {
+          "gitBlobSha": "953c61422776b47612c3c945920358ad7b5daee7",
+          "size": 2747,
+          "mode": "100644"
+        },
+        "MISSION-FORMAT.md": {
+          "gitBlobSha": "45250bb1bad70988bf381625931df64645e10246",
+          "size": 1540,
+          "mode": "100644"
+        },
+        "RESOURCES-FORMAT.md": {
+          "gitBlobSha": "18b588c8b6f96a50ae2352f264928c643d2782e4",
+          "size": 1924,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "493fa3bae0dada971c4dfb965790e56920b1dced",
+          "size": 9733,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "3452a850e3b0c1f0a3d41b2bfd45164d2d38d7f6",
+          "size": 139,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 6,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 7,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [
+        "stateful-workspace-file-write",
+        "optional-web-research"
+      ],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。",
+        "需要的宿主能力尚未逐项运行验证；收集文件不代表已安装其第三方工具或获得外部写入授权。"
+      ]
+    },
+    {
+      "id": "to-questionnaire",
+      "sourceId": "mattpocock/to-questionnaire",
+      "disposition": "needs-testing",
+      "upstreamCategory": "productivity",
+      "stability": "upstream-main",
+      "sourcePath": "skills/productivity/to-questionnaire",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/to-questionnaire",
+      "target": "skills/productivity/to-questionnaire/1.0.0",
+      "reusedExistingPackage": true,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "agents/openai.yaml": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "dadd0c00d6a350acaa15bb9ca1b96b20ead684ca",
+          "size": 2904,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "a58d14765beb4acb4c9708b516310558e1308a22",
+          "size": 166,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    },
+    {
+      "id": "wait-what",
+      "sourceId": "mattpocock/wait-what",
+      "disposition": "intake-needs-review",
+      "upstreamCategory": "productivity",
+      "stability": "upstream-main",
+      "sourcePath": "skills/productivity/wait-what",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/wait-what",
+      "target": "intake/mattpocock-all-2026-10-09/productivity/wait-what",
+      "reusedExistingPackage": false,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+        "agents/openai.yaml": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999"
+      },
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "9b15cd1a7dda0854ca093e29e3e0de57e241b2ac",
+          "size": 396,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "6f7a9c33f99ec4ba70d986d6fc0de06c8b811bc3",
+          "size": 158,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 2,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 3,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。",
+        "候选包不进入 MCP 可安装索引；继续执行挑选、权限与宿主适配、人工验收。"
+      ]
+    },
+    {
+      "id": "writing-for-agents",
+      "sourceId": "mattpocock/writing-for-agents",
+      "disposition": "needs-testing",
+      "upstreamCategory": "productivity",
+      "stability": "upstream-main",
+      "sourcePath": "skills/productivity/writing-for-agents",
+      "sourceUrl": "https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/writing-for-agents",
+      "target": "skills/productivity/writing-for-agents/1.0.0",
+      "reusedExistingPackage": true,
+      "files": {
+        "LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL-MECHANICS.md": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+        "SKILL.md": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+        "agents/openai.yaml": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+      },
+      "upstreamFiles": {
+        "SKILL-MECHANICS.md": {
+          "gitBlobSha": "9cdbdb22aadc438755392216e75ad9a14cc9832e",
+          "size": 2629,
+          "mode": "100644"
+        },
+        "SKILL.md": {
+          "gitBlobSha": "a37608daf6e835e767deecfb498facecaaba82ba",
+          "size": 10886,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "079c933b75743dec18b5d0c01006def20b6aad26",
+          "size": 102,
+          "mode": "100644"
+        }
+      },
+      "completeness": {
+        "upstreamFileCount": 3,
+        "upstreamNonMarkdownFileCount": 1,
+        "bundledFileCount": 4,
+        "bundledNonMarkdownFileCount": 2,
+        "allUpstreamFilesPresent": true,
+        "allUpstreamBytesMatch": true,
+        "symlinks": [],
+        "gitlinks": [],
+        "lfsPointers": [],
+        "sharedLocalResourcesOutsideSkillDirectory": []
+      },
+      "skillDependencies": [],
+      "requiredHostCapabilities": [],
+      "limitations": [
+        "完整原始目录已保存；本次仅核验文件和来源，未执行上游脚本，也未增加人工或跨宿主运行验收。"
+      ]
+    }
+  ],
+  "thirdPartyAttribution": [
+    {
+      "recordId": "pr",
+      "attributionFile": "intake/mattpocock-all-2026-10-09/engineering/pr/CREDITS.md",
+      "sourceFrom": "Original SKILL.md metadata.credits.url identifies humanlayer/skills; CREDITS.md retains its original humanlayer/humanlayer link.",
+      "upstream": "https://github.com/humanlayer/skills",
+      "commit": "653b6411c1f70c275a18e37673b042ff99f67ceb",
+      "sourcePath": "plugins/show-me/skills/show-me/SKILL.md",
+      "sourceGitBlobSha": "f0ccd047c136d7b702b385e0ecad775ccb773eae",
+      "sourceSha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100",
+      "license": "MIT",
+      "licenseSource": "https://github.com/humanlayer/skills/blob/653b6411c1f70c275a18e37673b042ff99f67ceb/LICENSE",
+      "licenseGitBlobSha": "f7ad6f4a1d5ed9bbf0589c172c6360587d1530e3",
+      "bundledLicense": "intake/mattpocock-all-2026-10-09/engineering/pr/LICENSE-HumanLayer.txt",
+      "verification": "Read the original referenced show-me file and repository MIT license at this fixed commit; the referenced visual examples correspond to the reproduced Summary section. Original credit retained and complete HumanLayer license added."
+    }
+  ],
+  "verification": {
+    "method": "Enumerated Git tree at fixed pin; copied complete skill directories; compared every original file byte-for-byte and computed SHA-256 and Git blob SHA; audited named cross-skill calls and their target mapping.",
+    "runtimeExecuted": false,
+    "humanEvaluationAdded": false,
+    "mcpQualificationAdded": false,
+    "existingVersionContentChanged": false
+  }
+}

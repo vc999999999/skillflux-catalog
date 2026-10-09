@@ -115,7 +115,45 @@
           "original": "https://github.com/morluto/rea/blob/main/docs/web-network-captures.md",
           "pinned": "https://github.com/morluto/rea/blob/c701376777212ec9acfd10c97f45b1eaf0c885c6/docs/web-network-captures.md"
         }
-      ]
+      ],
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "629a727312738dfc6cb47c7607674399ed48c629",
+          "size": 12527
+        },
+        "references/android-applications.md": {
+          "gitBlobSha": "297e88677c5eef4762bc39e61525edb9f77e79d6",
+          "size": 1756
+        },
+        "references/evidence-workflows.md": {
+          "gitBlobSha": "b78dbf40a91755f760bd98785204d681ff10932a",
+          "size": 1946
+        },
+        "references/javascript-applications.md": {
+          "gitBlobSha": "e19c3cdc8371b53a16b59b3be27b89d544478df8",
+          "size": 3180
+        },
+        "references/native-and-artifacts.md": {
+          "gitBlobSha": "bf42555e86070fd7fed515f0a6f47eade829b412",
+          "size": 7562
+        },
+        "references/runtime-observation.md": {
+          "gitBlobSha": "3e16a3e19e0957a5c4cf3660e2bca96f78062290",
+          "size": 1811
+        }
+      },
+      "completeness": {
+        "verifiedAt": "2026-10-09T08:58:09.785009+08:00",
+        "timeZone": "Asia/Shanghai",
+        "sourceDirectoryFileCount": 6,
+        "targetFileCount": 7,
+        "allSourceFilesPreserved": true,
+        "sourceDirectoryInventory": "Complete recursive Git blob inventory at the fixed upstream commit, excluding added catalog licenses and notices.",
+        "verification": "Every source byte and Git file mode was compared with the uploaded catalog package. Added licenses remain covered by the files SHA-256 inventory. No upstream code was executed.",
+        "externalDependencies": [
+          "REA MCP server or rea-agents CLI and target-specific analysis providers are separate runtime dependencies, not omitted skill-directory files. Seven same-repository documentation links remain optional upstream supplemental guides; the skill directory includes all five local references."
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,472 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "commit": "92ace75ac21efe19a620434e0ca4e356081fe807",
+  "importedAt": "2026-10-09T01:00:14.798463Z",
+  "license": "MIT",
+  "licenseSource": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/92ace75ac21efe19a620434e0ca4e356081fe807/LICENSE.md",
+  "notes": "Complete raw directories of two selected workflows plus scientific-schematics support, in original repository-relative layout. Scripts copied for review, never executed. Existing 2026-10-08 intake is not changed. Python/package/API services are external runtime requirements, not vendored dependencies.",
+  "records": [
+    {
+      "id": "scientific-critical-thinking",
+      "disposition": "intake",
+      "role": "selected",
+      "sourcePath": "skills/scientific-critical-thinking",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/scientific-critical-thinking",
+      "target": "intake/scientific-agent-skills-2026-10-09/collection/skills/scientific-critical-thinking",
+      "directoryUnit": "intake/scientific-agent-skills-2026-10-09/collection",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "2a2fc151b5b13e4e11ece7410f21a14d5b25e30d",
+          "size": 13146,
+          "mode": "100644"
+        },
+        "references/common_biases.md": {
+          "gitBlobSha": "0acba93293aaf6df629cc00212c9e86a184efdb0",
+          "size": 12368,
+          "mode": "100644"
+        },
+        "references/core_capabilities.md": {
+          "gitBlobSha": "ca7fec36594abd20921d2aa2ae15e9363d3d58b1",
+          "size": 16975,
+          "mode": "100644"
+        },
+        "references/evidence_hierarchy.md": {
+          "gitBlobSha": "e4b4946886cee0b1e35b24309e162e0f9ca6f14b",
+          "size": 17435,
+          "mode": "100644"
+        },
+        "references/experimental_design.md": {
+          "gitBlobSha": "4be76ae49eb6339e6a72c8d3ee69338c4ea3e347",
+          "size": 18227,
+          "mode": "100644"
+        },
+        "references/logical_fallacies.md": {
+          "gitBlobSha": "336a0407f4397f8ad9b218fc4156ef3473d19f70",
+          "size": 18659,
+          "mode": "100644"
+        },
+        "references/review_sources.md": {
+          "gitBlobSha": "0241f4aa470f86473cd8be196edeff07a274b261",
+          "size": 7557,
+          "mode": "100644"
+        },
+        "references/scientific_method.md": {
+          "gitBlobSha": "4dee3644c01de3bec9250d19efa58a0a13cbee59",
+          "size": 7641,
+          "mode": "100644"
+        },
+        "references/statistical_pitfalls.md": {
+          "gitBlobSha": "1e78cb2d3c6873e7d8289009cc7c9fb772def542",
+          "size": 21151,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "SKILL.md": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4",
+        "references/common_biases.md": "641e8e8e6dfadac1643ea8691b7d3e4e58cf013f134cd42c71301878096a5a39",
+        "references/core_capabilities.md": "0f337b96aa2d7453433a17824368fbd0638b9469d4f90a5fd23f4167c9dee180",
+        "references/evidence_hierarchy.md": "534fbe991ecfb2d162f755004dc528118ce74a78862917c2911595a522d76e6c",
+        "references/experimental_design.md": "eca7e42025393984c07676f3d4bc354d217e5604dc2209c76215d31953a7c74c",
+        "references/logical_fallacies.md": "becfc5bfac7b831dca67cc442cd0fcb42d8eea527a6fc2921c1b704e592ff593",
+        "references/review_sources.md": "71e75106f36f3e69b28959ad1fec503ccdb21b7f5361ab230173e4812accbf62",
+        "references/scientific_method.md": "5aa925b97c7a916f819dafc8b42a9c24e4bd3eb2836594e724f1e7f9ae75ea0f",
+        "references/statistical_pitfalls.md": "0c43204a0a81110cfeb7c982fa4caa89f274bdcebf096e09e5adfccf31241cb9"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "LICENSE.md",
+        "sha256": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 134227,
+        "fileCount": 10,
+        "failures": []
+      }
+    },
+    {
+      "id": "scientific-brainstorming",
+      "disposition": "intake",
+      "role": "selected",
+      "sourcePath": "skills/scientific-brainstorming",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/scientific-brainstorming",
+      "target": "intake/scientific-agent-skills-2026-10-09/collection/skills/scientific-brainstorming",
+      "directoryUnit": "intake/scientific-agent-skills-2026-10-09/collection",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "487a1a0e31c6bf270b3e80818798bab9b4ebc0b9",
+          "size": 14658,
+          "mode": "100644"
+        },
+        "references/brainstorming_methods.md": {
+          "gitBlobSha": "df9621cf92d9dd980c0c3b8282cf083d1b82fe9e",
+          "size": 12505,
+          "mode": "100644"
+        },
+        "references/facilitation_workflows.md": {
+          "gitBlobSha": "a36945c809b2a1a4fe3646da9078e8f6c54e232d",
+          "size": 10016,
+          "mode": "100644"
+        },
+        "references/idea_evaluation.md": {
+          "gitBlobSha": "c451c93900c9933b89d8fa5d11a3beb50333d9d3",
+          "size": 12165,
+          "mode": "100644"
+        },
+        "references/responsible_ai.md": {
+          "gitBlobSha": "0dd4c4e64a982e5f68fe0751268f20b9a30f97e8",
+          "size": 10584,
+          "mode": "100644"
+        },
+        "references/sources.md": {
+          "gitBlobSha": "0391482bca0607e520261e1d96ceee9a4c329029",
+          "size": 17660,
+          "mode": "100644"
+        },
+        "scripts/_common.py": {
+          "gitBlobSha": "dec0b1008ca40472841738fad3bb505d6382a8fb",
+          "size": 9933,
+          "mode": "100644"
+        },
+        "scripts/evaluate_matrix.py": {
+          "gitBlobSha": "2dae159650c70a90a084b0639fa36319bdf8af59",
+          "size": 20137,
+          "mode": "100644"
+        },
+        "scripts/session_scaffold.py": {
+          "gitBlobSha": "6da33f5b291bcf39de0c95cd7d6e67b74fc2cd9a",
+          "size": 7930,
+          "mode": "100644"
+        },
+        "scripts/validate_register.py": {
+          "gitBlobSha": "7d1f9dbf0c27f2b382780a7cbf02b4b5bbc7d1f0",
+          "size": 20872,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "SKILL.md": "06f73b71556356a7f488c369b9445d7943543a3f14d159b2168fd3f621d6f8a9",
+        "references/brainstorming_methods.md": "2c3749f38c4a9ba0f310b04679b870cbf603d923aa30b82dd92720a7d2977632",
+        "references/facilitation_workflows.md": "bfb2acc43472f4649b10f2c3db02180fa9c86636f375f82d8bc36b28075a5ccc",
+        "references/idea_evaluation.md": "5a5fcb319cdcc151a9acd17e0e501d270e55f7a9fb6a829c87c43af5b5705d14",
+        "references/responsible_ai.md": "d5b61b2555b72914d1e2cfb6e84496ce80fc2d24a3001c9eefa04cca336b9830",
+        "references/sources.md": "ab4ab107ea4f94b21ce85aec6e63d3701e56a546c4840ccfd8dab5f2cdd52210",
+        "scripts/_common.py": "271bc1a013d83dc1bab41dc3fd3d70bae3d6f7549db70c678debfc50251efe19",
+        "scripts/evaluate_matrix.py": "ed38f33a7b35045217fe40b6b57ebb370c584891392899b74f4e4530e72f2215",
+        "scripts/session_scaffold.py": "0af7b297a8f92f1c7456b7e14c717a017315b4a71b603ca5402434dee98db5ba",
+        "scripts/validate_register.py": "765e57854efe9e28b4965d23b073eb67ffdc8cc0c7ac0b47d9240e4cc8ea1bd5"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "LICENSE.md",
+        "sha256": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": false,
+        "totalBytes": 137528,
+        "fileCount": 11,
+        "failures": [
+          "references/responsible_ai.md: safety-bypass pattern requires rejection"
+        ]
+      }
+    },
+    {
+      "id": "scientific-schematics",
+      "disposition": "intake",
+      "role": "support",
+      "sourcePath": "skills/scientific-schematics",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807/skills/scientific-schematics",
+      "target": "intake/scientific-agent-skills-2026-10-09/collection/skills/scientific-schematics",
+      "directoryUnit": "intake/scientific-agent-skills-2026-10-09/collection",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "5f2ff1b3f73818b05c649438e71f50961d01f2eb",
+          "size": 20304,
+          "mode": "100644"
+        },
+        "references/best_practices.md": {
+          "gitBlobSha": "86d326e4afb010ec2aa11d2d6c29bdc4c881d8dd",
+          "size": 20486,
+          "mode": "100644"
+        },
+        "references/iterative_refinement.md": {
+          "gitBlobSha": "ff238a91286a2975109c498a849c6a066bf6d0af",
+          "size": 15304,
+          "mode": "100644"
+        },
+        "scripts/example_usage.sh": {
+          "gitBlobSha": "b321f6861f0308a3a88cad7a923681ba2d9bd28c",
+          "size": 3548,
+          "mode": "100755"
+        },
+        "scripts/generate_schematic.py": {
+          "gitBlobSha": "10aacec40261d1dfb4c51c406e1d12590ab865bb",
+          "size": 7782,
+          "mode": "100644"
+        },
+        "scripts/generate_schematic_ai.py": {
+          "gitBlobSha": "a7f586678624e23fb70b271188b70fa539d8fc99",
+          "size": 35684,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "SKILL.md": "e15d761ef88013c98fd5b19cc144aba7336e20dbadf340db17bd1ba2227d1d69",
+        "references/best_practices.md": "a991e1f2219feaffea93360c39cb5a7102c7cd8985c0c7aafc68fa617d3b8581",
+        "references/iterative_refinement.md": "f151ecba3c786b55f6f4b505ddca01957deabbc8f5dc9dcd0d3e27e766c3da75",
+        "scripts/example_usage.sh": "921e4c2332f83cafa75491be4bb92dd863c86cd9118ef0e04028a7eb74a9ae0b",
+        "scripts/generate_schematic.py": "0c81ce099d5ab9aa3d3c486aa9bd3e81ee1117e18a54db14bb0a68de61eaa4bc",
+        "scripts/generate_schematic_ai.py": "7316f2df92f442b8c60a5dd2bd8b504e17449d4be89352e5af24be2239700046"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "LICENSE.md",
+        "sha256": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 104176,
+        "fileCount": 7,
+        "failures": []
+      }
+    },
+    {
+      "id": "scientific-methods-collection",
+      "disposition": "intake",
+      "role": "collection-unit",
+      "sourcePath": "",
+      "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807",
+      "target": "intake/scientific-agent-skills-2026-10-09/collection",
+      "inventoryScope": "selected-directories-and-shared-resources",
+      "selectedSourcePaths": [
+        "LICENSE.md",
+        "skills/scientific-critical-thinking",
+        "skills/scientific-brainstorming",
+        "skills/scientific-schematics"
+      ],
+      "upstreamFiles": {
+        "LICENSE.md": {
+          "gitBlobSha": "eb246475fd5a66b9bb56176f3a718984632dd98d",
+          "size": 1068,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/SKILL.md": {
+          "gitBlobSha": "487a1a0e31c6bf270b3e80818798bab9b4ebc0b9",
+          "size": 14658,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/references/brainstorming_methods.md": {
+          "gitBlobSha": "df9621cf92d9dd980c0c3b8282cf083d1b82fe9e",
+          "size": 12505,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/references/facilitation_workflows.md": {
+          "gitBlobSha": "a36945c809b2a1a4fe3646da9078e8f6c54e232d",
+          "size": 10016,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/references/idea_evaluation.md": {
+          "gitBlobSha": "c451c93900c9933b89d8fa5d11a3beb50333d9d3",
+          "size": 12165,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/references/responsible_ai.md": {
+          "gitBlobSha": "0dd4c4e64a982e5f68fe0751268f20b9a30f97e8",
+          "size": 10584,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/references/sources.md": {
+          "gitBlobSha": "0391482bca0607e520261e1d96ceee9a4c329029",
+          "size": 17660,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/scripts/_common.py": {
+          "gitBlobSha": "dec0b1008ca40472841738fad3bb505d6382a8fb",
+          "size": 9933,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/scripts/evaluate_matrix.py": {
+          "gitBlobSha": "2dae159650c70a90a084b0639fa36319bdf8af59",
+          "size": 20137,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/scripts/session_scaffold.py": {
+          "gitBlobSha": "6da33f5b291bcf39de0c95cd7d6e67b74fc2cd9a",
+          "size": 7930,
+          "mode": "100644"
+        },
+        "skills/scientific-brainstorming/scripts/validate_register.py": {
+          "gitBlobSha": "7d1f9dbf0c27f2b382780a7cbf02b4b5bbc7d1f0",
+          "size": 20872,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/SKILL.md": {
+          "gitBlobSha": "2a2fc151b5b13e4e11ece7410f21a14d5b25e30d",
+          "size": 13146,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/common_biases.md": {
+          "gitBlobSha": "0acba93293aaf6df629cc00212c9e86a184efdb0",
+          "size": 12368,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/core_capabilities.md": {
+          "gitBlobSha": "ca7fec36594abd20921d2aa2ae15e9363d3d58b1",
+          "size": 16975,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/evidence_hierarchy.md": {
+          "gitBlobSha": "e4b4946886cee0b1e35b24309e162e0f9ca6f14b",
+          "size": 17435,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/experimental_design.md": {
+          "gitBlobSha": "4be76ae49eb6339e6a72c8d3ee69338c4ea3e347",
+          "size": 18227,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/logical_fallacies.md": {
+          "gitBlobSha": "336a0407f4397f8ad9b218fc4156ef3473d19f70",
+          "size": 18659,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/review_sources.md": {
+          "gitBlobSha": "0241f4aa470f86473cd8be196edeff07a274b261",
+          "size": 7557,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/scientific_method.md": {
+          "gitBlobSha": "4dee3644c01de3bec9250d19efa58a0a13cbee59",
+          "size": 7641,
+          "mode": "100644"
+        },
+        "skills/scientific-critical-thinking/references/statistical_pitfalls.md": {
+          "gitBlobSha": "1e78cb2d3c6873e7d8289009cc7c9fb772def542",
+          "size": 21151,
+          "mode": "100644"
+        },
+        "skills/scientific-schematics/SKILL.md": {
+          "gitBlobSha": "5f2ff1b3f73818b05c649438e71f50961d01f2eb",
+          "size": 20304,
+          "mode": "100644"
+        },
+        "skills/scientific-schematics/references/best_practices.md": {
+          "gitBlobSha": "86d326e4afb010ec2aa11d2d6c29bdc4c881d8dd",
+          "size": 20486,
+          "mode": "100644"
+        },
+        "skills/scientific-schematics/references/iterative_refinement.md": {
+          "gitBlobSha": "ff238a91286a2975109c498a849c6a066bf6d0af",
+          "size": 15304,
+          "mode": "100644"
+        },
+        "skills/scientific-schematics/scripts/example_usage.sh": {
+          "gitBlobSha": "b321f6861f0308a3a88cad7a923681ba2d9bd28c",
+          "size": 3548,
+          "mode": "100755"
+        },
+        "skills/scientific-schematics/scripts/generate_schematic.py": {
+          "gitBlobSha": "10aacec40261d1dfb4c51c406e1d12590ab865bb",
+          "size": 7782,
+          "mode": "100644"
+        },
+        "skills/scientific-schematics/scripts/generate_schematic_ai.py": {
+          "gitBlobSha": "a7f586678624e23fb70b271188b70fa539d8fc99",
+          "size": 35684,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "skills/scientific-brainstorming/LICENSE.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "skills/scientific-brainstorming/SKILL.md": "06f73b71556356a7f488c369b9445d7943543a3f14d159b2168fd3f621d6f8a9",
+        "skills/scientific-brainstorming/references/brainstorming_methods.md": "2c3749f38c4a9ba0f310b04679b870cbf603d923aa30b82dd92720a7d2977632",
+        "skills/scientific-brainstorming/references/facilitation_workflows.md": "bfb2acc43472f4649b10f2c3db02180fa9c86636f375f82d8bc36b28075a5ccc",
+        "skills/scientific-brainstorming/references/idea_evaluation.md": "5a5fcb319cdcc151a9acd17e0e501d270e55f7a9fb6a829c87c43af5b5705d14",
+        "skills/scientific-brainstorming/references/responsible_ai.md": "d5b61b2555b72914d1e2cfb6e84496ce80fc2d24a3001c9eefa04cca336b9830",
+        "skills/scientific-brainstorming/references/sources.md": "ab4ab107ea4f94b21ce85aec6e63d3701e56a546c4840ccfd8dab5f2cdd52210",
+        "skills/scientific-brainstorming/scripts/_common.py": "271bc1a013d83dc1bab41dc3fd3d70bae3d6f7549db70c678debfc50251efe19",
+        "skills/scientific-brainstorming/scripts/evaluate_matrix.py": "ed38f33a7b35045217fe40b6b57ebb370c584891392899b74f4e4530e72f2215",
+        "skills/scientific-brainstorming/scripts/session_scaffold.py": "0af7b297a8f92f1c7456b7e14c717a017315b4a71b603ca5402434dee98db5ba",
+        "skills/scientific-brainstorming/scripts/validate_register.py": "765e57854efe9e28b4965d23b073eb67ffdc8cc0c7ac0b47d9240e4cc8ea1bd5",
+        "skills/scientific-critical-thinking/LICENSE.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "skills/scientific-critical-thinking/SKILL.md": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4",
+        "skills/scientific-critical-thinking/references/common_biases.md": "641e8e8e6dfadac1643ea8691b7d3e4e58cf013f134cd42c71301878096a5a39",
+        "skills/scientific-critical-thinking/references/core_capabilities.md": "0f337b96aa2d7453433a17824368fbd0638b9469d4f90a5fd23f4167c9dee180",
+        "skills/scientific-critical-thinking/references/evidence_hierarchy.md": "534fbe991ecfb2d162f755004dc528118ce74a78862917c2911595a522d76e6c",
+        "skills/scientific-critical-thinking/references/experimental_design.md": "eca7e42025393984c07676f3d4bc354d217e5604dc2209c76215d31953a7c74c",
+        "skills/scientific-critical-thinking/references/logical_fallacies.md": "becfc5bfac7b831dca67cc442cd0fcb42d8eea527a6fc2921c1b704e592ff593",
+        "skills/scientific-critical-thinking/references/review_sources.md": "71e75106f36f3e69b28959ad1fec503ccdb21b7f5361ab230173e4812accbf62",
+        "skills/scientific-critical-thinking/references/scientific_method.md": "5aa925b97c7a916f819dafc8b42a9c24e4bd3eb2836594e724f1e7f9ae75ea0f",
+        "skills/scientific-critical-thinking/references/statistical_pitfalls.md": "0c43204a0a81110cfeb7c982fa4caa89f274bdcebf096e09e5adfccf31241cb9",
+        "skills/scientific-schematics/LICENSE.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+        "skills/scientific-schematics/SKILL.md": "e15d761ef88013c98fd5b19cc144aba7336e20dbadf340db17bd1ba2227d1d69",
+        "skills/scientific-schematics/references/best_practices.md": "a991e1f2219feaffea93360c39cb5a7102c7cd8985c0c7aafc68fa617d3b8581",
+        "skills/scientific-schematics/references/iterative_refinement.md": "f151ecba3c786b55f6f4b505ddca01957deabbc8f5dc9dcd0d3e27e766c3da75",
+        "skills/scientific-schematics/scripts/example_usage.sh": "921e4c2332f83cafa75491be4bb92dd863c86cd9118ef0e04028a7eb74a9ae0b",
+        "skills/scientific-schematics/scripts/generate_schematic.py": "0c81ce099d5ab9aa3d3c486aa9bd3e81ee1117e18a54db14bb0a68de61eaa4bc",
+        "skills/scientific-schematics/scripts/generate_schematic_ai.py": "7316f2df92f442b8c60a5dd2bd8b504e17449d4be89352e5af24be2239700046"
+      },
+      "installable": false,
+      "staticScan": {
+        "passed": false,
+        "totalBytes": 376999,
+        "fileCount": 29,
+        "failures": [
+          "skills/scientific-brainstorming/references/responsible_ai.md: safety-bypass pattern requires rejection"
+        ]
+      }
+    }
+  ],
+  "capabilities": {
+    "scientific-critical-thinking": [
+      "Read/write project documents",
+      "Optional figure branch now has its scientific-schematics source directory in the same collection",
+      "Optional network citation verification"
+    ],
+    "scientific-brainstorming": [
+      "Read/write session artifacts",
+      "Optional Python >=3.11 standard-library CLIs"
+    ],
+    "scientific-schematics": [
+      "Python >=3.10 and requests",
+      "Outbound OpenRouter image and chat APIs",
+      "OPENROUTER_API_KEY; upstream loader can inspect ancestor .env files",
+      "Paid image generation and local output files; requires task-specific authorization"
+    ]
+  },
+  "optionalExternalSkillHandoffs": [
+    "hypothesis-generation",
+    "experimental-design",
+    "statistical-power",
+    "literature-review",
+    "statistical-analysis"
+  ],
+  "verification": {
+    "gitBlobAndSizeMatched": 26,
+    "allSelectedSkillDirectoriesComplete": true,
+    "upstreamScriptsExecuted": false,
+    "humanEvaluation": false,
+    "hostInstallEvaluation": false,
+    "optionalRelatedContent": [],
+    "unresolvedMarkdownTargets": [],
+    "staticScanMeaning": "Only the existing textual scanner was applied. A pass does not grant runtime permissions, human qualification or an installable status. Aggregate collection units may exceed runtime file-count limits and remain intake.",
+    "gitFileModesMatched": 26,
+    "executableFiles": [
+      "intake/scientific-agent-skills-2026-10-09/collection/skills/scientific-schematics/scripts/example_usage.sh"
+    ]
+  }
+}

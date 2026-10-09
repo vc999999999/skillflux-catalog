@@ -1,0 +1,1085 @@
+{
+  "schema": "skillflux-import-audit/v1",
+  "upstream": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "commit": "9fa87d86e34d6c9a1c7cdb0db755c83c780537a0",
+  "importedAt": "2026-10-09T01:00:14.798463Z",
+  "license": "MIT (selected 50-brycewang-aer-skills collection only)",
+  "licenseSource": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/LICENSE",
+  "declaredOriginalSource": "https://github.com/brycewang-stanford/AER-skills",
+  "notes": "Three complete selected skill directories plus three directly referenced support skills and their shared methods/bibliography, complete language templates, referenced executable examples and scaffold helper. Preserves relative layout. The surrounding heterogeneous AERS repository is not copied. Cross-navigation to unselected writing/submission/collection-maintenance material is recorded separately, not silently claimed as runtime closure.",
+  "records": [
+    {
+      "id": "aer-preregistration",
+      "disposition": "intake",
+      "role": "selected",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-preregistration",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-preregistration",
+      "target": "intake/auto-empirical-research-skills-2026-10-09/aer-skills/skills/aer-preregistration",
+      "directoryUnit": "intake/auto-empirical-research-skills-2026-10-09/aer-skills",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "26f0d192762fd0103e48d8882fc6e177c505a49b",
+          "size": 7574,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "41c7d4c8343abc5223699b777948b39064f9af77",
+          "size": 284,
+          "mode": "100644"
+        },
+        "references/pap-template.md": {
+          "gitBlobSha": "72c4229abcc892f5038050bc9caecae2629dc779",
+          "size": 9420,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "SKILL.md": "3d2f03f0540d56a5acabe0bd2dcde769d07847fe4b6664b9d72b710f33155a2e",
+        "agents/openai.yaml": "8c3683cf8c8eca8140e802b3906871c9a215e431d194cfea2b76e43e9d222081",
+        "references/pap-template.md": "a9d72d172851dd94bd77643083f98c8ab5b21c5a12f7506ae7accd9a364ad37a"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "skills/50-brycewang-aer-skills/LICENSE",
+        "sha256": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 18345,
+        "fileCount": 4,
+        "failures": []
+      }
+    },
+    {
+      "id": "aer-identification",
+      "disposition": "intake",
+      "role": "selected",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-identification",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-identification",
+      "target": "intake/auto-empirical-research-skills-2026-10-09/aer-skills/skills/aer-identification",
+      "directoryUnit": "intake/auto-empirical-research-skills-2026-10-09/aer-skills",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "96b31bf288fca789ad905bf334839f5c16c1121b",
+          "size": 11965,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "2b4f0551a5356da563e7956ca0fff688224d1637",
+          "size": 212,
+          "mode": "100644"
+        },
+        "references/estimator-playbook.md": {
+          "gitBlobSha": "81da7ff4640fd486d3a43b50e33d48f2ee355acc",
+          "size": 17337,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "SKILL.md": "43d61741731424c1566ff77c1ac5182eca38138378e7238ba4476185703a62f5",
+        "agents/openai.yaml": "60884602448d896a1e12ccdbc5b2417bbbcecdf83a016e25e301b603acd43e71",
+        "references/estimator-playbook.md": "6071199898370e1bf0b6aab28536e10dd945f3ce40036a14b64d9bd22232dfb9"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "skills/50-brycewang-aer-skills/LICENSE",
+        "sha256": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 30581,
+        "fileCount": 4,
+        "failures": []
+      }
+    },
+    {
+      "id": "aer-replication",
+      "disposition": "intake",
+      "role": "selected",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-replication",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-replication",
+      "target": "intake/auto-empirical-research-skills-2026-10-09/aer-skills/skills/aer-replication",
+      "directoryUnit": "intake/auto-empirical-research-skills-2026-10-09/aer-skills",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "4a7c05b75d0872ff0688454a45709655babd498e",
+          "size": 11433,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "6203824e9c4567a58b941fdd7118a45e626439aa",
+          "size": 211,
+          "mode": "100644"
+        },
+        "references/aea-package-checklist.md": {
+          "gitBlobSha": "0b7e1b3eebd9776b60b506551d8c6c4d7cba4144",
+          "size": 13226,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "SKILL.md": "65c79ca440fe204190bcc4efe27dd19a784882611464592cb7731ce0a92f90ee",
+        "agents/openai.yaml": "1fa83c065abcef5e9fd2c3c947c0fc997bd2c57e8ee5d1a9f7075fcacb01e082",
+        "references/aea-package-checklist.md": "922d2ba1b897e47929da838ce617c2807a6c244f1941062e56a664cd349b0398"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "skills/50-brycewang-aer-skills/LICENSE",
+        "sha256": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 25937,
+        "fileCount": 4,
+        "failures": []
+      }
+    },
+    {
+      "id": "aer-robustness",
+      "disposition": "intake",
+      "role": "support",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-robustness",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-robustness",
+      "target": "intake/auto-empirical-research-skills-2026-10-09/aer-skills/skills/aer-robustness",
+      "directoryUnit": "intake/auto-empirical-research-skills-2026-10-09/aer-skills",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "60f118593b28c8b1a96fc9549c95f16fc94442a3",
+          "size": 10070,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "4078383a845785710f6eb94a2f2baa1f67a56721",
+          "size": 238,
+          "mode": "100644"
+        },
+        "references/robustness-menu.md": {
+          "gitBlobSha": "65c8717fc0b40a90d9686df228e86b4472f08f8c",
+          "size": 12067,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "SKILL.md": "01325fc6e4e23675ac9f926558ba84cbe1177489da7bd5b535f76fa9232521c0",
+        "agents/openai.yaml": "d55bc3b722d31ef4f188e96a9a882f3121d9864337475b89848018384cd02f2c",
+        "references/robustness-menu.md": "c732a7085e2580ca79da9d5fe8741425bbb560cb8fddbde2c5a7970bfa35dbfd"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "skills/50-brycewang-aer-skills/LICENSE",
+        "sha256": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 23442,
+        "fileCount": 4,
+        "failures": []
+      }
+    },
+    {
+      "id": "aer-statspai",
+      "disposition": "intake",
+      "role": "support",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-statspai",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-statspai",
+      "target": "intake/auto-empirical-research-skills-2026-10-09/aer-skills/skills/aer-statspai",
+      "directoryUnit": "intake/auto-empirical-research-skills-2026-10-09/aer-skills",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "fdd4e8bda59e5ec2d734770ed61f8fa501c94974",
+          "size": 11981,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "1ef2a573513be5d4c0f26717b6889912ad93b558",
+          "size": 228,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "SKILL.md": "49e94f6a7090196694743855b311a28554d5ff03603fcb755d6beaf0c847b9da",
+        "agents/openai.yaml": "f26dfe3bd879e99d89076fe41db5d14b099e0b0f2b93ed25ccf90b78673bf71a"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "skills/50-brycewang-aer-skills/LICENSE",
+        "sha256": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 13276,
+        "fileCount": 3,
+        "failures": []
+      }
+    },
+    {
+      "id": "aer-tables-figures",
+      "disposition": "intake",
+      "role": "support",
+      "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-tables-figures",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-tables-figures",
+      "target": "intake/auto-empirical-research-skills-2026-10-09/aer-skills/skills/aer-tables-figures",
+      "directoryUnit": "intake/auto-empirical-research-skills-2026-10-09/aer-skills",
+      "inventoryScope": "complete-skill-directory",
+      "upstreamFiles": {
+        "SKILL.md": {
+          "gitBlobSha": "630331b9081dd728d9f7f6cafe0cf5a642aa93f1",
+          "size": 8200,
+          "mode": "100644"
+        },
+        "agents/openai.yaml": {
+          "gitBlobSha": "1bd191dc9493e0067c8c0441936db1ef33acfe32",
+          "size": 204,
+          "mode": "100644"
+        },
+        "references/exhibit-cookbook.md": {
+          "gitBlobSha": "4be7ce3087f2ff87307dcb24a7dc654edfa8f23b",
+          "size": 9495,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "SKILL.md": "4c04db1e25c01ab900db13a1a0652bfda689db019341e14f77584ad2f8e7bee0",
+        "agents/openai.yaml": "56bcd471a4d5ffaad998ff674120515b23fb72e7a1d424735565f45f87c1fd76",
+        "references/exhibit-cookbook.md": "b997f48a1a54a3183f01c3549aac6411cf05c9e4ad94b999b25dcaccaef57b0b"
+      },
+      "licenseCopy": {
+        "targetPath": "LICENSE.txt",
+        "sourcePath": "skills/50-brycewang-aer-skills/LICENSE",
+        "sha256": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540"
+      },
+      "humanEvaluation": "not-performed",
+      "installable": false,
+      "staticScan": {
+        "passed": true,
+        "totalBytes": 18966,
+        "fileCount": 4,
+        "failures": []
+      }
+    },
+    {
+      "id": "aer-research-collection",
+      "disposition": "intake",
+      "role": "collection-unit",
+      "sourcePath": "skills/50-brycewang-aer-skills",
+      "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills",
+      "target": "intake/auto-empirical-research-skills-2026-10-09/aer-skills",
+      "inventoryScope": "selected-directories-and-shared-resources",
+      "selectedSourcePaths": [
+        "skills/50-brycewang-aer-skills/skills/aer-preregistration",
+        "skills/50-brycewang-aer-skills/skills/aer-identification",
+        "skills/50-brycewang-aer-skills/skills/aer-replication",
+        "skills/50-brycewang-aer-skills/skills/aer-robustness",
+        "skills/50-brycewang-aer-skills/skills/aer-statspai",
+        "skills/50-brycewang-aer-skills/skills/aer-tables-figures",
+        "skills/50-brycewang-aer-skills/templates",
+        "skills/50-brycewang-aer-skills/examples/replication-package-skeleton",
+        "skills/50-brycewang-aer-skills/examples/power-mde-demo",
+        "skills/50-brycewang-aer-skills/examples/lee-bounds-demo",
+        "skills/50-brycewang-aer-skills/examples/sun-abraham-demo",
+        "skills/50-brycewang-aer-skills/examples/sensitivity-rv-demo",
+        "skills/50-brycewang-aer-skills/examples/dml-plr-demo",
+        "skills/50-brycewang-aer-skills/examples/staggered-did-demo",
+        "skills/50-brycewang-aer-skills/examples/lp-did-demo",
+        "skills/50-brycewang-aer-skills/examples/oster-ovb-demo",
+        "skills/50-brycewang-aer-skills/LICENSE",
+        "skills/50-brycewang-aer-skills/references.bib",
+        "skills/50-brycewang-aer-skills/docs/methods-reference.md",
+        "skills/50-brycewang-aer-skills/docs/source-register.md",
+        "skills/50-brycewang-aer-skills/docs/glossary.md",
+        "skills/50-brycewang-aer-skills/docs/design-principles.md",
+        "skills/50-brycewang-aer-skills/examples/aer-exemplars.md",
+        "skills/50-brycewang-aer-skills/examples/modern-aer-exemplars.md",
+        "skills/50-brycewang-aer-skills/examples/_aer_numeric_check.py",
+        "skills/50-brycewang-aer-skills/scripts/scaffold_project.py",
+        "skills/50-brycewang-aer-skills/scripts/statspai_tools.txt"
+      ],
+      "upstreamFiles": {
+        "LICENSE": {
+          "gitBlobSha": "8dd19202b8a21d3ff319fad3da61af7565e4ae8f",
+          "size": 1067,
+          "mode": "100644"
+        },
+        "docs/design-principles.md": {
+          "gitBlobSha": "25e5ab885cf7f289ca64d2e4db9d2f56ec8bc6f2",
+          "size": 4887,
+          "mode": "100644"
+        },
+        "docs/glossary.md": {
+          "gitBlobSha": "9629913b93a95cef35978182ffd24f623642a07f",
+          "size": 20363,
+          "mode": "100644"
+        },
+        "docs/methods-reference.md": {
+          "gitBlobSha": "46b2dc6611081cf78cf245195a252204cd766b4a",
+          "size": 16629,
+          "mode": "100644"
+        },
+        "docs/source-register.md": {
+          "gitBlobSha": "fdc4a5d3d0dc813944c93cdf016d83cbfffc175f",
+          "size": 4294,
+          "mode": "100644"
+        },
+        "examples/_aer_numeric_check.py": {
+          "gitBlobSha": "80b65db40baf101d1d3690e2055c1def240b9857",
+          "size": 2570,
+          "mode": "100644"
+        },
+        "examples/aer-exemplars.md": {
+          "gitBlobSha": "c0cc07a7f659184a07c94f577b37110f8720b39a",
+          "size": 8845,
+          "mode": "100644"
+        },
+        "examples/dml-plr-demo/README.md": {
+          "gitBlobSha": "0677497801f161943c7ac5e9cdb15f8e1ed00aba",
+          "size": 2804,
+          "mode": "100644"
+        },
+        "examples/dml-plr-demo/dml_plr_demo.py": {
+          "gitBlobSha": "f95424156eab6656db0f5f197db9b3e1b9b7cfdd",
+          "size": 9775,
+          "mode": "100644"
+        },
+        "examples/lee-bounds-demo/README.md": {
+          "gitBlobSha": "5e1fb2985b63f3bd028305570c7cf46997896f0c",
+          "size": 3557,
+          "mode": "100644"
+        },
+        "examples/lee-bounds-demo/lee_bounds_demo.py": {
+          "gitBlobSha": "b33055f2b3e757d83c1ed78b4612516994b488f7",
+          "size": 9892,
+          "mode": "100644"
+        },
+        "examples/lp-did-demo/README.md": {
+          "gitBlobSha": "f09721d00620e3abdb6baf3f62ab2b1dc74fab7d",
+          "size": 2996,
+          "mode": "100644"
+        },
+        "examples/lp-did-demo/lp_did_demo.py": {
+          "gitBlobSha": "97b4c2febea66ec89a598738a3e08e1f9395087c",
+          "size": 13150,
+          "mode": "100644"
+        },
+        "examples/modern-aer-exemplars.md": {
+          "gitBlobSha": "098a6a0bc9c609b54c431674fdca718224bffdac",
+          "size": 18601,
+          "mode": "100644"
+        },
+        "examples/oster-ovb-demo/README.md": {
+          "gitBlobSha": "d4dda74c97b64d223a318d4bb42063bb607114b6",
+          "size": 2131,
+          "mode": "100644"
+        },
+        "examples/oster-ovb-demo/oster_ovb_demo.py": {
+          "gitBlobSha": "aa7d32e90bee22cb6c68b05a5032c11ea98eea72",
+          "size": 7451,
+          "mode": "100644"
+        },
+        "examples/power-mde-demo/README.md": {
+          "gitBlobSha": "b45b634686d136beeb80dd856f52c6f81815cc3e",
+          "size": 3159,
+          "mode": "100644"
+        },
+        "examples/power-mde-demo/power_mde_demo.py": {
+          "gitBlobSha": "ee26848c830ef3e2b2402dcdfa4dd8a5415b596f",
+          "size": 7894,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/LICENSE": {
+          "gitBlobSha": "d91edced24cac660376880d780eaa24e609ac43d",
+          "size": 962,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/README.md": {
+          "gitBlobSha": "26ab2b10d841f0fa7f913103e7606d6c1158f010",
+          "size": 6913,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/00_globals.do": {
+          "gitBlobSha": "ea6c263842c70b86bb94d59363ee74fb6ccbd79e",
+          "size": 998,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/00_install_packages.do": {
+          "gitBlobSha": "04f93846a3d37a19b407cd89c83eab46229575c5",
+          "size": 639,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/01_clean.do": {
+          "gitBlobSha": "69ce721d91193aa38b21179db6e6a16671fba6de",
+          "size": 589,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/02_descriptives.do": {
+          "gitBlobSha": "20125ab1980ee655d80cdd73ca27c1bd3646a09f",
+          "size": 278,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/03_main_did.do": {
+          "gitBlobSha": "64e4ec4711f1996ead546ef2e08a06d9cd681ceb",
+          "size": 326,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/04_robustness.do": {
+          "gitBlobSha": "33dc08a267bae3ab73f3e6b9ace141d2151d8d26",
+          "size": 303,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/05_heterogeneity.do": {
+          "gitBlobSha": "4092682b38bed98bf03d68f1f5d0bd6ca8b36ee4",
+          "size": 308,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/06_tables.do": {
+          "gitBlobSha": "bf7ae67b7feda62e5e9f1ebbcc5f4589e0222018",
+          "size": 275,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/code/07_figures.do": {
+          "gitBlobSha": "338ac9f0f9357a2282545defcf1971c1240c10a9",
+          "size": 294,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/data/codebook/.gitkeep": {
+          "gitBlobSha": "2fa992c0b8b5c6acd2bdd4fa31de29d29799bdd5",
+          "size": 5,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/data/codebook/source-register.md": {
+          "gitBlobSha": "5cdbfdfe4696a541ee820db950389100aad950d0",
+          "size": 2106,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/data/intermediate/.gitkeep": {
+          "gitBlobSha": "2fa992c0b8b5c6acd2bdd4fa31de29d29799bdd5",
+          "size": 5,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/data/raw/.gitkeep": {
+          "gitBlobSha": "2fa992c0b8b5c6acd2bdd4fa31de29d29799bdd5",
+          "size": 5,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/docs/.gitkeep": {
+          "gitBlobSha": "2fa992c0b8b5c6acd2bdd4fa31de29d29799bdd5",
+          "size": 5,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/docs/claim-evidence-ledger.csv": {
+          "gitBlobSha": "576d8af3305062333eef6f058ee5a1759db6eb79",
+          "size": 767,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/docs/exhibit-register.md": {
+          "gitBlobSha": "da60f9d23e40bffdf331d1aa4d69ff704062a000",
+          "size": 3231,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/logs/.gitkeep": {
+          "gitBlobSha": "2fa992c0b8b5c6acd2bdd4fa31de29d29799bdd5",
+          "size": 5,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/output/figures/.gitkeep": {
+          "gitBlobSha": "2fa992c0b8b5c6acd2bdd4fa31de29d29799bdd5",
+          "size": 5,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/output/tables/.gitkeep": {
+          "gitBlobSha": "2fa992c0b8b5c6acd2bdd4fa31de29d29799bdd5",
+          "size": 5,
+          "mode": "100644"
+        },
+        "examples/replication-package-skeleton/run_all.do": {
+          "gitBlobSha": "ae24c9aa63d7fadf609a215e450017cca7651ee0",
+          "size": 620,
+          "mode": "100644"
+        },
+        "examples/sensitivity-rv-demo/README.md": {
+          "gitBlobSha": "8eae0507bd3b7d43622bde547f2f2a9425a5acb7",
+          "size": 3693,
+          "mode": "100644"
+        },
+        "examples/sensitivity-rv-demo/sensitivity_rv_demo.py": {
+          "gitBlobSha": "115da61bcbaf97285d63684a679a58f41f1a7bf1",
+          "size": 11475,
+          "mode": "100644"
+        },
+        "examples/staggered-did-demo/README.md": {
+          "gitBlobSha": "5b7a660ecc26df0fa40fb9ba66de373c401a8398",
+          "size": 1464,
+          "mode": "100644"
+        },
+        "examples/staggered-did-demo/staggered_did_demo.R": {
+          "gitBlobSha": "e9d57f903fa1a69cf1bd6f76b37f537de0f8653a",
+          "size": 6882,
+          "mode": "100644"
+        },
+        "examples/staggered-did-demo/staggered_did_demo.py": {
+          "gitBlobSha": "4f87ad7c6bd520aa25a2ade921bd7714a1317e1a",
+          "size": 9303,
+          "mode": "100644"
+        },
+        "examples/sun-abraham-demo/README.md": {
+          "gitBlobSha": "351208b45590f4cbbb17f91bc888d618df1ff948",
+          "size": 3778,
+          "mode": "100644"
+        },
+        "examples/sun-abraham-demo/sun_abraham_demo.py": {
+          "gitBlobSha": "150d69c2255fbc7fe87993bc70508b61ea171793",
+          "size": 14188,
+          "mode": "100644"
+        },
+        "references.bib": {
+          "gitBlobSha": "0739a79017a7d1cb76156ff323507f4dcc0a3192",
+          "size": 19032,
+          "mode": "100644"
+        },
+        "scripts/scaffold_project.py": {
+          "gitBlobSha": "2343b68c88f53e8818788a8fef4145b2ac4f954a",
+          "size": 4070,
+          "mode": "100755"
+        },
+        "scripts/statspai_tools.txt": {
+          "gitBlobSha": "7201d69d822f0ab0a13ab0763507b5904864ec22",
+          "size": 2116,
+          "mode": "100644"
+        },
+        "skills/aer-identification/SKILL.md": {
+          "gitBlobSha": "96b31bf288fca789ad905bf334839f5c16c1121b",
+          "size": 11965,
+          "mode": "100644"
+        },
+        "skills/aer-identification/agents/openai.yaml": {
+          "gitBlobSha": "2b4f0551a5356da563e7956ca0fff688224d1637",
+          "size": 212,
+          "mode": "100644"
+        },
+        "skills/aer-identification/references/estimator-playbook.md": {
+          "gitBlobSha": "81da7ff4640fd486d3a43b50e33d48f2ee355acc",
+          "size": 17337,
+          "mode": "100644"
+        },
+        "skills/aer-preregistration/SKILL.md": {
+          "gitBlobSha": "26f0d192762fd0103e48d8882fc6e177c505a49b",
+          "size": 7574,
+          "mode": "100644"
+        },
+        "skills/aer-preregistration/agents/openai.yaml": {
+          "gitBlobSha": "41c7d4c8343abc5223699b777948b39064f9af77",
+          "size": 284,
+          "mode": "100644"
+        },
+        "skills/aer-preregistration/references/pap-template.md": {
+          "gitBlobSha": "72c4229abcc892f5038050bc9caecae2629dc779",
+          "size": 9420,
+          "mode": "100644"
+        },
+        "skills/aer-replication/SKILL.md": {
+          "gitBlobSha": "4a7c05b75d0872ff0688454a45709655babd498e",
+          "size": 11433,
+          "mode": "100644"
+        },
+        "skills/aer-replication/agents/openai.yaml": {
+          "gitBlobSha": "6203824e9c4567a58b941fdd7118a45e626439aa",
+          "size": 211,
+          "mode": "100644"
+        },
+        "skills/aer-replication/references/aea-package-checklist.md": {
+          "gitBlobSha": "0b7e1b3eebd9776b60b506551d8c6c4d7cba4144",
+          "size": 13226,
+          "mode": "100644"
+        },
+        "skills/aer-robustness/SKILL.md": {
+          "gitBlobSha": "60f118593b28c8b1a96fc9549c95f16fc94442a3",
+          "size": 10070,
+          "mode": "100644"
+        },
+        "skills/aer-robustness/agents/openai.yaml": {
+          "gitBlobSha": "4078383a845785710f6eb94a2f2baa1f67a56721",
+          "size": 238,
+          "mode": "100644"
+        },
+        "skills/aer-robustness/references/robustness-menu.md": {
+          "gitBlobSha": "65c8717fc0b40a90d9686df228e86b4472f08f8c",
+          "size": 12067,
+          "mode": "100644"
+        },
+        "skills/aer-statspai/SKILL.md": {
+          "gitBlobSha": "fdd4e8bda59e5ec2d734770ed61f8fa501c94974",
+          "size": 11981,
+          "mode": "100644"
+        },
+        "skills/aer-statspai/agents/openai.yaml": {
+          "gitBlobSha": "1ef2a573513be5d4c0f26717b6889912ad93b558",
+          "size": 228,
+          "mode": "100644"
+        },
+        "skills/aer-tables-figures/SKILL.md": {
+          "gitBlobSha": "630331b9081dd728d9f7f6cafe0cf5a642aa93f1",
+          "size": 8200,
+          "mode": "100644"
+        },
+        "skills/aer-tables-figures/agents/openai.yaml": {
+          "gitBlobSha": "1bd191dc9493e0067c8c0441936db1ef33acfe32",
+          "size": 204,
+          "mode": "100644"
+        },
+        "skills/aer-tables-figures/references/exhibit-cookbook.md": {
+          "gitBlobSha": "4be7ce3087f2ff87307dcb24a7dc654edfa8f23b",
+          "size": 9495,
+          "mode": "100644"
+        },
+        "templates/python/README.md": {
+          "gitBlobSha": "be04b2037dbb60f7e595ca94d28604391d4a3a7d",
+          "size": 2527,
+          "mode": "100644"
+        },
+        "templates/python/clean.py": {
+          "gitBlobSha": "7c6e6380e62d27eea7a427f89aa862508b67dfb0",
+          "size": 783,
+          "mode": "100644"
+        },
+        "templates/python/descriptives.py": {
+          "gitBlobSha": "a0ab940e3839bb8a824f65fb9de061ccd4ab9916",
+          "size": 674,
+          "mode": "100644"
+        },
+        "templates/python/figures.py": {
+          "gitBlobSha": "edda90cba6323c243960f67e058aaed950c3eb53",
+          "size": 236,
+          "mode": "100644"
+        },
+        "templates/python/heterogeneity.py": {
+          "gitBlobSha": "af6f3201257232f78ec7744017f7fe4241729bbf",
+          "size": 249,
+          "mode": "100644"
+        },
+        "templates/python/main_did.py": {
+          "gitBlobSha": "0b2fb6bf6f9db83bdfd12051cd281aa24913d211",
+          "size": 5061,
+          "mode": "100644"
+        },
+        "templates/python/requirements.txt": {
+          "gitBlobSha": "a61fb0ef5f9bcc3534b43a6203e43df5219346e1",
+          "size": 876,
+          "mode": "100644"
+        },
+        "templates/python/robustness.py": {
+          "gitBlobSha": "96d0b0e0b61c9552c132196cb2e07d484a84ef35",
+          "size": 267,
+          "mode": "100644"
+        },
+        "templates/python/run_all.py": {
+          "gitBlobSha": "160f30e7d9bca4023e045a930826641c0393d554",
+          "size": 2097,
+          "mode": "100644"
+        },
+        "templates/python/setup.py": {
+          "gitBlobSha": "59d44da5a909ae967c0b3ebf4ca2aa75a729888d",
+          "size": 1438,
+          "mode": "100644"
+        },
+        "templates/python/tables.py": {
+          "gitBlobSha": "ebb410120ea4e44d76832bd73669f62101bead47",
+          "size": 1909,
+          "mode": "100644"
+        },
+        "templates/r/00_setup.R": {
+          "gitBlobSha": "847df932b9a4122fca8bd29adc29e88400422ca8",
+          "size": 2356,
+          "mode": "100644"
+        },
+        "templates/r/01_clean.R": {
+          "gitBlobSha": "5946d64d82a92591185fbc5adb60516c9260099e",
+          "size": 766,
+          "mode": "100644"
+        },
+        "templates/r/02_descriptives.R": {
+          "gitBlobSha": "75c34fb73e0fc78a9618ff2929592d7f2a9805a5",
+          "size": 682,
+          "mode": "100644"
+        },
+        "templates/r/03_main_did.R": {
+          "gitBlobSha": "aca38cc50ccd4a10c1eb00be2c1243901a93dcfc",
+          "size": 6105,
+          "mode": "100644"
+        },
+        "templates/r/04_robustness.R": {
+          "gitBlobSha": "46c5fc31d76a094ed871cc983b5053bc599e91fb",
+          "size": 279,
+          "mode": "100644"
+        },
+        "templates/r/05_heterogeneity.R": {
+          "gitBlobSha": "17b72c172b8919b46395573326d2db83abe33698",
+          "size": 261,
+          "mode": "100644"
+        },
+        "templates/r/06_tables.R": {
+          "gitBlobSha": "2a3c8336326ef7ef24329e84ff0ae46c8618e1d8",
+          "size": 1987,
+          "mode": "100644"
+        },
+        "templates/r/07_figures.R": {
+          "gitBlobSha": "05a0386826ab264ae3bcd1b7cb23a5c474131219",
+          "size": 248,
+          "mode": "100644"
+        },
+        "templates/r/README.md": {
+          "gitBlobSha": "e6aafb33f4fe97715a62072292961e2c1ee1c4d2",
+          "size": 1942,
+          "mode": "100644"
+        },
+        "templates/r/run_all.R": {
+          "gitBlobSha": "e83c0719950d4beb3bfac51849db2f01a84e2622",
+          "size": 1743,
+          "mode": "100644"
+        },
+        "templates/stata/00_globals.do": {
+          "gitBlobSha": "a83b1b35e50e79c82b09f28a3d38a35ce6dc286e",
+          "size": 1382,
+          "mode": "100644"
+        },
+        "templates/stata/00_install_packages.do": {
+          "gitBlobSha": "af44418c3f56328c345eea9e74f5e5dbb7393e6c",
+          "size": 1092,
+          "mode": "100644"
+        },
+        "templates/stata/01_clean.do": {
+          "gitBlobSha": "ad6aeb01df15005a313f410038360443b946443b",
+          "size": 796,
+          "mode": "100644"
+        },
+        "templates/stata/02_descriptives.do": {
+          "gitBlobSha": "6eed8dd39e4785dd1ca53d9a1506f9bf709b03b0",
+          "size": 406,
+          "mode": "100644"
+        },
+        "templates/stata/03_main_did.do": {
+          "gitBlobSha": "622096678997d9e476e0f5ea8b8100249b232d30",
+          "size": 3490,
+          "mode": "100644"
+        },
+        "templates/stata/04_robustness.do": {
+          "gitBlobSha": "f2815b42168d9c5737b18ef080010b33225f86e4",
+          "size": 314,
+          "mode": "100644"
+        },
+        "templates/stata/05_heterogeneity.do": {
+          "gitBlobSha": "a4c5e87bc5f9e2998ed5a8aaaccdb598f9617028",
+          "size": 296,
+          "mode": "100644"
+        },
+        "templates/stata/06_tables.do": {
+          "gitBlobSha": "d510c88cc670791dea1dcd73b6469d4be0782c75",
+          "size": 2143,
+          "mode": "100644"
+        },
+        "templates/stata/07_figures.do": {
+          "gitBlobSha": "6dd42294bd4c6f013896a25efd243c5d2d855eba",
+          "size": 283,
+          "mode": "100644"
+        },
+        "templates/stata/README.md": {
+          "gitBlobSha": "33892941b7b47c97740d1daf44ad3c2c718481e3",
+          "size": 2055,
+          "mode": "100644"
+        },
+        "templates/stata/run_all.do": {
+          "gitBlobSha": "a86827d9da3c7fac9728c62f1c624df51591a6e5",
+          "size": 1564,
+          "mode": "100644"
+        }
+      },
+      "files": {
+        "LICENSE": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "docs/design-principles.md": "799e7741d550e14d41c89b583801fe6cdb7ff07427428b2372009f228098cb1b",
+        "docs/glossary.md": "88067e6df794a57b063b86f69da864c324b065893083cdba843dfceb92c0dc62",
+        "docs/methods-reference.md": "ded50adba39b117bf369415adafaebfe6968b09b5920ea78ba5bf5b0a7ee16f2",
+        "docs/source-register.md": "7b7ca280086cd1a0447319f1eb3285658e109dd388a9780264cc8a7aea2afc26",
+        "examples/_aer_numeric_check.py": "c18e3673866c1b125173feb27a5959b63900e7cf22ebdfbc6d71107e3a1f3892",
+        "examples/aer-exemplars.md": "8bbf6d78eedfce5f92afa916c5b1470d24f356c92d777f4ed7870252c66dd48d",
+        "examples/dml-plr-demo/README.md": "0e6c0a8aaa364a181aa636125d06ef959a2a7fdb381559f20d25245e41fd2fb5",
+        "examples/dml-plr-demo/dml_plr_demo.py": "c26d327bae39a7135f1bce8103fbebb33da773131454b10aa0044f1a53860b22",
+        "examples/lee-bounds-demo/README.md": "5909633cf91323e7de7ade2ae9c159d37373ac3787c5822b958deb71ec6512cd",
+        "examples/lee-bounds-demo/lee_bounds_demo.py": "226de49395aaded5954f8371e25e412d5be50b534302c7dcc100fc34bc7b647e",
+        "examples/lp-did-demo/README.md": "a97a96efa79ecdd5125563b05c1c1ee607030d5c3cec70439382cb7dcac70e72",
+        "examples/lp-did-demo/lp_did_demo.py": "dc22e17e05f33adaabfa8143209eda7d121173721dbf088a50807864c435d3e3",
+        "examples/modern-aer-exemplars.md": "f4323a3821f44f11b3fab4d9a786cb051dd9bb9d734949854c508508693ccee8",
+        "examples/oster-ovb-demo/README.md": "025b0dcf9fea685eff09f6f7842ad6f71be98918cf2837e93ef5386d3fae3e2c",
+        "examples/oster-ovb-demo/oster_ovb_demo.py": "c9826390f80fb4bebe3eeacc280bd4a8cff6a3841bc81629d2db3837bc346136",
+        "examples/power-mde-demo/README.md": "56077edb590709452fbb6d88459f834cb439a89e5c1585850bfe3607b5926bcb",
+        "examples/power-mde-demo/power_mde_demo.py": "6b81496de71b3b4d9822615d5e7fb5504b5cea24468bc437a06884192d596a1a",
+        "examples/replication-package-skeleton/LICENSE": "b3a106825f58d408816d0421ed18642ddd42775c7aa4e0b7692f424bd8517ef8",
+        "examples/replication-package-skeleton/README.md": "d8c181167bbb0ed1fa5a152187aca5a1349e0e1c9ab90f0989fbcfcfc8b46bc5",
+        "examples/replication-package-skeleton/code/00_globals.do": "03533427f03d9fdb9218c043db9fadfc8091dca02cd020c681fc4ca456d227a9",
+        "examples/replication-package-skeleton/code/00_install_packages.do": "73668bf023469368109b0bc49855565ba4a4e739cbf15cb89c3f67458b0a58a3",
+        "examples/replication-package-skeleton/code/01_clean.do": "c3f55fc6e31817c6c5a9e6d550c39edca1134618a6e7b92c59bd365d306516dc",
+        "examples/replication-package-skeleton/code/02_descriptives.do": "32f856d93f648e40c78e7a1fbbbd2b8564b73c5cdc91cd9098801bd2c7d23211",
+        "examples/replication-package-skeleton/code/03_main_did.do": "927d47ce9e3d6492ae1e1c050b0a0d57bc58ce449c67e02059e59794f2b72660",
+        "examples/replication-package-skeleton/code/04_robustness.do": "9cdc1c595f65bd8504cdeb21348bb69460fc6c734c2abf17513f2d35d44176af",
+        "examples/replication-package-skeleton/code/05_heterogeneity.do": "91fa1136932c08fd99ed6e64ce5fd32bc08f3d2d11d0e5643c778caa27832d45",
+        "examples/replication-package-skeleton/code/06_tables.do": "9425a5388b7e1fea5f8060f012a3abfb07867420bfbc28e9765d9abfd5046d53",
+        "examples/replication-package-skeleton/code/07_figures.do": "35199c7d3f76ecf428e4d48acaf020d619ae8e4a58de05f4f94c41fe7e07566e",
+        "examples/replication-package-skeleton/data/codebook/.gitkeep": "f660a7996deacfbc7560e4240054a8ad82eb02fe25a95064257e07084bcacb85",
+        "examples/replication-package-skeleton/data/codebook/source-register.md": "5230f754dd5f7dfd8751c2bf8391b87feff49a920272d257a73448397f3469a2",
+        "examples/replication-package-skeleton/data/intermediate/.gitkeep": "f660a7996deacfbc7560e4240054a8ad82eb02fe25a95064257e07084bcacb85",
+        "examples/replication-package-skeleton/data/raw/.gitkeep": "f660a7996deacfbc7560e4240054a8ad82eb02fe25a95064257e07084bcacb85",
+        "examples/replication-package-skeleton/docs/.gitkeep": "f660a7996deacfbc7560e4240054a8ad82eb02fe25a95064257e07084bcacb85",
+        "examples/replication-package-skeleton/docs/claim-evidence-ledger.csv": "0aa84d880497a46f0f45dffca331e8c3bb8781d632f45e6e3e8b8e514265b106",
+        "examples/replication-package-skeleton/docs/exhibit-register.md": "99768e12b62307ca969221fb1e1a2d89b671775cae43f24dbb591534bd88c49e",
+        "examples/replication-package-skeleton/logs/.gitkeep": "f660a7996deacfbc7560e4240054a8ad82eb02fe25a95064257e07084bcacb85",
+        "examples/replication-package-skeleton/output/figures/.gitkeep": "f660a7996deacfbc7560e4240054a8ad82eb02fe25a95064257e07084bcacb85",
+        "examples/replication-package-skeleton/output/tables/.gitkeep": "f660a7996deacfbc7560e4240054a8ad82eb02fe25a95064257e07084bcacb85",
+        "examples/replication-package-skeleton/run_all.do": "ab105a5536e309eae2ed6b3a4af02d7df85094a999ef3f93dfbe63bd5441d293",
+        "examples/sensitivity-rv-demo/README.md": "b080d81dcb883e2268743339f26e7273f4110150bbc0b8c3f8ef8ae495563827",
+        "examples/sensitivity-rv-demo/sensitivity_rv_demo.py": "ee4383d7bb4c99a8a8e39ad9d760740529f8798b21df5d9aa338b2af8ad1f40e",
+        "examples/staggered-did-demo/README.md": "77206872560a9636fe7583699c36b40480e589ef137272a852bfcb51f68db0d7",
+        "examples/staggered-did-demo/staggered_did_demo.R": "22f9b3d885b5ccaba24763a6951b94e4a3fe0c9115440139393ce87cc9e2d593",
+        "examples/staggered-did-demo/staggered_did_demo.py": "36431cb95aceffd5128210dc0bf6ae3fad02be37380e00b74703203a53a174c4",
+        "examples/sun-abraham-demo/README.md": "2a115cf1b79dfe26e211e537413d53e1519ca66cb340e25babf5bca39ea1df58",
+        "examples/sun-abraham-demo/sun_abraham_demo.py": "2380b66fdd04d056675a01e42e4b3c8d32e4789d0fb654a82d895bba97e581c2",
+        "references.bib": "cbd99409dabf4833c3951a0b6537daefba4b37ac12d1d8e4604ddeaa57355067",
+        "scripts/scaffold_project.py": "5bdcea14092aef81a25fac424f6a3035cbe391c96bcf302d56312db589cadbd5",
+        "scripts/statspai_tools.txt": "ff3e50611130fa3e39b8db825ffe34d66da816b6968831935d3728a7aeed3ed4",
+        "skills/aer-identification/LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "skills/aer-identification/SKILL.md": "43d61741731424c1566ff77c1ac5182eca38138378e7238ba4476185703a62f5",
+        "skills/aer-identification/agents/openai.yaml": "60884602448d896a1e12ccdbc5b2417bbbcecdf83a016e25e301b603acd43e71",
+        "skills/aer-identification/references/estimator-playbook.md": "6071199898370e1bf0b6aab28536e10dd945f3ce40036a14b64d9bd22232dfb9",
+        "skills/aer-preregistration/LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "skills/aer-preregistration/SKILL.md": "3d2f03f0540d56a5acabe0bd2dcde769d07847fe4b6664b9d72b710f33155a2e",
+        "skills/aer-preregistration/agents/openai.yaml": "8c3683cf8c8eca8140e802b3906871c9a215e431d194cfea2b76e43e9d222081",
+        "skills/aer-preregistration/references/pap-template.md": "a9d72d172851dd94bd77643083f98c8ab5b21c5a12f7506ae7accd9a364ad37a",
+        "skills/aer-replication/LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "skills/aer-replication/SKILL.md": "65c79ca440fe204190bcc4efe27dd19a784882611464592cb7731ce0a92f90ee",
+        "skills/aer-replication/agents/openai.yaml": "1fa83c065abcef5e9fd2c3c947c0fc997bd2c57e8ee5d1a9f7075fcacb01e082",
+        "skills/aer-replication/references/aea-package-checklist.md": "922d2ba1b897e47929da838ce617c2807a6c244f1941062e56a664cd349b0398",
+        "skills/aer-robustness/LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "skills/aer-robustness/SKILL.md": "01325fc6e4e23675ac9f926558ba84cbe1177489da7bd5b535f76fa9232521c0",
+        "skills/aer-robustness/agents/openai.yaml": "d55bc3b722d31ef4f188e96a9a882f3121d9864337475b89848018384cd02f2c",
+        "skills/aer-robustness/references/robustness-menu.md": "c732a7085e2580ca79da9d5fe8741425bbb560cb8fddbde2c5a7970bfa35dbfd",
+        "skills/aer-statspai/LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "skills/aer-statspai/SKILL.md": "49e94f6a7090196694743855b311a28554d5ff03603fcb755d6beaf0c847b9da",
+        "skills/aer-statspai/agents/openai.yaml": "f26dfe3bd879e99d89076fe41db5d14b099e0b0f2b93ed25ccf90b78673bf71a",
+        "skills/aer-tables-figures/LICENSE.txt": "bad075617318f23249188e9f4561c8f5fa1a3e992d1e6c95a8740750aba98540",
+        "skills/aer-tables-figures/SKILL.md": "4c04db1e25c01ab900db13a1a0652bfda689db019341e14f77584ad2f8e7bee0",
+        "skills/aer-tables-figures/agents/openai.yaml": "56bcd471a4d5ffaad998ff674120515b23fb72e7a1d424735565f45f87c1fd76",
+        "skills/aer-tables-figures/references/exhibit-cookbook.md": "b997f48a1a54a3183f01c3549aac6411cf05c9e4ad94b999b25dcaccaef57b0b",
+        "templates/python/README.md": "6d243d88c6387676392de8531fe8249b70ad6aaa4feff5d37a8ec05981de12f7",
+        "templates/python/clean.py": "70c7506c8812ac7fe59366ba706054ce163708a7829b2b1c8cc25fc452fcf14e",
+        "templates/python/descriptives.py": "76e9bf4b74f12587b8a4e6cf7f6cfb1886cb7e037d5bd87f701681bd4edcb846",
+        "templates/python/figures.py": "8f88f426df3b7fcedf53f23314d71c86c2777801d1c0e0c3ae19ba1d6d2f6590",
+        "templates/python/heterogeneity.py": "fc280e2baf590eb9a5e2891393dcc2480af5964d51289dece98cd325a4b25c4a",
+        "templates/python/main_did.py": "8d6a0b7f6ce6d9169bd036176f78076bbc518d9d31d1518830178d69dd7eed68",
+        "templates/python/requirements.txt": "e8c19f5ec5a04ac27b0e21428cf229b2fad14d9a0e4c1f18e9428e8fe7b181d6",
+        "templates/python/robustness.py": "4c376aaf5bec2bcd4cc29f16abedf3491b88d2197925cc499db5d8efeefebd00",
+        "templates/python/run_all.py": "59b871559fd8e56f11d831ddb833882802d14877f99363d56ff4f2b0036c8071",
+        "templates/python/setup.py": "b2e661eb95d2297592242003734aab7aefeb90cb69ed525a4520f29ff8833089",
+        "templates/python/tables.py": "eb77c770776ae9834f2f89f5ef8f9c4a766177b8cafeadc6a28e71183f9fc30d",
+        "templates/r/00_setup.R": "1cbd62bc98653623f5a9d177127c67403d9757b7d9e9ab8b2d3ee2ac94eb6b76",
+        "templates/r/01_clean.R": "fbe0949ffc419ab651f2fb47f08f1ae04abcd81023b6e19214d5da0efad73dba",
+        "templates/r/02_descriptives.R": "cc9d33c6c6ead321e4b3b3c17be8a5f2c660829fdbe49d0d58e6e539b94bd5f5",
+        "templates/r/03_main_did.R": "d53e13cbc397a1df366976b356a64f5b8db6c20a01d20a335ead15ee36f08b30",
+        "templates/r/04_robustness.R": "9bb9ac9a8e1a4173540ac9c865bcfb6cf2c17d6c490cf164607ed7bc820538b8",
+        "templates/r/05_heterogeneity.R": "fc65df4290ed693cedccfbc7f346ab072c0cd88d8fa46f355f37ad76be9afef2",
+        "templates/r/06_tables.R": "685e181338a4d14e27db8e893f8fc892e51274e2a5506bb6d1a49e02a21c4069",
+        "templates/r/07_figures.R": "df15e154d9165d77804904483b3f7ca88263aecfeca7baa8b505dfec30175442",
+        "templates/r/README.md": "bf84d54636a56c95c12216f021ae9efe04607182bab65309051e7cc605c20f9e",
+        "templates/r/run_all.R": "8c73f900c6a2225b406b7611424fe4438ea1a345bc89b98db225834b9df31007",
+        "templates/stata/00_globals.do": "45e396b9e4f08fd179f390cec64e8ee08a3e41186528001027e8ad0a3c34a223",
+        "templates/stata/00_install_packages.do": "19100cde07938063abcb281d289ed5e7ccab71bf906f9aff9961ec83b6a85ad9",
+        "templates/stata/01_clean.do": "c9e25852bce2cf8fca0251f944df40ff069baceefde05ffd629ca8e331ce78b6",
+        "templates/stata/02_descriptives.do": "b766e91afd128d711b36d19c95f818a974ce0a66a00cd58ff86c8362af5b49d1",
+        "templates/stata/03_main_did.do": "996aa1931cba30849d8d6f171785dbb90b4cdcecf8dcf651f5debd02f8d648aa",
+        "templates/stata/04_robustness.do": "3375e5518ef58565b7e6eb63432c6661f40798809e9aa487f57a8f5be5f5fb19",
+        "templates/stata/05_heterogeneity.do": "92398b86399e29684f26dd974c60c5efa25109ef993300a6ef7ea17197b07b6b",
+        "templates/stata/06_tables.do": "2bd907499d32d3eb552f90a0c0e4e902dc93956e361fd87ce5d0d1674e2f6b51",
+        "templates/stata/07_figures.do": "f012481dc361a125e91066a972565cf5bf6eca7a0e04a67c2deb1c02882dc741",
+        "templates/stata/README.md": "72a6f6fb93f08ec20c65493e60c03ae601a79e158ed107c11b527a882da4ece0",
+        "templates/stata/run_all.do": "ae306cdb14e130723e10c038fdee217fcd0fe96579431c847d229ce7d12a683c"
+      },
+      "installable": false,
+      "staticScan": {
+        "passed": false,
+        "totalBytes": 411564,
+        "fileCount": 105,
+        "failures": [
+          "bundle contains too many files"
+        ]
+      }
+    }
+  ],
+  "capabilities": {
+    "execution": [
+      "Python/R/Stata and method-specific packages as declared in templates and examples",
+      "Optional StatsPAI MCP server; service implementation is not vendored",
+      "Package installation and citation/policy verification may require network"
+    ],
+    "externalActions": [
+      "Research registration and openICPSR upload require user task authorization; source inclusion does not perform them"
+    ],
+    "mutations": [
+      "Template scaffold can replace destination contents with --replace; copied for inspection and not executed"
+    ],
+    "limitations": [
+      "Selected collection source MIT is preserved; example skeleton has its original template license and data-specific-license notice",
+      "Generated plans and documentation do not prove method validity, registration, reproducibility or journal compliance"
+    ]
+  },
+  "optionalExternalSkillHandoffs": [
+    "aer-topic-selection",
+    "aer-consistency",
+    "aer-submission",
+    "aer-introduction",
+    "aer-paper-body"
+  ],
+  "verification": {
+    "gitBlobAndSizeMatched": 99,
+    "allSelectedSkillDirectoriesComplete": true,
+    "upstreamScriptsExecuted": false,
+    "humanEvaluation": false,
+    "hostInstallEvaluation": false,
+    "optionalRelatedContent": [
+      {
+        "from": "docs/glossary.md",
+        "link": "../skills/aer-literature/SKILL.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-literature/SKILL.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-literature/SKILL.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../examples/bunching-demo/",
+        "sourcePath": "skills/50-brycewang-aer-skills/examples/bunching-demo",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/examples/bunching-demo",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../skills/aer-literature/SKILL.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-literature/SKILL.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-literature/SKILL.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../skills/aer-consistency/SKILL.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-consistency/SKILL.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-consistency/SKILL.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../skills/aer-referee-sim/SKILL.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-referee-sim/SKILL.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-referee-sim/SKILL.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../skills/aer-consistency/SKILL.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-consistency/SKILL.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-consistency/SKILL.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../examples/matrix-completion-demo/",
+        "sourcePath": "skills/50-brycewang-aer-skills/examples/matrix-completion-demo",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/examples/matrix-completion-demo",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../examples/README.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/examples/README.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/examples/README.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../skills/aer-workflow/SKILL.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-workflow/SKILL.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-workflow/SKILL.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "./quality-scorecard.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/docs/quality-scorecard.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/docs/quality-scorecard.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../examples/qte-demo/",
+        "sourcePath": "skills/50-brycewang-aer-skills/examples/qte-demo",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/examples/qte-demo",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "./referee-report-rubric.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/docs/referee-report-rubric.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/docs/referee-report-rubric.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "../skills/aer-referee-sim/SKILL.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/skills/aer-referee-sim/SKILL.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/skills/aer-referee-sim/SKILL.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      },
+      {
+        "from": "docs/glossary.md",
+        "link": "./desk-rejection-audit.md",
+        "sourcePath": "skills/50-brycewang-aer-skills/docs/desk-rejection-audit.md",
+        "sourceUrl": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/blob/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0/skills/50-brycewang-aer-skills/docs/desk-rejection-audit.md",
+        "kind": "optional-related-content",
+        "note": "Navigation to unselected upstream material; not copied or asserted as an installed dependency."
+      }
+    ],
+    "unresolvedMarkdownTargets": [],
+    "staticScanMeaning": "Only the existing textual scanner was applied. A pass does not grant runtime permissions, human qualification or an installable status. Aggregate collection units may exceed runtime file-count limits and remain intake.",
+    "gitFileModesMatched": 99,
+    "executableFiles": [
+      "intake/auto-empirical-research-skills-2026-10-09/aer-skills/scripts/scaffold_project.py"
+    ]
+  },
+  "optionalExternalSkillHandoffsNote": "Optional later workflow handoffs, not copied or represented as installed skills in this selected collection."
+}

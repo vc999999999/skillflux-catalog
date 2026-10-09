@@ -9,6 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Test import verification
+        run: python3 -B -m unittest discover -s scripts -p 'test_*.py'
+      - name: Verify complete imported package inventories
+        run: python3 -B scripts/verify_imports.py .
       - uses: actions/setup-node@v4
         with:
           node-version: 24
