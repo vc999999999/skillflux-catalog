@@ -3,12 +3,21 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   verify:
+    if: github.event_name != 'workflow_dispatch' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    outputs:
+      catalog_changed: ${{ steps.catalog-change.outputs.refresh }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -31,3 +40,67 @@ jobs:
           npm run build --workspace @skillflux/mcp
       - name: Check index.json matches the skills directory
         run: node skillflux-client/mcp/dist/cli.js catalog --check .
+
+      - name: Check whether the website needs a refresh
+        if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+        id: catalog-change
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [[ "$EVENT_NAME" == workflow_dispatch ]]; then
+            echo 'refresh=true' >> "$GITHUB_OUTPUT"
+            echo 'Manual production refresh requested after catalog verification.'
+            exit 0
+          fi
+          if [[ "$BEFORE_SHA" != 0000000000000000000000000000000000000000 ]] && git diff --quiet "$BEFORE_SHA" "$CURRENT_SHA" -- index.json; then
+            echo 'refresh=false' >> "$GITHUB_OUTPUT"
+            echo 'No catalog index change; website refresh is unnecessary.'
+            exit 0
+          fi
+          echo 'refresh=true' >> "$GITHUB_OUTPUT"
+
+  refresh-website:
+    needs: verify
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' && needs.verify.outputs.catalog_changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    concurrency:
+      group: catalog-website-refresh
+      cancel-in-progress: false
+    steps:
+      - name: Refresh the production website and release feeds
+        env:
+          CLOUDFLARE_DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          import urllib.error
+          import urllib.request
+
+          hook = os.environ.get("CLOUDFLARE_DEPLOY_HOOK_URL", "")
+          if not re.fullmatch(r"https://api\.cloudflare\.com/client/v4/workers/builds/deploy_hooks/[0-9a-fA-F-]{36}", hook):
+              raise SystemExit("Configure the CLOUDFLARE_DEPLOY_HOOK_URL repository secret with the production main deploy hook.")
+          request = urllib.request.Request(hook, data=b"", method="POST")
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  payload = json.load(response)
+          except urllib.error.HTTPError as error:
+              raise SystemExit(f"Cloudflare rejected the refresh request (HTTP {error.code}).") from None
+          except (urllib.error.URLError, TimeoutError, ValueError):
+              raise SystemExit("Could not confirm the Cloudflare refresh request; inspect the production build history before retrying.") from None
+          result = payload.get("result") or {}
+          build_id = result.get("build_uuid", "")
+          if payload.get("success") is not True or not re.fullmatch(r"[0-9a-fA-F-]{36}", build_id):
+              raise SystemExit("Cloudflare did not confirm a build. Inspect the production build history.")
+          print(f"Production refresh accepted: build {build_id}.")
+          print("The website build resolves and validates its own pinned catalog snapshot before publishing.")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+              summary.write(f"Production website refresh accepted: `{build_id}`.\n\n")
+              summary.write("This confirms the build was queued, not that deployment has completed. Check Cloudflare Workers Builds and the published release feed.\n")
+          PY
