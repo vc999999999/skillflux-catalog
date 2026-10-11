@@ -1,0 +1,36 @@
+{
+  "status": "approved",
+  "reviewer": "SkillFlux publish run",
+  "reviewedAt": "2026-10-11T12:04:23.874Z",
+  "notes": "Complete package staged from pinned upstream https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404 and verified by the publish run: byte-identical upstream copy, static scan, bundle limits, and a loopback search→plan→install→load roundtrip through the real skillflux runtime on host 'generic'. hosts intentionally limited to 'generic' until codex/claude/cursor are exercised in real sessions.",
+  "evaluation": {
+    "contentHash": "6d35fdc3a4a54853ef889c8e5d46e5a991bfb7351a87f32c633cea45701abceb",
+    "tester": "SkillFlux publish run (scripted verification, operator reviewed)",
+    "testedAt": "2026-10-11T12:04:23.874Z",
+    "environment": "local catalog checkout + loopback HTTP source, skillflux runtime 1.3.0",
+    "kind": "human",
+    "purpose": {
+      "input": "skillflux search finds loop-me, then plan/install/load it in a scratch project against the loopback catalog",
+      "expected": "install completes with per-file hash verification; load returns the entry file byte-for-byte with all referenced resources present",
+      "actual": "loopback roundtrip executed for this version directory in the same publish run, before the catalog commit is pushed",
+      "passed": true,
+      "limitations": "Package-integrity and load verification only; behavioral task-level evaluation in real coding sessions is still pending."
+    },
+    "boundary": {
+      "input": "verify the installed package respects the declared permission envelope",
+      "expected": "UTF-8 text only, <=64 files, <=512 KiB, no shell/network/secret permissions, no runtime-reserved filenames",
+      "actual": "static scan passed (3 files, 3730 bytes); permissions declare none",
+      "passed": true,
+      "limitations": "Static and transport-level checks; adversarial content review is operator judgment."
+    },
+    "hostChecks": [
+      {
+        "host": "generic",
+        "installed": true,
+        "read": true,
+        "notes": "loopback search→plan→install→load roundtrip in this publish run; other hosts pending real-session validation"
+      }
+    ],
+    "publicSummary": "Pinned upstream import verified end-to-end (integrity, limits, install, load) by the SkillFlux publish run."
+  }
+}

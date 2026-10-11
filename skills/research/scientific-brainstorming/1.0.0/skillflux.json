@@ -1,0 +1,34 @@
+{
+  "schema": "skillflux/v1",
+  "id": "scientific-brainstorming",
+  "version": "1.0.0",
+  "name": "Scientific Brainstorming",
+  "description": "科研头脑风暴：生成有文献依据的研究问题、假设与实验设计；research hypotheses, experiment design, scientific ideation.",
+  "category": "research",
+  "tags": [
+    "science",
+    "brainstorming",
+    "hypothesis",
+    "research"
+  ],
+  "hosts": [
+    "generic"
+  ],
+  "publisher": "K-Dense AI (imported from K-Dense-AI/scientific-agent-skills)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-11T12:04:23.874Z",
+  "release": {
+    "notes": "Imported verbatim from https://github.com/K-Dense-AI/scientific-agent-skills/tree/92ace75ac21efe19a620434e0ca4e356081fe807 (upstream commit 92ace75ac21efe19a620434e0ca4e356081fe807). Complete skill package.",
+    "breaking": false,
+    "minClientVersion": "1.1.0",
+    "maintainedAt": "2026-10-11T12:04:23.874Z",
+    "maintainedBy": "SkillFlux publish run"
+  }
+}

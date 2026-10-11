@@ -1,0 +1,31 @@
+{
+  "schema": "skillflux/v1",
+  "id": "ask-matt",
+  "version": "1.0.0",
+  "name": "ask-matt",
+  "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+  "category": "development",
+  "tags": [
+    "mattpocock"
+  ],
+  "hosts": [
+    "generic"
+  ],
+  "publisher": "Matt Pocock (imported from mattpocock/skills)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-11T12:04:23.874Z",
+  "release": {
+    "notes": "Imported verbatim from https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404 (upstream commit b0618bc436ad893b3c5e84e55fba86586d34a404). Complete skill package.",
+    "breaking": false,
+    "minClientVersion": "1.1.0",
+    "maintainedAt": "2026-10-11T12:04:23.874Z",
+    "maintainedBy": "SkillFlux publish run"
+  }
+}

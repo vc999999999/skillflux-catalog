@@ -1,0 +1,35 @@
+{
+  "schema": "skillflux/v1",
+  "id": "aer-preregistration",
+  "version": "1.0.0",
+  "name": "AER Preregistration",
+  "description": "Draft pre-analysis plans and preregistrations for empirical projects: hypotheses, bounds, power/MDE and attrition handling.",
+  "category": "research",
+  "tags": [
+    "preregistration",
+    "analysis-plan",
+    "empirical-research",
+    "econometrics",
+    "aers"
+  ],
+  "hosts": [
+    "generic"
+  ],
+  "publisher": "brycewang-stanford (imported from Auto-Empirical-Research-Skills)",
+  "license": "MIT (selected 50-brycewang-aer-skills collection only)",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-11T12:04:23.874Z",
+  "release": {
+    "notes": "Imported verbatim from https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/9fa87d86e34d6c9a1c7cdb0db755c83c780537a0 (upstream commit 9fa87d86e34d6c9a1c7cdb0db755c83c780537a0). Complete skill package; 21 unreferenced files omitted for bundle limits.",
+    "breaking": false,
+    "minClientVersion": "1.1.0",
+    "maintainedAt": "2026-10-11T12:04:23.874Z",
+    "maintainedBy": "SkillFlux publish run"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "skillflux/v1",
+  "id": "reverse-engineer-anything",
+  "version": "1.0.0",
+  "name": "Reverse Engineer Anything",
+  "description": "Systematically reverse-engineer applications and artifacts: recover structure, behavior and evidence workflows from binaries, JavaScript bundles, Android apps and runtime observation.",
+  "category": "development",
+  "tags": [
+    "reverse-engineering",
+    "analysis",
+    "rea"
+  ],
+  "hosts": [
+    "generic"
+  ],
+  "publisher": "Morluto (imported from morluto/rea)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-11T12:04:23.874Z",
+  "release": {
+    "notes": "Imported verbatim from https://github.com/morluto/rea/tree/c701376777212ec9acfd10c97f45b1eaf0c885c6 (upstream commit c701376777212ec9acfd10c97f45b1eaf0c885c6). Complete skill package.",
+    "breaking": false,
+    "minClientVersion": "1.1.0",
+    "maintainedAt": "2026-10-11T12:04:23.874Z",
+    "maintainedBy": "SkillFlux publish run"
+  }
+}

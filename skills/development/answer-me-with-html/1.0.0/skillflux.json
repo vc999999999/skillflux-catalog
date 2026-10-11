@@ -1,0 +1,35 @@
+{
+  "schema": "skillflux/v1",
+  "id": "answer-me-with-html",
+  "version": "1.0.0",
+  "name": "Answer Me With HTML",
+  "description": "Render answers as self-contained interactive HTML pages: markdown, mermaid-style diagrams and built-in templates via the bundled rendering scripts.",
+  "category": "development",
+  "tags": [
+    "html",
+    "rendering",
+    "markdown",
+    "diagrams",
+    "visualization"
+  ],
+  "hosts": [
+    "generic"
+  ],
+  "publisher": "QingYunA (imported from QingYunA/answer-me-with-html)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "permissions": {
+    "network": [],
+    "shell": false,
+    "secrets": []
+  },
+  "dependencies": [],
+  "createdAt": "2026-10-11T12:04:23.874Z",
+  "release": {
+    "notes": "Imported verbatim from https://github.com/QingYunA/answer-me-with-html/tree/d0add7ec67fd51704321ec0295ede1563f8297be (upstream commit d0add7ec67fd51704321ec0295ede1563f8297be). Complete skill package.",
+    "breaking": false,
+    "minClientVersion": "1.1.0",
+    "maintainedAt": "2026-10-11T12:04:23.874Z",
+    "maintainedBy": "SkillFlux publish run"
+  }
+}
